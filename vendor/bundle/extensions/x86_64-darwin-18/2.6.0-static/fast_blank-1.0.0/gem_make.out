@@ -1,0 +1,15 @@
+current directory: /Users/amelie/Code/crimson-pro/vendor/bundle/gems/fast_blank-1.0.0/ext/fast_blank
+/Users/amelie/.rbenv/versions/2.6.3/bin/ruby -I /Users/amelie/.rbenv/versions/2.6.3/lib/ruby/2.6.0 -r ./siteconf20190814-76430-199itij.rb extconf.rb
+creating Makefile
+
+current directory: /Users/amelie/Code/crimson-pro/vendor/bundle/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" clean
+
+current directory: /Users/amelie/Code/crimson-pro/vendor/bundle/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR="
+compiling fast_blank.c
+linking shared-object fast_blank.bundle
+
+current directory: /Users/amelie/Code/crimson-pro/vendor/bundle/gems/fast_blank-1.0.0/ext/fast_blank
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fast_blank.bundle ./.gem.20190814-76430-ks8qwd
