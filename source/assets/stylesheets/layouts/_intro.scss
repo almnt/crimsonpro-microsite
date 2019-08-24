@@ -1,10 +1,5 @@
 .intro {
-  @include padding($spacing-medium null);
   background-color: $black;
-
-  @media (min-width: $screen-medium) {
-    @include padding(null $spacing-base);
-  }
 }
 
 .intro__slider {
