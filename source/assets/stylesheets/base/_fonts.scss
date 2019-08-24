@@ -1,0 +1,11 @@
+@include font-face(
+  "Crimson-Pro-Regular",
+  "/assets/fonts/CrimsonPro-Roman-VF",
+  $file-formats: ttf
+);
+
+@include font-face(
+  "Crimson-Pro-Italic",
+  "/assets/fonts/CrimsonPro-Italic-VF",
+  $file-formats: ttf
+);

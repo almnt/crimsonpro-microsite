@@ -1,0 +1,7 @@
+.slider {
+  width: 100%;
+
+  @media (min-width: $screen-medium) {
+    transform: rotateY(90);
+  }
+}

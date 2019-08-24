@@ -1,9 +1,9 @@
 body {
-  color: $base-font-color;
-  font-family: $base-font-family;
+  color: $font-color-base;
+  font-family: $font-family-base;
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
-  line-height: $base-line-height;
+  line-height: $line-height-base;
 }
 
 h1,
@@ -12,14 +12,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
+  font-family: $font-family-base;
   font-size: $base-font-size;
-  line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  line-height: $line-height-heading;
+  margin: 0 0 $spacing-small;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $spacing-small;
 }
 
 a {
@@ -35,11 +35,11 @@ a {
 }
 
 hr {
-  border-bottom: $base-border;
+  border-bottom: $border-base;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: $base-spacing 0;
+  margin: $spacing-base 0;
 }
 
 img,

@@ -1,21 +1,21 @@
 fieldset {
   background-color: $secondary-background-color;
-  border: $base-border;
-  margin: 0 0 $small-spacing;
-  padding: $base-spacing;
+  border: $border-base;
+  margin: 0 0 $spacing-small;
+  padding: $spacing-base;
 }
 
 input,
 label,
 select {
   display: block;
-  font-family: $base-font-family;
+  font-family: $font-family-base;
   font-size: $base-font-size;
 }
 
 label {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: $spacing-small / 2;
 
   &.required::after {
     content: "*";
@@ -29,19 +29,19 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple] {
   background-color: $base-background-color;
-  border: $base-border;
-  border-radius: $base-border-radius;
+  border: $border-base;
+  border-radius: $border-radius-base;
   box-shadow: $form-box-shadow;
   box-sizing: border-box;
-  font-family: $base-font-family;
+  font-family: $font-family-base;
   font-size: $base-font-size;
-  margin-bottom: $small-spacing;
-  padding: $base-spacing / 3;
+  margin-bottom: $spacing-small;
+  padding: $spacing-base / 3;
   transition: border-color $base-duration $base-timing;
   width: 100%;
 
   &:hover {
-    border-color: shade($base-border-color, 20%);
+    border-color: shade($border-color-base, 20%);
   }
 
   &:focus {
@@ -55,7 +55,7 @@ select[multiple=multiple] {
     cursor: not-allowed;
 
     &:hover {
-      border: $base-border;
+      border: $border-base;
     }
   }
 }
@@ -71,7 +71,7 @@ input[type="search"] {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: $spacing-small / 2;
 
   + label {
     display: inline-block;
@@ -79,12 +79,12 @@ input[type="radio"] {
 }
 
 input[type="file"] {
-  margin-bottom: $small-spacing;
+  margin-bottom: $spacing-small;
   width: 100%;
 }
 
 select {
-  margin-bottom: $base-spacing;
+  margin-bottom: $spacing-base;
   max-width: 100%;
   width: auto;
 }

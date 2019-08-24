@@ -1,0 +1,70 @@
+// Typography
+$font-family-base: "Crimson-Pro-Regular", serif;
+$font-family-italic: "Crimson-Pro-Italic", serif;
+
+// Font Sizes
+$heading-size-base: 1.83rem;
+$heading-size-medium: 1.25rem;
+
+// Line Heights
+$line-height-base: 1.15;
+$line-height-heading: 1.2;
+
+// Spacing
+$spacing-base: 1.45rem;
+$spacing-medium: $spacing-base * 1.5;
+$spacing-large: $spacing-base * 3;
+
+// Screen Sizes
+$screen-small: 320px;
+$screen-medium: 768px;
+$screen-large: 1020px;
+$screen-xlarge: 1440px;
+
+// Z-Indices
+$z-index-base: 0;
+
+// Colors
+$black: #222;
+$white: #fff;
+
+// Font Colors
+$font-color-base: $black;
+$font-color-light: $white;
+$font-color-action: $white;
+
+// Layout Specific
+$page-section-height: 100vh;
+$book-content-width: 342px;
+$book-number-size: 10.42rem;
+
+// Focus
+$focus-outline-color: transparentize($font-color-action, 0.4);
+$focus-outline-width: 3px;
+$focus-outline: $focus-outline-width solid $focus-outline-color;
+$focus-outline-offset: 2px;
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;
+
+// Font Sizes
+$font-size-heading-large: 3.75rem;
+$font-size-heading: 2.5rem;
+$font-size-subheading: 2rem;
+$font-size-base: 1.65rem;
+$font-size-nav: 1rem;
+$font-size-small: 1.125rem;
+
+// Font Weights
+$font-weight-xlight: 200;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-xbold: 800;
+$font-weight-black: 900;
+
+// Transition Duration
+$transition-base-duration: 250ms;

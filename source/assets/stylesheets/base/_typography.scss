@@ -1,0 +1,44 @@
+html {
+  color: $font-color-base;
+  font-family: $font-family-base;
+  font-size: 100%;
+  line-height: $line-height-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-base;
+  font-size: modular-scale(1);
+  line-height: $line-height-heading;
+  margin: 0 0 $spacing-base;
+}
+
+p {
+  margin: 0 0 $spacing-base;
+}
+
+a {
+  color: $font-color-action;
+  text-decoration-skip: ink;
+  transition: color $base-duration $base-timing;
+
+  &:hover {
+    color: shade($font-color-action, 25%);
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
+
+hr {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $spacing-base 0;
+}
