@@ -1,0 +1,74 @@
+.design {
+  @include padding(1.25em);
+  background-color: $pale-dusk;
+  border: 1px solid $black;
+}
+
+.design__heading {
+  font-size: 2rem;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-base;
+  text-align: center;
+}
+
+.design__subheading {
+  font-size: 1.25rem;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-base;
+  text-align: center;
+}
+
+.design__callout {
+  font-size: 1.6rem;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-base;
+  text-align: center;
+}
+
+.design__copy {
+  @include margin(null null $spacing-base null);
+  font-size: 1.1rem;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-medium;
+  text-align: justify;
+}
+
+.design__section {
+  @include margin($spacing-medium null);
+  text-align: center;
+}
+
+.design__section-title {
+  @include margin(null null $spacing-small);
+  font-size: 1.1rem;
+  line-height: $line-height-base;
+  text-transform: uppercase;
+}
+
+.design__number-compression {
+  font-size: 3.5rem;
+}
+
+.design__example {
+  @include margin($spacing-medium null $spacing-large);
+}
+
+.design__example-heading {
+  font-size: 1rem;
+  font-weight: $font-weight-medium;
+  line-height: $line-height-base;
+  text-transform: uppercase;
+}
+
+.design__example-text {
+  display: block;
+  font-size: 5rem;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+}
+
+.design__number-weight {
+  display: block;
+  font-size: $slider-number-size;
+  text-align: center;
+}

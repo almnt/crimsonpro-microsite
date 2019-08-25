@@ -8,10 +8,12 @@ $heading-size-medium: 1.25rem;
 
 // Line Heights
 $line-height-base: 1.15;
+$line-height-medium: $line-height-base * 1.1375;
 $line-height-heading: 1.2;
 
 // Spacing
 $spacing-base: 1.45rem;
+$spacing-small: $spacing-base / 2;
 $spacing-medium: $spacing-base * 1.5;
 $spacing-large: $spacing-base * 3;
 
@@ -26,6 +28,8 @@ $z-index-base: 0;
 
 // Colors
 $black: #222;
+$pale-dusk: #f2d9c6;
+$rust: #df6140;
 $white: #fff;
 
 // Font Colors
@@ -36,7 +40,7 @@ $font-color-action: $white;
 // Layout Specific
 $page-section-height: 100vh;
 $book-content-width: 342px;
-$book-number-size: 10.42rem;
+$slider-number-size: 11rem;
 
 // Focus
 $focus-outline-color: transparentize($font-color-action, 0.4);
