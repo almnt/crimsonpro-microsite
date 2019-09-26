@@ -1,9 +1,5 @@
 .page-section {
   @include padding($spacing-medium null);
-
-  @media (min-width: $screen-medium) {
-    @include padding(null $spacing-base);
-  }
 }
 
 .page-section__meta-header {
@@ -20,8 +16,18 @@
 }
 
 .page-section__meta-footer {
-  @include margin($spacing-large null null null);
   font-style: italic;
   font-weight: $font-weight-regular;
   text-transform: lowercase;
+}
+
+.page-section__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: $spacing-small;
+
+  &:last-child .page-section__meta-footer {
+    align-self: flex-end;
+  }
+
 }

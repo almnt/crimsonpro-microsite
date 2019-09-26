@@ -1,6 +1,10 @@
 .design {
   @include padding(1.25em);
   border: 1px solid $black;
+
+  & + .design {
+    border-top: none;
+  }
 }
 
 .design__heading {
@@ -34,6 +38,7 @@
 
 .design__section {
   @include margin($spacing-medium null);
+  flex-basis: 50%;
   text-align: center;
 }
 

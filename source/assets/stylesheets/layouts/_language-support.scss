@@ -1,6 +1,8 @@
 .language-support {
   @include padding(1.25em);
-  border: 1px solid $black;
+  border-bottom: 1px solid $black;
+  border-left: 1px solid $black;
+  border-right: 1px solid $black;
 }
 
 .language-support__heading {
@@ -68,4 +70,3 @@
   line-height: $line-height-base;
   text-indent: 30px;
 }
-
