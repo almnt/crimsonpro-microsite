@@ -1,10 +1,7 @@
 .design {
-  @include padding(1.25em);
-  border: 1px solid $black;
-
-  & + .design {
-    border-top: none;
-  }
+  @include margin(0 auto);
+  background-color: $pale-dusk;
+  max-width: 70rem;
 }
 
 .design__heading {

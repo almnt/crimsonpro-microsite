@@ -1,8 +1,7 @@
 .language-support {
-  @include padding(1.25em);
-  border-bottom: 1px solid $black;
-  border-left: 1px solid $black;
-  border-right: 1px solid $black;
+  @include margin(0 auto);
+  background-color: $pale-blue;
+  max-width: 70rem;
 }
 
 .language-support__heading {
@@ -37,6 +36,10 @@
 .language-support__list:nth-of-type(2n) {
   grid-column: 1/2;
   grid-row: 2/3;
+}
+
+.language-suppport__book {
+  flex-basis: 100%;
 }
 
 .language-suppport__book-author,
