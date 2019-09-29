@@ -1,0 +1,80 @@
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  background: transparent; /* Otherwise white in Chrome */
+  height: 100%; /* Specific width is required for Firefox. */
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-ms-track {
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+}
+
+.input-range__main {
+  -webkit-appearance: slider-vertical; /* WebKit */
+  writing-mode: bt-lr; /* IE */
+
+  &::-moz-range-thumb {
+    background: $white;
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+  }
+
+  &::-ms-thumb {
+    background: $white;
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+  }
+
+  &::-webkit-slider-thumb {
+    background: $white;
+    border: none;
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+  }
+
+  &::-moz-range-track,
+  &::-webkit-slider-runnable-track {
+    background: $white;
+    cursor: pointer;
+    height: 100%;
+    width: 2px;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $rust;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    color: transparent;
+    height: 100%;
+    width: 2px;
+  }
+
+  &::-ms-fill-lower,
+  &::-ms-fill-upper {
+    background: $white;
+  }
+
+  &:focus::-ms-fill-lower,
+  &:focus::-ms-fill-upper {
+    background: $rust;
+  }
+}
