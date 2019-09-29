@@ -27,6 +27,7 @@
 
 .design__copy {
   @include margin(null null $spacing-base null);
+  flex-basis: 100%;
   font-size: 1.1rem;
   font-weight: $font-weight-regular;
   line-height: $line-height-medium;
@@ -52,6 +53,28 @@
 
 .design__example {
   @include margin($spacing-medium null $spacing-large);
+  position: relative;
+}
+
+.design__line-cap,
+.design__line-mean,
+.design__line-base {
+  background-color: $rust;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.design__line-base {
+  bottom: 1.1em;
+}
+
+.design__line-cap {
+  top: 4.2em;
+}
+
+.design__line-mean {
+  top: 4.95em;
 }
 
 .design__example-heading {
