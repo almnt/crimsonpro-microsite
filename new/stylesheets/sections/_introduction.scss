@@ -1,0 +1,7 @@
+.introduction {
+  padding: var(--spacing--base) var(--spacing--small);
+
+  @media (min-width: $screen--medium) {
+    padding: var(--spacing--medium);
+  }
+}

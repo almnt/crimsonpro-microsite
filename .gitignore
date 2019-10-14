@@ -6,3 +6,4 @@
 build/
 scratch.html.erb
 vendor/bundle
+new/stylesheets/main.css.map

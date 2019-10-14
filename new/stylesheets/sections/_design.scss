@@ -1,0 +1,114 @@
+.design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > *  {
+    flex: 1 1 35rem;
+    margin: 10px;
+    max-width: 30rem;
+  }
+}
+
+.design--intro,
+.design--language {
+  border: var(--border);
+}
+
+.design--intro {
+  background-color: $section-background--design;
+}
+
+.design--language {
+  background-color: $section-background--language-support;
+}
+
+.design--language-list {
+  list-style: none;
+  padding: 0;
+  columns: 3;
+}
+
+.design__lines {
+  font-size: 5em;
+  font-weight: var(--font-weight--semi-bold);
+  margin: var(--spacing--medium) 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $screen--medium) {
+    font-size: 7em;
+  }
+}
+
+.design__lines:first-child {
+  .design__line-text::before {
+    content: "Cap height";
+    font-size: .175em;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.design__lines:nth-child(2n) {
+  .design__line-text::after {
+    content: "Counter";
+    font-size: .175em;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.design__line-cap,
+.design__line-mean,
+.design__line-base {
+  border-top: 1px solid darken($paper-almond, 20%);
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.design__line-cap {
+  top: .510em;
+}
+
+.design__line-mean {
+  top: .65em;
+}
+
+.design__line-base {
+  top: 1.085em;
+}
+
+.design__characters {
+  margin: var(--spacing--medium) 0;
+}
+
+.design__characters-title {
+  font-variant-caps: all-small-caps;
+  font-weight: var(--font-weight--medium);
+  letter-spacing: var(--letter-spacing--base);
+  text-align: center;
+}
+
+.design__characters-sample {
+  display: block;
+  text-align: center;
+}
+
+.design__characters-sample:nth-of-type(1) {
+  font-size: 1.5em;
+  letter-spacing: var(--letter-spacing--base);
+}
+
+.design__characters-sample:nth-of-type(2) {
+  font-size: 1.3em;
+  letter-spacing: var(--letter-spacing--base);
+}
+
+.design__characters-sample:nth-of-type(3) {
+  font-size: 1.1em;
+  letter-spacing: var(--letter-spacing--base);
+}
