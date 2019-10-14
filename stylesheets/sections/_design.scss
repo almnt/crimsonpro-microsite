@@ -23,16 +23,6 @@
   background-color: $section-background--design;
 }
 
-.design--language {
-  background-color: $section-background--language-support;
-}
-
-.design--language-list {
-  list-style: none;
-  padding: 0;
-  columns: 3;
-}
-
 .design__lines {
   font-size: 5em;
   font-weight: var(--font-weight--semi-bold);
@@ -135,4 +125,48 @@
 
 .design__characters-italic {
   font-style: italic;
+}
+
+.design--language {
+  background-color: $section-background--language-support;
+}
+
+.design--language-list {
+  list-style: none;
+  padding: 0;
+  columns: 3;
+}
+
+.design--language:nth-child(2) h3 {
+  text-transform: uppercase;
+  font-weight: var(--font-weight--medium);
+}
+
+.design__book-title,
+.design__book-chapter {
+  font-weight: var(--font-weight--medium);
+  text-align: center;
+}
+
+.design__book-title {
+  font-size: calc(var(--font-size--page) * 1.2);
+  text-transform: uppercase;
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(var(--font-size--page) * 1.3);
+  }
+}
+
+.design__book-chapter {
+  font-size: calc(var(--font-size--page) * 1.075);
+}
+
+.design__book-grafs {
+  font-size: .9em;
+  margin-top: var(--spacing--large);
+  text-align: justify;
+
+  @media (min-width: $screen--medium) {
+    columns: 2;
+  }
 }
