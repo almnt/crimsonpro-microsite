@@ -1,9 +1,0 @@
-.container {
-  @include margin(0 auto);
-  max-width: 1300px;
-
-  @media (min-width: $screen-medium) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
