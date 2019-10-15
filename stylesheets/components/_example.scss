@@ -2,9 +2,9 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   justify-content: space-around;
-  padding: var(--spacing--large) var(--spacing--base);
+  padding: var(--spacing--base);
   position: relative;
   width: 100%;
 
@@ -19,6 +19,10 @@
   font-style: italic;
   padding: var(--spacing--base) 0;
   text-align: center;
+}
+
+.example__body {
+  padding: var(--spacing--base) 0;
 }
 
 .example__title {
