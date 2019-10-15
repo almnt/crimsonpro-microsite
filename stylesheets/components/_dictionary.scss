@@ -1,0 +1,10 @@
+.dictionary {
+  background-color: $section-background--dictionary;
+}
+
+.dictionary__content {
+  background: $paper;
+  font-size: 1.125em;
+  max-width: 25em;
+  padding: var(--spacing--base) var(--spacing--small);
+}
