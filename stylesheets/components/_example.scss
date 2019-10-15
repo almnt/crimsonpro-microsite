@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
-  padding: var(--spacing--medium) var(--spacing--base);
+  padding: var(--spacing--large) var(--spacing--base);
   position: relative;
   width: 100%;
 
@@ -17,6 +17,7 @@
   font-size: 1em;
   text-transform: lowercase;
   font-style: italic;
+  padding: var(--spacing--base) 0;
   text-align: center;
 }
 
