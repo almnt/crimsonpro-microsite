@@ -1,8 +1,6 @@
 .cache
 .DS_Store
 .sass-cache
-.vscode/
-scratch.html.erb
-/stylesheets/main.css.map
+.vscode
 scratch.html
 stylesheets/main.css.map
