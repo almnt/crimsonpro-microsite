@@ -1,0 +1,30 @@
+.example {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding: var(--spacing--medium) var(--spacing--base);
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $screen--medium) {
+    flex-direction: row;
+  }
+}
+
+.example__navigation {
+  font-size: 1em;
+  text-transform: lowercase;
+  font-style: italic;
+  text-align: center;
+}
+
+.example__title {
+  display: block;
+  font-weight: var(--font-weight--bold);
+  margin-top: var(--spacing--base);
+  text-align: right;
+  letter-spacing: var(--letter-spacing--base);
+  text-transform: uppercase;
+}
