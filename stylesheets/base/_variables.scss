@@ -1,9 +1,12 @@
 // Colors
 $ink: #222222;
-$paper: #ffffff;
 $paper-almond: #f2d9c6;
+$paper-antique: #f8e9d3;
 $paper-mabel: #c6f2f2;
+$paper-melrose: #c3bae3;
+$paper-sidecar: #f4e7bd;
 $paper-water: #cbd5db;
+$paper: #ffffff;
 
 // Background Colors
 $background-color--dark: $ink;
@@ -18,11 +21,14 @@ $font-color--light: $paper;
 $screen--medium: 38.75em;
 
 // Section Backgrounds
-$section-background--intro: $ink;
+$section-background--biology: $paper-antique;
 $section-background--design: $paper-almond;
-$section-background--language-support: $paper-mabel;
 $section-background--dictionary: $paper-water;
+$section-background--intro: $ink;
+$section-background--language-support: $paper-mabel;
+$section-background--manuscript: $paper-sidecar;
 $section-background--newspaper: $paper;
+$section-background--playground: $paper-melrose;
 
 /* Base Variables for Site Root
 -------------------------------*/
