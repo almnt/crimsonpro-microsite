@@ -10,7 +10,9 @@
     top center,
     bottom center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:
+    cover,
+    100%;
   font-size: 1.125em;
   max-width: 25em;
   padding: var(--spacing--base) var(--spacing--base) var(--spacing--medium);
