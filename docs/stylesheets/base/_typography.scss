@@ -1,0 +1,32 @@
+html {
+  color: var(--font-color--base);
+  font-family: var(--font-family);
+  font-size: 100%;
+  line-height: var(--line-height);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-height--heading);
+  margin: 0 0 var(--spacing--small);
+}
+
+p {
+  margin: 0 0 var(--spacing--small);
+}
+
+strong {
+  font-weight: var(--font-weight--bold);
+}
+
+hr {
+  border-bottom: var(--border);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: var(--spacing--medium) 0;
+}

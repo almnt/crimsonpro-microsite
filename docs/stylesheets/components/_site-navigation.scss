@@ -1,0 +1,23 @@
+.site-navigation {
+  background-color: $background-color--dark;
+  border: var(--border);
+  bottom: 0;
+  color: $font-color--light;
+  display: flex;
+  justify-content: stretch;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  & > *  {
+    flex: 1 1 200px;
+    margin: 10px;
+  }
+}
+
+.site-navigation__link {
+  color: inherit;
+  padding: 0 var(--spacing--small);
+  text-align: center;
+  text-transform: lowercase;
+}

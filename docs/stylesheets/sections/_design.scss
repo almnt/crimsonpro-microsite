@@ -1,0 +1,172 @@
+:root {
+  --font-size--characters: 1.1em;
+}
+
+.design {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > *  {
+    flex: 1 1 35rem;
+    margin: 10px;
+    max-width: 30rem;
+  }
+}
+
+.design--intro,
+.design--language {
+  border: var(--border);
+}
+
+.design--intro {
+  background-color: $section-background--design;
+}
+
+.design__lines {
+  font-size: 5em;
+  font-weight: var(--font-weight--semi-bold);
+  margin: var(--spacing--medium) 0;
+  position: relative;
+  text-align: center;
+  width: 100%;
+
+  @media (min-width: $screen--medium) {
+    font-size: 7em;
+  }
+}
+
+.design__lines:first-child {
+  .design__line-text::before {
+    content: "Cap height";
+    font-size: .175em;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.design__lines:nth-child(2n) {
+  .design__line-text::after {
+    content: "Counter";
+    font-size: .175em;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.design__line-cap,
+.design__line-mean,
+.design__line-base {
+  border-top: 1px solid darken($paper-almond, 20%);
+  display: block;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+}
+
+.design__line-cap {
+  top: .510em;
+}
+
+.design__line-mean {
+  top: .65em;
+}
+
+.design__line-base {
+  top: 1.085em;
+}
+
+.design__characters {
+  margin: var(--spacing--medium) 0;
+}
+
+.design__characters-title {
+  font-variant-caps: all-small-caps;
+  font-weight: var(--font-weight--medium);
+  letter-spacing: var(--letter-spacing--base);
+  text-align: center;
+}
+
+.design__characters-roman,
+.design__characters-italic {
+  display: block;
+  text-align: center;
+}
+
+.design__characters-roman:nth-of-type(1),
+.design__characters-italic:nth-of-type(1) {
+  font-size: calc(1.4 * var(--font-size--characters));
+  letter-spacing: var(--letter-spacing--base);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(2.2 * var(--font-size--characters));
+  }
+}
+
+.design__characters-roman:nth-of-type(2),
+.design__characters-italic:nth-of-type(2) {
+  font-size: calc(1.2 * var(--font-size--characters));
+  letter-spacing: var(--letter-spacing--base);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(1.8 * var(--font-size--characters));
+  }
+}
+
+.design__characters-roman:nth-of-type(3),
+.design__characters-italic:nth-of-type(3) {
+  font-size: calc(1 / var(--font-size--characters));
+  letter-spacing: var(--letter-spacing--base);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(1.2 * var(--font-size--characters));
+  }
+}
+
+.design__characters-italic {
+  font-style: italic;
+}
+
+.design--language {
+  background-color: $section-background--language-support;
+}
+
+.design--language-list {
+  list-style: none;
+  padding: 0;
+  columns: 3;
+}
+
+.design--language:nth-child(2) h3 {
+  text-transform: uppercase;
+  font-weight: var(--font-weight--medium);
+}
+
+.design__book-title,
+.design__book-chapter {
+  font-weight: var(--font-weight--medium);
+  text-align: center;
+}
+
+.design__book-title {
+  font-size: calc(var(--font-size--page) * 1.2);
+  text-transform: uppercase;
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(var(--font-size--page) * 1.3);
+  }
+}
+
+.design__book-chapter {
+  font-size: calc(var(--font-size--page) * 1.075);
+}
+
+.design__book-grafs {
+  font-size: .9em;
+  margin-top: var(--spacing--large);
+  text-align: justify;
+
+  @media (min-width: $screen--medium) {
+    columns: 2;
+  }
+}
