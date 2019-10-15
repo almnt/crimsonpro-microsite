@@ -9,13 +9,17 @@
 @import "base/media";
 @import "base/typography";
 
+@import "components/biology";
 @import "components/book";
 @import "components/dictionary";
 @import "components/example";
+@import "components/manuscript";
+@import "components/newspaper";
 @import "components/page";
-@import "components/slider";
+@import "components/playground";
 @import "components/site-header";
 @import "components/site-navigation";
+@import "components/slider";
 
 @import "sections/design";
 @import "sections/introduction";
