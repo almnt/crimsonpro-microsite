@@ -17,6 +17,13 @@ $font-color--light: $paper;
 // Screen Sizes
 $screen--medium: 38.75em;
 
+// Section Backgrounds
+$section-background--intro: $ink;
+$section-background--design: $paper-almond;
+$section-background--language-support: $paper-mabel;
+$section-background--dictionary: $paper-water;
+$section-background--newspaper: $paper;
+
 /* Base Variables for Site Root
 -------------------------------*/
 :root {
@@ -54,10 +61,3 @@ $screen--medium: 38.75em;
   --spacing--medium: 3rem;
   --spacing--large: 6rem;
 }
-
-// Section Variables
-// Section Backgrounds
-$section-background--intro: $ink;
-$section-background--design: $paper-almond;
-$section-background--language-support: $paper-mabel;
-$section-background--dictionary: $paper-water;
