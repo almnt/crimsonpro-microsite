@@ -135,11 +135,19 @@ hr {
 .dictionary {
   background-color: #cbd5db; }
 
-.dictionary__content {
-  background: #ffffff;
+.dictionary__entry {
+  background-image: linear-gradient(180deg, #ffffff 80%, rgba(0, 0, 0, 0) 80%), url("../images/dictionary-paper-rip.png");
+  background-position: top center, bottom center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, contain;
   font-size: 1.125em;
   max-width: 25em;
-  padding: var(--spacing--base) var(--spacing--small); }
+  padding: var(--spacing--base) var(--spacing--base) var(--spacing--medium); }
+
+.dictionary__entry-title {
+  font-weight: var(--font-weight--black); }
+  .dictionary__entry-title span {
+    font-weight: var(--font-weight--normal); }
 
 .example {
   align-items: center;
