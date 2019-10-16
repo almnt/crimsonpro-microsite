@@ -85,6 +85,9 @@ hr {
   border-top: 0;
   margin: var(--spacing--medium) 0; }
 
+.biology {
+  background-color: #f8e9d3; }
+
 :root {
   --book--width: 25em;
   --book-font-size--heading: 2.5em;
@@ -138,8 +141,8 @@ hr {
 .dictionary__entry {
   background-image: linear-gradient(180deg, #ffffff 80%, rgba(0, 0, 0, 0) 80%), url("../images/dictionary-paper-rip.png");
   background-position: top center, bottom center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-size: cover, 100%;
   font-size: 1.125em;
   max-width: 25em;
   padding: var(--spacing--base) var(--spacing--base) var(--spacing--medium); }
@@ -153,9 +156,9 @@ hr {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   justify-content: space-around;
-  padding: var(--spacing--medium) var(--spacing--base);
+  padding: var(--spacing--base);
   position: relative;
   width: 100%; }
   @media (min-width: 38.75em) {
@@ -166,7 +169,11 @@ hr {
   font-size: 1em;
   text-transform: lowercase;
   font-style: italic;
+  padding: var(--spacing--base) 0;
   text-align: center; }
+
+.example__body {
+  padding: var(--spacing--base) 0; }
 
 .example__title {
   display: block;
@@ -175,6 +182,85 @@ hr {
   text-align: right;
   letter-spacing: var(--letter-spacing--base);
   text-transform: uppercase; }
+
+.manuscript {
+  background-color: #f4e7bd; }
+
+:root {
+  --font-size--newspaper-title: 1.75em; }
+
+.newspaper {
+  background-color: #ffffff; }
+
+.newspaper__content {
+  border-bottom: var(--border);
+  margin: 0 auto; }
+  @media (min-width: 38.75em) {
+    .newspaper__content {
+      background-image: url("../images/newspaper.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      display: grid;
+      grid-gap: 1em;
+      grid-template: auto 1fr 2fr / auto 2fr 1fr auto;
+      grid-template-areas: ". . . ." ". title title ." ". photo article .";
+      height: 35em;
+      justify-items: center;
+      max-width: 50em;
+      padding-left: var(--spacing--base);
+      padding-right: var(--spacing--medium); } }
+
+.newspaper__title,
+.newspaper__article-headline,
+.newspaper__article-byline {
+  text-align: center; }
+
+.newspaper__title {
+  font-size: var(--font-size--newspaper-title);
+  font-weight: var(--font-weight--bold);
+  margin-bottom: var(--spacing--base);
+  margin-top: var(--spacing--base); }
+  @media (min-width: 38.75em) {
+    .newspaper__title {
+      align-self: end;
+      font-size: calc(var(--font-size--newspaper-title) * 1.75);
+      grid-area: title;
+      margin-bottom: 0; } }
+
+@media (min-width: 38.75em) {
+  .newspaper__photo {
+    align-self: end;
+    grid-area: photo; } }
+
+.newspaper__article {
+  margin-bottom: var(--spacing--base); }
+  @media (min-width: 38.75em) {
+    .newspaper__article {
+      align-self: end;
+      grid-area: article;
+      margin-bottom: 0; } }
+
+.newspaper__article-headline {
+  font-size: calc(var(--font-size--newspaper-title) * .8);
+  font-weight: var(--font-weight--extra-bold);
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--base);
+  font-style: italic; }
+
+.newspaper__article-byline {
+  font-weight: var(--font-weight--semi-bold);
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--small); }
+  .newspaper__article-byline span {
+    text-transform: uppercase; }
+
+.newspaper__article-body {
+  grid-area: article;
+  line-height: 1.5;
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--base);
+  text-align: justify; }
 
 .page {
   display: flex;
@@ -252,9 +338,8 @@ hr {
     .page__weightheading {
       font-size: 12em; } }
 
-.slider--page {
-  margin: var(--spacing--base) 0 var(--spacing--medium);
-  width: 100%; }
+.playground {
+  background-color: #c3bae3; }
 
 .site-header {
   background-color: #222222;
@@ -288,6 +373,10 @@ hr {
   padding: 0 var(--spacing--small);
   text-align: center;
   text-transform: lowercase; }
+
+.slider--page {
+  margin: var(--spacing--base) 0 var(--spacing--medium);
+  width: 100%; }
 
 :root {
   --font-size--characters: 1.1em; }

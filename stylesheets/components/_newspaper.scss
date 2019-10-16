@@ -1,3 +1,93 @@
+:root {
+  --font-size--newspaper-title: 1.75em;
+}
+
 .newspaper {
   background-color: $section-background--newspaper;
+}
+
+.newspaper__content {
+  border-bottom: var(--border);
+  margin: 0 auto;
+
+  @media (min-width: $screen--medium) {
+    background-image: url('../images/newspaper.png');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template: auto 1fr 2fr / auto 2fr 1fr auto;
+    grid-template-areas:
+      ". . . ."
+      ". title title ."
+      ". photo article .";
+    height: 35em;
+    justify-items: center;
+    max-width: 50em;
+    padding-left: var(--spacing--base);
+    padding-right: var(--spacing--medium);
+  }
+}
+.newspaper__title,
+.newspaper__article-headline,
+.newspaper__article-byline {
+  text-align: center;
+}
+
+.newspaper__title {
+  font-size: var(--font-size--newspaper-title);
+  font-weight: var(--font-weight--bold);
+  margin-bottom: var(--spacing--base);
+  margin-top: var(--spacing--base);
+
+  @media (min-width: $screen--medium) {
+    align-self: end;
+    font-size: calc(var(--font-size--newspaper-title) * 1.75);
+    grid-area: title;
+    margin-bottom: 0;
+  }
+}
+
+.newspaper__photo {
+  @media (min-width: $screen--medium) {
+    align-self: end;
+    grid-area: photo;
+  }
+}
+
+.newspaper__article {
+  margin-bottom: var(--spacing--base);
+
+  @media (min-width: $screen--medium) {
+    align-self: end;
+    grid-area: article;
+    margin-bottom: 0;
+  }
+}
+
+.newspaper__article-headline {
+  font-size: calc(var(--font-size--newspaper-title) * .8);
+  font-weight: var(--font-weight--extra-bold);
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--base);
+  font-style: italic;
+}
+
+.newspaper__article-byline {
+  font-weight: var(--font-weight--semi-bold);
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--small);
+
+  span {
+    text-transform: uppercase;
+  }
+}
+
+.newspaper__article-body {
+  grid-area: article;
+  line-height: 1.5;
+  margin-bottom: var(--spacing--small);
+  margin-top: var(--spacing--base);
+  text-align: justify;
 }
