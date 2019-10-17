@@ -1,0 +1,30 @@
+.epilogue {
+  align-items: center;
+  background-color: $section-background--intro;
+  color: $font-color--light;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: var(--spacing--base) var(--spacing--small);
+
+  @media (min-width: $screen--medium) {
+    padding: var(--spacing--medium);
+  }
+}
+
+.epilogue__title {
+  align-self: center;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.epilogue__book {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.epilogue__heading,
+.epilogue__book-copy {
+  text-align: right;
+}

@@ -182,6 +182,7 @@ hr {
     transform: rotate(360deg); } }
 :root {
   --book--width: 25em;
+  --book--height: 40em;
   --book-font-size--heading: 2.5em;
   --book-font-size--weightheading: 8em;
   --book-font-size--subheading: 1.8em;
@@ -190,10 +191,12 @@ hr {
 .book {
   background-color: #ffffff;
   color: #222222;
+  min-height: var(--book--height);
   max-width: var(--book--width);
   padding: var(--spacing--base) var(--spacing--small); }
   @media (min-width: 38.75em) {
     .book {
+      min-height: var(--book--height);
       padding: var(--spacing--medium) var(--spacing--base); } }
 
 .book__heading,
@@ -243,6 +246,32 @@ hr {
   font-weight: var(--font-weight--black); }
   .dictionary__entry-title span {
     font-weight: var(--font-weight--normal); }
+
+.epilogue {
+  align-items: center;
+  background-color: #222222;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: var(--spacing--base) var(--spacing--small); }
+  @media (min-width: 38.75em) {
+    .epilogue {
+      padding: var(--spacing--medium); } }
+
+.epilogue__title {
+  align-self: center;
+  font-style: italic;
+  font-size: 2em; }
+
+.epilogue__book {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.epilogue__heading,
+.epilogue__book-copy {
+  text-align: right; }
 
 .example {
   align-items: center;

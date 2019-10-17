@@ -1,5 +1,6 @@
 :root {
   --book--width: 25em;
+  --book--height: 40em;
   --book-font-size--heading: 2.5em;
   --book-font-size--weightheading: 8em;
   --book-font-size--subheading: 1.8em;
@@ -9,10 +10,12 @@
 .book {
   background-color: $background-color--light;
   color: $font-color--base;
+  min-height: var(--book--height);
   max-width: var(--book--width);
   padding: var(--spacing--base) var(--spacing--small);
 
   @media (min-width: $screen--medium) {
+    min-height: var(--book--height);
     padding: var(--spacing--medium) var(--spacing--base);
   }
 }
