@@ -1,14 +1,17 @@
 @font-face {
-  font-family: "Crimson Pro Regular";
-  src: url("../fonts/crimsonpro-roman-vf.ttf") format("truetype"); }
+  font-family: "Crimson Pro";
+  src: url("../fonts/crimsonpro-roman-vf.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 @font-face {
-  font-family: "Crimson Pro Italic";
-  src: url("../fonts/crimsonpro-roman-vf.ttf") format("truetype"); }
+  font-family: "Crimson Pro";
+  src: url("../fonts/crimsonpro-italic-vf.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic; }
 /* Base Variables for Site Root
 -------------------------------*/
 :root {
-  --font-family: "Crimson Pro Regular", serif;
-  --font-family--italic: "Crimson Pro Italic", serif;
+  --font-family: "Crimson Pro", serif;
   --font-weight--extra-light: 200;
   --font-weight--light: 300;
   --font-weight--normal: 400;

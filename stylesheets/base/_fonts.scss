@@ -1,9 +1,13 @@
 @font-face {
-  font-family: "Crimson Pro Regular";
-  src: url('../fonts/crimsonpro-roman-vf.ttf')  format('truetype');
+  font-family: "Crimson Pro";
+  src: url('../fonts/crimsonpro-roman-vf.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Crimson Pro Italic";
-  src: url('../fonts/crimsonpro-roman-vf.ttf')  format('truetype');
+  font-family: "Crimson Pro";
+  src: url('../fonts/crimsonpro-italic-vf.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
