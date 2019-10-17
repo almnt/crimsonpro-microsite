@@ -91,6 +91,9 @@ hr {
 .biology__content {
   display: grid;
   grid-template: repeat(4, 1fr)/repeat(2, 1fr); }
+  @media (min-width: 38.75em) {
+    .biology__content {
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr); } }
 
 .biology__samples {
   position: relative; }
@@ -99,12 +102,16 @@ hr {
   font-style: italic;
   font-variant-numeric: oldstyle-nums;
   font-weight: var(--font-weight--light);
-  text-align: center; }
+  position: relative;
+  text-align: center;
+  z-index: 1; }
 
 .biology__sample-image {
+  animation: flotate 25s linear infinite;
   display: block;
   margin: 0 auto;
-  animation: flotate 25s linear infinite; }
+  position: relative;
+  z-index: 0; }
 
 @keyframes flotate {
   from {
