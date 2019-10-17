@@ -88,6 +88,29 @@ hr {
 .biology {
   background-color: #f8e9d3; }
 
+.biology__content {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(2, 1fr); }
+
+.biology__samples {
+  position: relative; }
+
+.biology__sample-text {
+  font-style: italic;
+  font-variant-numeric: oldstyle-nums;
+  font-weight: var(--font-weight--light);
+  text-align: center; }
+
+.biology__sample-image {
+  display: block;
+  margin: 0 auto;
+  animation: flotate 25s linear infinite; }
+
+@keyframes flotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 :root {
   --book--width: 25em;
   --book-font-size--heading: 2.5em;
