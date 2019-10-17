@@ -1,3 +1,90 @@
 .manuscript {
   background-color: $section-background--manuscript;
 }
+
+.manuscript__content {
+  @media (min-width: $screen--medium) {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+.manuscript__prompt {
+  margin-bottom: var(--spacing--medium);
+  max-width: 15em;
+  text-transform: lowercase;
+
+  @media (min-width: $screen--medium) {
+    align-self: center;
+  }
+}
+
+.manuscript__prompt-heading {
+  font-size: 2.25em;
+  font-weight: var(--font-weight--medium);
+  text-align: center;
+
+  span {
+    color: darken($section-background--manuscript, 50%);
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+
+.manuscript__prompt-copy {
+  font-size: 1.2em;
+  font-weight: var(--font-weight--medium);
+  text-align: justify;
+}
+
+.manuscript__prompt-new {
+  font-size: 1.125em;
+  font-variant-caps: all-small-caps;
+  font-weight: var(--font-weight--bold);
+  text-decoration: underline;
+}
+
+.manuscript__details {
+  background-color: transparentize($paper, .3);
+  max-width: 25em;
+  padding: var(--spacing--base) var(--spacing--small);
+  position: relative;
+
+  @media (min-width: $screen--medium) {
+    padding: var(--spacing--base);
+  }
+}
+
+.manuscript__title {
+  text-align: center;
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-transform: uppercase;
+
+  @media (min-width: $screen--medium) {
+    font-size: 3em;
+  }
+}
+
+.manuscript__section {
+  margin: var(--spacing--base) 0;
+
+  &:nth-child(4) .manuscript__section-copy {
+    text-indent: 1.5em;
+  }
+}
+
+.manuscript__section-heading {
+  font-size: 1.25em;
+  font-variant-caps: all-small-caps;
+  font-weight: var(--font-weight--bold);
+}
+
+.manuscript__voicemail {
+  background-color: darken($section-background--manuscript, 45%);
+  font-size: 1.25em;
+  font-variant-caps: all-small-caps;
+  font-weight: var(--font-weight--bold);
+  padding: var(--spacing--small);
+}
