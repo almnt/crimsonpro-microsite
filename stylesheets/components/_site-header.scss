@@ -5,11 +5,3 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
-
-.variable-slider {
-  margin-bottom: var(--spacing--base);
-
-  @media (min-width: $screen--medium) {
-    margin-bottom: 0;
-  }
-}

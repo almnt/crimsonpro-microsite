@@ -1,28 +1,204 @@
 input {
   display: block;
-  font-family: var(--font-family);
-  font-size: 1rem;
 }
 
-// input[type=range] {
-//   -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-//   background: transparent; /* Otherwise white in Chrome */
-//   height: 100%; /* Specific width is required for Firefox. */
+input[type=range] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 100%;
 
-//   &:focus {
-//     outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-//   }
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
 
-//   &::-ms-track {
-//     /* Hides the slider so custom styles can be added */
-//     background: transparent;
-//     border-color: transparent;
-//     color: transparent;
-//     cursor: pointer;
-//     height: 100%;
-//   }
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    width: 100%;
+  }
 
-//   &::-webkit-slider-thumb {
-//     -webkit-appearance: none;
-//   }
-// }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $input-range--thumb-background;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    height: $input-range--thumb-height;
+    margin-top: -16px;
+    width: $input-range--thumb-width;
+  }
+
+  &::-moz-range-thumb {
+    background: $input-range--thumb-background;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    height: $input-range--thumb-height;
+    width: $input-range--thumb-width;
+  }
+
+  &::-ms-thumb {
+    background: $input-range--thumb-background;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+    height: $input-range--thumb-height;
+    width: $input-range--thumb-width;
+  }
+
+  &::-webkit-slider-runnable-track {
+    background: $input-range--track-background;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: $input-range--track-height;
+    width: 100%;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $input-range--track-background;
+  }
+
+  &::-moz-range-track {
+    background: $input-range--track-background;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: $input-range--track-height;
+    width: 100%;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    cursor: pointer;
+    height: $input-range--track-height;
+    width: 100%;
+  }
+  &::-ms-fill-lower {
+    background: $input-range--track-background;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+  &:focus::-ms-fill-lower {
+    background: $input-range--track-background;
+  }
+  &::-ms-fill-upper {
+    background: $input-range--track-background;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+  &:focus::-ms-fill-upper {
+    background: $input-range--track-background;
+  }
+}
+
+input[type=range][orient=vertical] {
+  -webkit-appearance: slider-vertical;
+  background: transparent;
+  height: 100%;
+  width: auto;
+  writing-mode: bt-lr;
+
+  &:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    height: 100%;
+    width: auto;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: $paper;
+    border-radius: 100%;
+    border: 1px solid $paper;
+    cursor: pointer;
+    height: 20px;
+    margin-left: -6px;
+    width: 20px;
+  }
+
+  &::-moz-range-thumb {
+    background: $paper;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
+  &::-ms-thumb {
+    background: $paper;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+
+  &::-webkit-slider-runnable-track {
+    background: $paper;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: 100%;
+    width: $input-range--track-width;
+  }
+
+  &:focus::-webkit-slider-runnable-track {
+    background: $paper;
+  }
+
+  &::-moz-range-track {
+    background: $paper;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    height: 100%;
+    width: $input-range--track-width;
+  }
+
+  &::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    cursor: pointer;
+    height: 100%;
+    width: $input-range--track-width;
+  }
+  &::-ms-fill-lower {
+    background: $paper;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+  &:focus::-ms-fill-lower {
+    background: $paper;
+  }
+  &::-ms-fill-upper {
+    background: $paper;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+  &:focus::-ms-fill-upper {
+    background: $paper;
+  }
+}

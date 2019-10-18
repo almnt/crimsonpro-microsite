@@ -1,3 +1,11 @@
+.slider {
+  margin-bottom: var(--spacing--base);
+
+  @media (min-width: $screen--medium) {
+    margin-bottom: 0;
+  }
+}
+
 .slider--page {
   margin: var(--spacing--base) 0 var(--spacing--medium);
   width: 100%;
