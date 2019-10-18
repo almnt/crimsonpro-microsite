@@ -559,11 +559,9 @@ hr {
 .acknowledgements {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: var(--spacing--base); }
+  justify-content: center; }
   .acknowledgements > * {
     flex: 1 1 35rem;
-    margin: 10px;
     max-width: 25rem; }
 
 .acknowledgements__heading {
@@ -1018,8 +1016,8 @@ hr {
   justify-content: center; }
   .design > * {
     flex: 1 1 35rem;
-    margin: 10px;
-    max-width: 25rem; }
+    max-width: 25rem;
+    margin: var(--spacing--base) 0; }
 
 .design--intro,
 .design--language {

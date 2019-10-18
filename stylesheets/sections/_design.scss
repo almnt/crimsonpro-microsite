@@ -9,8 +9,8 @@
 
   & > *  {
     flex: 1 1 35rem;
-    margin: 10px;
     max-width: 25rem;
+    margin: var(--spacing--base) 0;
   }
 }
 

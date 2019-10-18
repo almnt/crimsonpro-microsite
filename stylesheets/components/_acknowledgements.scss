@@ -2,11 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: var(--spacing--base);
 
   & > *  {
     flex: 1 1 35rem;
-    margin: 10px;
     max-width: 25rem;
   }
 }
