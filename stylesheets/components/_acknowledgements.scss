@@ -7,7 +7,7 @@
   & > *  {
     flex: 1 1 35rem;
     margin: 10px;
-    max-width: 30rem;
+    max-width: 25rem;
   }
 }
 
@@ -22,7 +22,6 @@
   border: var(--border);
   margin-bottom: var(--spacing--medium);
   padding: var(--spacing--small);
-  max-width: 35rem;
 
   @media (min-width: $screen--medium) {
     padding: var(--spacing--base);
@@ -73,7 +72,7 @@
 }
 
 .acknowledgements__section-copy {
-  font-size: 1.125em;
+  font-size: .875em;
 }
 
 .acknowledgements__section-image {

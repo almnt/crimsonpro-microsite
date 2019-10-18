@@ -61,10 +61,6 @@
   font-size: 2.5em;
   text-decoration: underline;
   text-transform: uppercase;
-
-  @media (min-width: $screen--medium) {
-    font-size: 3em;
-  }
 }
 
 .manuscript__section {

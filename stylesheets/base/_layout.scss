@@ -4,16 +4,16 @@ html {
 }
 
 *,
-*::before,
+*::before,hello
 *::after {
   box-sizing: inherit;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
 
 body {
   margin: 0;
+  padding-bottom: 50px;
 }

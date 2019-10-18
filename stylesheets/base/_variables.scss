@@ -28,7 +28,10 @@ $input-range--track-height: 2px;
 $input-range--track-width: 2px;
 
 // Other Sizes
-
+$font-width--min: 16px;
+$font-width--max: 22px;
+$screen-width--min: 320px;
+$screen-width--max: 1200px;
 
 // Screen Sizes
 $screen--medium: 38.75em;
@@ -60,10 +63,10 @@ $section-background--playground: $paper-melrose;
   --font-weight--black: 900;
 
   // Font Sizes
-  --font-size--page: 1.1em;
+  --font-size--page: 1.1rem;
 
   // Letter Spacing
-  --letter-spacing--base: .05em;
+  --letter-spacing--base: .05rem;
 
   // Line Heights
   --line-height: 1.5;

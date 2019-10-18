@@ -41,24 +41,16 @@
   font-size: calc(var(--font-size--page) * 1.5);
   font-weight: var(--font-weight--normal);
   margin-bottom: var(--spacing--base);
-
-  @media (min-width: $screen--medium) {
-    font-size: calc(var(--font-size--page) * 1.75);
-  }
 }
 
 .page__header-subheading {
   font-size: calc(var(--font-size--page) * 1.2);
   font-weight: var(--font-weight--semi-bold);
-
-  @media (min-width: $screen--medium) {
-    font-size: calc(var(--font-size--page) * 1.45);
-  }
 }
 
 .page__body {
-  font-size: calc(var(--font-size--page) * .85);
   flex-basis: 100%;
+  font-size: calc(var(--font-size--page) * .875);
   margin: var(--spacing--base) 0;
 }
 
@@ -89,8 +81,4 @@
   display: block;
   font-size: 8em;
   text-align: center;
-
-  @media (min-width: $screen--medium) {
-    font-size: 12em;
-  }
 }

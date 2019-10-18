@@ -1,23 +1,17 @@
 :root {
-  --book--width: 25em;
-  --book--height: 40em;
-  --book-font-size--heading: 2.5em;
-  --book-font-size--weightheading: 8em;
-  --book-font-size--subheading: 1.8em;
-  --book-font-size--copy: 1.175em;
+  --book--width: 25rem;
+  --book--height: 40rem;
+  --book-font-size--heading: 2.8rem;
+  --book-font-size--weightheading: 8rem;
+  --book-font-size--subheading: 2rem;
+  --book-font-size--copy: 1.175rem;
 }
 
 .book {
   background-color: $background-color--light;
   color: $font-color--base;
-  min-height: var(--book--height);
   max-width: var(--book--width);
-  padding: var(--spacing--base) var(--spacing--small);
-
-  @media (min-width: $screen--medium) {
-    min-height: var(--book--height);
-    padding: var(--spacing--medium) var(--spacing--base);
-  }
+  padding: var(--spacing--medium) var(--spacing--base);
 }
 
 .book__heading,
@@ -30,10 +24,7 @@
 
 .book__heading {
   font-size: var(--book-font-size--heading);
-
-  @media (min-width: $screen--medium) {
-    font-size: calc((var(--book-font-size--heading) * 1.40));
-  }
+  margin-bottom: 0;
 }
 
 .book__weightheading {
@@ -45,16 +36,8 @@
 .book__subheading {
   font-size: var(--book-font-size--subheading);
   margin-bottom: var(--spacing--base);
-
-  @media (min-width: $screen--medium) {
-    font-size: calc((var(--book-font-size--subheading) * 1.45));
-  }
 }
 
 .book__copy {
   font-size: var(--book-font-size--copy);
-
-  @media (min-width: $screen--medium) {
-    font-size: calc((var(--book-font-size--copy) * 1.15));
-  }
 }
