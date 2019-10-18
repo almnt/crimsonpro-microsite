@@ -5,6 +5,7 @@
 
   & > *  {
     flex: 1 1 35rem;
+    margin: var(--spacing--base) 0;
     max-width: 25rem;
   }
 }
