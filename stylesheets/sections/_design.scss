@@ -6,12 +6,20 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  min-height: 100vh;
+  margin: var(--spacing--base) 0;
+
+  @media (min-width: $screen--medium) {
+    margin: var(--spacing--large) 0;
+  }
 
   & > *  {
     flex: 1 1 35rem;
     margin: var(--spacing--base) 0;
     max-width: 30rem;
+
+    @media (min-width: $screen--medium) {
+      max-height: 40rem;
+    }
   }
 }
 
