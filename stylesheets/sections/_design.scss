@@ -36,7 +36,7 @@
   }
 }
 
-.design__lines:first-child {
+.design__lines:nth-child(1) {
   .design__line-text::before {
     content: "Cap height";
     font-size: .175em;
@@ -45,8 +45,8 @@
   }
 }
 
-.design__lines:nth-child(2n) {
-  .design__line-text::after {
+.design__lines:nth-child(2) {
+  .design__line-text::before {
     content: "Counter";
     font-size: .175em;
     position: absolute;
