@@ -35,6 +35,7 @@ $screen-width--max: 1200px;
 
 // Screen Sizes
 $screen--medium: 38.75rem;
+$screen--large: 1135px;
 
 // Section Backgrounds
 $section-background--biology: $paper-antique;
@@ -78,8 +79,8 @@ $section-background--playground: $paper-melrose;
   --border-radius: 100%;
 
   // Spacing
-  --spacing--base: 1.5rem;
-  --spacing--small: 0.75rem;
-  --spacing--medium: 3rem;
-  --spacing--large: 6rem;
+  --spacing--base: 1rem;
+  --spacing--small: 0.5rem;
+  --spacing--medium: 2rem;
+  --spacing--large: 4rem;
 }

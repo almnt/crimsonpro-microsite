@@ -8,7 +8,7 @@
     margin: var(--spacing--large) 0;
   }
 
-  & > *  {
+  & > * {
     flex: 1 1 35rem;
     margin: var(--spacing--base) 0;
     max-width: 30rem;
@@ -32,55 +32,78 @@
   padding: var(--spacing--small);
 
   @media (min-width: $screen--medium) {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(6, 1fr);
     padding: var(--spacing--base);
 
-    &:first-of-type {
+    &:nth-child(1) {
       .acknowledgements__section-title {
         align-self: center;
-        grid-area: 2 / 1 / 3 / 2;
+        grid-area: 2 / 1 / 4 / 3;
         justify-self: center;
+      }
+
+      .acknowledgements__section-copy:nth-child(3) {
+        grid-area: 2 / 3 / 3 / 6;
+      }
+
+      .acknowledgements__section-copy:nth-child(4) {
+        grid-area: 3 / 4 / 4 / 7;
+      }
+
+      .acknowledgements__section-copy:nth-child(5) {
+        align-self: end;
+        grid-area: 4 / 1 / 5 / 4;
+        max-width: 17rem;
       }
 
       .acknowledgements__section-image {
         align-self: center;
-        grid-area: 3 / 2 / 5 / 3;
+        grid-area: 4 / 4 / 5 / 7;
+      }
+    }
+
+    &:nth-child(2) {
+      .acknowledgements__section-title {
+        align-self: center;
+        grid-area: 2 / 5 / 4 / 5;
+        justify-self: center;
       }
 
       .acknowledgements__section-copy:nth-child(2) {
         align-self: end;
-        grid-area: 1 / 1 / 2 / 3;
-        margin-right: -10px;
-        max-width: 17em;
+        grid-area: 1 / 3 / 2 / 6;
       }
 
       .acknowledgements__section-copy:nth-child(3) {
-        grid-area: 2 / 2 / 3 / 3;
+        grid-area: 2 / 1 / 3 / 4;
+        margin-top: var(--spacing--base);
       }
 
-      .acknowledgements__section-copy:nth-child(4) {
-        grid-area: 3 / 1 / 4 / 2;
+      .acknowledgements__section-image {
+        align-self: center;
+        grid-area: 3 / 3 / 4 / 5;
       }
     }
+  }
+}
 
-    &:last-of-type {
-      .acknowledgements__section-copy:nth-child(2) {
-        align-self: end;
-        margin-bottom: var(--spacing--medium);
-      }
-    }
+.acknowledgements__heading {
+  @media (min-width: $screen--medium) {
+    grid-area: 1 / 3 / 2 / 7;
   }
 }
 
 .acknowledgements__section-title {
-  font-size: 2.4375em;
+  font-size: 2.4375rem;
 
   @media (min-width: $screen--medium) {
-    writing-mode: vertical-lr;
+    writing-mode: sideways-lr;
   }
 }
 
 .acknowledgements__section-copy {
-  font-size: .875em;
+  font-size: .875rem;
 }
 
 .acknowledgements__section-image {

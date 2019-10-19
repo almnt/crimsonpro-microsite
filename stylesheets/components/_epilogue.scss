@@ -5,23 +5,27 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: var(--spacing--base) var(--spacing--small);
-
-  @media (min-width: $screen--medium) {
-    padding: var(--spacing--medium);
-  }
+  padding: var(--spacing--medium) var(--spacing--base);
 }
 
 .epilogue__title {
   align-self: center;
-  font-style: italic;
   font-size: 2em;
+  font-style: italic;
+  font-weight: var(--font-weight--extra-light);
+  margin: var(--spacing--medium) 0;
 }
 
 .epilogue__book {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  min-height: 30rem;
+
+  @media (min-width: $screen--medium) {
+    width: 25rem;
+    height: 40rem;
+  }
 }
 
 .epilogue__heading,

@@ -1,16 +1,30 @@
 .page {
-  display: flex;
-  flex-direction: column;
   font-size: var(--font-size--page);
-  padding: var(--spacing--base) var(--spacing--small);
+  padding: var(--spacing--medium) var(--spacing--base);
 
   &:last-child .page__footer {
     text-align: right;
   }
 
   @media (min-width: $screen--medium) {
-    padding: var(--spacing--base) var(--spacing--base);
+    padding-left: var(--spacing--medium);
+    padding-right: var(--spacing--medium);
   }
+
+  @media (min-width: $screen--large) {
+    &:nth-child(1) {
+      box-shadow: inset -.3em 0 .3em transparentize($ink, .9);
+    }
+
+    &:nth-child(2) {
+      box-shadow: inset .3em 0 .3em transparentize($ink, .9);
+    }
+  }
+}
+
+.page--flex {
+  display: flex;
+  flex-direction: column;
 }
 
 .page__header,
