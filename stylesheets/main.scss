@@ -10,12 +10,9 @@
 @import "base/media";
 @import "base/typography";
 
-@import "components/acknowledgements";
 @import "components/biology";
 @import "components/book";
 @import "components/dictionary";
-@import "components/epilogue";
-@import "components/example";
 @import "components/manuscript";
 @import "components/newspaper";
 @import "components/page";
@@ -24,5 +21,8 @@
 @import "components/site-navigation";
 @import "components/slider";
 
+@import "sections/acknowledgements";
 @import "sections/design";
+@import "sections/epilogue";
+@import "sections/example";
 @import "sections/introduction";
