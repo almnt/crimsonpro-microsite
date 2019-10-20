@@ -1,49 +1,29 @@
-function bookSlider() {
-  let range = document.querySelector('.slider--book');
+function sliderMagic(rangeClass, characterClass, addInnerText) {
+  let range = document.querySelector(rangeClass);
   let rangeValue = range.value;
-  let weightValue = document.querySelector('.book__weightheading');
+  let characters = document.querySelectorAll(characterClass);
 
-  range.onchange = function() {
+   updateCharacters(rangeValue, characters, addInnerText);
+
+  range.addEventListener('input', function() {
     rangeValue = range.value;
-    weightValue.innerText = rangeValue;
-    weightValue.style.fontWeight = rangeValue;
-  };
-
-  rangeValue = range.value;
-  weightValue.innerText = rangeValue;
-  weightValue.style.fontWeight = rangeValue;
+    updateCharacters(rangeValue, characters, addInnerText)
+  });
 }
 
-function axisSlider() {
-  let range = document.querySelector('.slider--page');
-  let rangeValue = range.value;
-  let weightValue = document.querySelector('.page__weightheading');
+function updateCharacters(rangeValue, characters, addInnerText) {
+  characters.forEach(function (item, index) {
+  if (addInnerText) {
+    item.innerText = rangeValue;
+  }
 
-  range.onchange = function() {
-    rangeValue = range.value;
-    weightValue.innerText = rangeValue;
-    weightValue.style.fontWeight = rangeValue;
-  };
-
-  rangeValue = range.value;
-  weightValue.innerText = rangeValue;
-  weightValue.style.fontWeight = rangeValue;
+  item.style.fontVariationSettings = "'wght'" + rangeValue;
+  });
 }
 
-// function romanSlider() {
-//   let range = document.querySelector('.slider--page');
-//   let rangeValue = range.value;
-//   let weightValue = document.querySelectorAll('.design__characters-roman');
-
-//   range.onchange = weightValue.forEach(function(i) {
-//     rangeValue = range.value;
-//     console.log(rangeValue);
-//   });
-
-//   rangeValue = range.value;
-//   weightValue = rangeValue;
-// }
-
-bookSlider();
-axisSlider();
-// romanSlider();
+sliderMagic('.slider--book', '.book__weightheading', true);
+sliderMagic('.slider--page', '.page__weightheading', true);
+sliderMagic('.slider--sample-one', '.design__characters-roman-one');
+sliderMagic('.slider--sample-two', '.design__characters-roman-two');
+sliderMagic('.slider--sample-three', '.design__characters-italic-three');
+sliderMagic('.slider--sample-four', '.design__characters-italic-four');
