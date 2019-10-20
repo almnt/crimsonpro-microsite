@@ -40,12 +40,16 @@
   position: relative;
   text-align: center;
   width: 100%;
+
+  @media (min-width: $screen--medium) {
+    font-size: 5rem;
+  }
 }
 
 .design__lines:nth-child(1) {
   .design__line-text::before {
     content: "Cap height";
-    font-size: .75rem;
+    font-size: 1rem;
     position: absolute;
     left: 0;
   }
@@ -54,7 +58,7 @@
 .design__lines:nth-child(2) {
   .design__line-text::before {
     content: "Counter";
-    font-size: .75rem;
+    font-size: 1rem;
     position: absolute;
     left: 0;
   }
@@ -93,28 +97,38 @@
   text-align: center;
 }
 
-.design__characters-roman,
-.design__characters-italic {
+[class^="design__characters-roman"],
+[class^="design__characters-italic"] {
   display: block;
+  letter-spacing: var(--letter-spacing--base);
   text-align: center;
 }
 
-.design__characters-roman:nth-of-type(1),
-.design__characters-italic:nth-of-type(1) {
-  font-size: calc(1.3 * var(--font-size--characters));
-  letter-spacing: var(--letter-spacing--base);
-}
-
-.design__characters-roman:nth-of-type(2),
-.design__characters-italic:nth-of-type(2) {
+[class^="design__characters-roman"]:nth-of-type(1),
+[class^="design__characters-italic"]:nth-of-type(1) {
   font-size: calc(1.1 * var(--font-size--characters));
-  letter-spacing: var(--letter-spacing--base);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(1.7 * var(--font-size--characters));
+  }
 }
 
-.design__characters-roman:nth-of-type(3),
-.design__characters-italic:nth-of-type(3) {
+[class^="design__characters-roman"]:nth-of-type(2),
+[class^="design__characters-italic"]:nth-of-type(2) {
+  font-size: var(--font-size--characters);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(1.3 * var(--font-size--characters));
+  }
+}
+
+[class^="design__characters-roman"]:nth-of-type(3),
+[class^="design__characters-italic"]:nth-of-type(3) {
   font-size: calc(.75 * var(--font-size--characters));
-  letter-spacing: var(--letter-spacing--base);
+
+  @media (min-width: $screen--medium) {
+    font-size: calc(1.1 * var(--font-size--characters));
+  }
 }
 
 .design__characters-italic {
