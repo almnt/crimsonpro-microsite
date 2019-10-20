@@ -19,9 +19,9 @@
 }
 
 .dictionary__entry-title {
-  font-weight: var(--font-weight--black);
+  font-variation-settings: var(--font-weight--black);
 
   span {
-    font-weight: var(--font-weight--normal);
+    font-variation-settings: var(--font-weight--normal);
   }
 }

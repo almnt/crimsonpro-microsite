@@ -18,9 +18,10 @@
     max-width: 30rem;
 
     @media (min-width: $screen--medium) {
+      min-height: 40rem;
       max-height: 40rem;
     }
-  }
+  } 
 }
 
 .design--intro,
@@ -34,7 +35,7 @@
 
 .design__lines {
   font-size: 4rem;
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin: var(--spacing--medium) 0;
   position: relative;
   text-align: center;
@@ -87,7 +88,7 @@
 
 .design__characters-title {
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   letter-spacing: var(--letter-spacing--base);
   text-align: center;
 }
@@ -142,7 +143,7 @@
 
 .design__book-title,
 .design__book-byline {
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: center;
 }
 
@@ -158,7 +159,7 @@
 
 .design__book-chapter {
   font-size: calc(var(--font-size--page) * 1.075);
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin-top: var(--spacing--medium);
   text-align: center;
 }

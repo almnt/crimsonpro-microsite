@@ -82,7 +82,7 @@ abbr[title] {
  */
 b,
 strong {
-  font-weight: bolder; }
+  font-variation-settings: bolder; }
 
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
@@ -306,25 +306,25 @@ template {
 @font-face {
   font-family: "Crimson Pro";
   src: url("../fonts/crimsonpro-roman-vf.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-variation-settings: 400; }
 @font-face {
   font-family: "Crimson Pro";
   src: url("../fonts/crimsonpro-italic-vf.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  font-variation-settings: 400; }
 /* Base Variables for Site Root
 -------------------------------*/
 :root {
   --font-family: "Crimson Pro", serif;
-  --font-weight--extra-light: 200;
-  --font-weight--light: 300;
-  --font-weight--normal: 400;
-  --font-weight--medium: 500;
-  --font-weight--semi-bold: 600;
-  --font-weight--bold: 700;
-  --font-weight--extra-bold: 800;
-  --font-weight--black: 900;
+  --font-weight--extra-light: 'wght' 200;
+  --font-weight--light: 'wght' 300;
+  --font-weight--normal: 'wght' 400;
+  --font-weight--medium: 'wght' 500;
+  --font-weight--semi-bold: 'wght' 600;
+  --font-weight--bold: 'wght' 700;
+  --font-weight--extra-bold: 'wght' 800;
+  --font-weight--black: 'wght' 900;
   --font-size--page: 1.1rem;
   --letter-spacing--base: .05rem;
   --line-height: 1.5;
@@ -467,7 +467,7 @@ p {
   margin: 0 0 var(--spacing--small); }
 
 strong {
-  font-weight: var(--font-weight--bold); }
+  font-variation-settings: var(--font-weight--bold); }
 
 hr {
   border-bottom: var(--border);
@@ -494,7 +494,7 @@ hr {
 
 .acknowledgements__heading {
   font-style: italic;
-  font-weight: var(--font-weight--normal);
+  font-variation-settings: var(--font-weight--normal);
   margin-bottom: var(--spacing--medium);
   text-align: right; }
 
@@ -570,7 +570,7 @@ hr {
 .biology__sample-text {
   font-style: italic;
   font-variant-numeric: oldstyle-nums;
-  font-weight: var(--font-weight--light);
+  font-variation-settings: var(--font-weight--light);
   position: relative;
   text-align: center;
   z-index: 1; }
@@ -603,7 +603,7 @@ hr {
 
 .book__heading,
 .book__subheading {
-  font-weight: var(--font-weight--extra-light);
+  font-variation-settings: var(--font-weight--extra-light);
   margin: 0;
   text-transform: uppercase;
   text-align: center; }
@@ -637,9 +637,9 @@ hr {
   padding: var(--spacing--base) var(--spacing--base) var(--spacing--medium); }
 
 .dictionary__entry-title {
-  font-weight: var(--font-weight--black); }
+  font-variation-settings: var(--font-weight--black); }
   .dictionary__entry-title span {
-    font-weight: var(--font-weight--normal); }
+    font-variation-settings: var(--font-weight--normal); }
 
 .epilogue {
   align-items: center;
@@ -654,7 +654,7 @@ hr {
   align-self: center;
   font-size: 2em;
   font-style: italic;
-  font-weight: var(--font-weight--extra-light);
+  font-variation-settings: var(--font-weight--extra-light);
   margin: var(--spacing--medium) 0; }
 
 .epilogue__book {
@@ -696,7 +696,7 @@ hr {
 
 .example__title {
   display: block;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   margin-top: var(--spacing--base);
   text-align: right;
   letter-spacing: var(--letter-spacing--base);
@@ -721,7 +721,7 @@ hr {
 
 .manuscript__prompt-heading {
   font-size: 2.25em;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: center; }
   .manuscript__prompt-heading span {
     color: #997b19;
@@ -730,13 +730,13 @@ hr {
 
 .manuscript__prompt-copy {
   font-size: 1.2em;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: justify; }
 
 .manuscript__prompt-new {
   font-size: 1.125em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   text-decoration: underline; }
 
 .manuscript__details {
@@ -762,13 +762,13 @@ hr {
 .manuscript__section-heading {
   font-size: 1.25em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold); }
+  font-variation-settings: var(--font-weight--bold); }
 
 .manuscript__voicemail {
   background-color: #ae8c1d;
   font-size: 1.25em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   padding: var(--spacing--small); }
 
 :root {
@@ -803,7 +803,7 @@ hr {
 
 .newspaper__title {
   font-size: var(--font-size--newspaper-title);
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   margin-bottom: var(--spacing--base);
   margin-top: var(--spacing--base); }
   @media (min-width: 38.75rem) {
@@ -828,13 +828,13 @@ hr {
 
 .newspaper__article-headline {
   font-size: calc(var(--font-size--newspaper-title) * .8);
-  font-weight: var(--font-weight--extra-bold);
+  font-variation-settings: var(--font-weight--extra-bold);
   margin-bottom: var(--spacing--small);
   margin-top: var(--spacing--base);
   font-style: italic; }
 
 .newspaper__article-byline {
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin-bottom: var(--spacing--small);
   margin-top: var(--spacing--small); }
   .newspaper__article-byline span {
@@ -881,18 +881,18 @@ hr {
 .page__header-meta {
   display: block;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   letter-spacing: var(--letter-spacing--base);
   margin-bottom: var(--spacing--base); }
 
 .page__header-heading {
   font-size: calc(var(--font-size--page) * 1.5);
-  font-weight: var(--font-weight--normal);
+  font-variation-settings: var(--font-weight--normal);
   margin-bottom: var(--spacing--base); }
 
 .page__header-subheading {
   font-size: calc(var(--font-size--page) * 1.2);
-  font-weight: var(--font-weight--semi-bold); }
+  font-variation-settings: var(--font-weight--semi-bold); }
 
 .page__body {
   flex-basis: 100%;
@@ -901,7 +901,7 @@ hr {
 
 .page__body-callout {
   font-size: calc(var(--font-size--page) * 1);
-  font-weight: var(--font-weight--normal);
+  font-variation-settings: var(--font-weight--normal);
   margin-bottom: var(--spacing--medium);
   text-align: center; }
 
@@ -979,6 +979,7 @@ hr {
     max-width: 30rem; }
     @media (min-width: 38.75rem) {
       .design > * {
+        min-height: 40rem;
         max-height: 40rem; } }
 
 .design--intro,
@@ -990,7 +991,7 @@ hr {
 
 .design__lines {
   font-size: 4rem;
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin: var(--spacing--medium) 0;
   position: relative;
   text-align: center;
@@ -1031,7 +1032,7 @@ hr {
 
 .design__characters-title {
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   letter-spacing: var(--letter-spacing--base);
   text-align: center; }
 
@@ -1073,7 +1074,7 @@ hr {
 
 .design__book-title,
 .design__book-byline {
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: center; }
 
 .design__book-title {
@@ -1086,7 +1087,7 @@ hr {
 
 .design__book-chapter {
   font-size: calc(var(--font-size--page) * 1.075);
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin-top: var(--spacing--medium);
   text-align: center; }
 

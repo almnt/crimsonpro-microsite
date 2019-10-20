@@ -22,7 +22,7 @@
 
 .manuscript__prompt-heading {
   font-size: 2.25em;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: center;
 
   span {
@@ -34,14 +34,14 @@
 
 .manuscript__prompt-copy {
   font-size: 1.2em;
-  font-weight: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--medium);
   text-align: justify;
 }
 
 .manuscript__prompt-new {
   font-size: 1.125em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   text-decoration: underline;
 }
 
@@ -74,13 +74,13 @@
 .manuscript__section-heading {
   font-size: 1.25em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
 }
 
 .manuscript__voicemail {
   background-color: darken($section-background--manuscript, 45%);
   font-size: 1.25em;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   padding: var(--spacing--small);
 }

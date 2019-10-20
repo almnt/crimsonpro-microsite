@@ -27,7 +27,7 @@
 
 .example__title {
   display: block;
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   margin-top: var(--spacing--base);
   text-align: right;
   letter-spacing: var(--letter-spacing--base);

@@ -16,7 +16,7 @@
 
 .book__heading,
 .book__subheading {
-  font-weight: var(--font-weight--extra-light);
+  font-variation-settings: var(--font-weight--extra-light);
   margin: 0;
   text-transform: uppercase;
   text-align: center;

@@ -46,20 +46,20 @@
 .page__header-meta {
   display: block;
   font-variant-caps: all-small-caps;
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   letter-spacing: var(--letter-spacing--base);
   margin-bottom: var(--spacing--base);
 }
 
 .page__header-heading {
   font-size: calc(var(--font-size--page) * 1.5);
-  font-weight: var(--font-weight--normal);
+  font-variation-settings: var(--font-weight--normal);
   margin-bottom: var(--spacing--base);
 }
 
 .page__header-subheading {
   font-size: calc(var(--font-size--page) * 1.2);
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
 }
 
 .page__body {
@@ -70,7 +70,7 @@
 
 .page__body-callout {
   font-size: calc(var(--font-size--page) * 1);
-  font-weight: var(--font-weight--normal);
+  font-variation-settings: var(--font-weight--normal);
   margin-bottom: var(--spacing--medium);
   text-align: center;
 }

@@ -37,7 +37,7 @@
 
 .newspaper__title {
   font-size: var(--font-size--newspaper-title);
-  font-weight: var(--font-weight--bold);
+  font-variation-settings: var(--font-weight--bold);
   margin-bottom: var(--spacing--base);
   margin-top: var(--spacing--base);
 
@@ -68,14 +68,14 @@
 
 .newspaper__article-headline {
   font-size: calc(var(--font-size--newspaper-title) * .8);
-  font-weight: var(--font-weight--extra-bold);
+  font-variation-settings: var(--font-weight--extra-bold);
   margin-bottom: var(--spacing--small);
   margin-top: var(--spacing--base);
   font-style: italic;
 }
 
 .newspaper__article-byline {
-  font-weight: var(--font-weight--semi-bold);
+  font-variation-settings: var(--font-weight--semi-bold);
   margin-bottom: var(--spacing--small);
   margin-top: var(--spacing--small);
 

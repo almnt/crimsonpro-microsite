@@ -18,7 +18,7 @@
 .biology__sample-text {
   font-style: italic;
   font-variant-numeric: oldstyle-nums;
-  font-weight: var(--font-weight--light);
+  font-variation-settings: var(--font-weight--light);
   position: relative;
   text-align: center;
   z-index: 1;
