@@ -64,6 +64,7 @@
 
 .page__body {
   flex-basis: 100%;
+  flex-grow: 2;
   font-size: calc(var(--font-size--page) * .875);
   margin: var(--spacing--base) 0;
 }
