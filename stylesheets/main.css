@@ -520,7 +520,9 @@ hr {
 .book--new {
   perspective: 1500px;
   height: var(--book--height);
-  max-width: var(--book--width); }
+  max-width: var(--book--width);
+  width: 100%;
+  flex-grow: 2; }
 
 .book__container {
   animation: bookRotate 10s ease-in-out infinite both;
@@ -879,6 +881,10 @@ hr {
   @media (min-width: 38.75rem) {
     .slider {
       margin-bottom: 0; } }
+
+.slider--book {
+  max-width: 10rem;
+  flex-shrink: 2; }
 
 .slider--page {
   margin: var(--spacing--base) 0 var(--spacing--medium);

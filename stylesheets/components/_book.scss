@@ -11,6 +11,8 @@
   perspective: 1500px;
   height: var(--book--height);
   max-width: var(--book--width);
+  width: 100%;
+  flex-grow: 2;
 }
 
 .book__container {

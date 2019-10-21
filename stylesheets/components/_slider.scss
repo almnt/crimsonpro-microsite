@@ -6,6 +6,11 @@
   }
 }
 
+.slider--book {
+  max-width: 10rem;
+  flex-shrink: 2;
+}
+
 .slider--page {
   margin: var(--spacing--base) 0 var(--spacing--medium);
   width: 100%;
