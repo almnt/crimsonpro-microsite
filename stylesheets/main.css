@@ -903,9 +903,38 @@ hr {
   text-align: right; }
 
 .acknowledgements__section {
+  background-color: #ffffff;
   border: var(--border);
   margin-bottom: var(--spacing--medium);
-  padding: var(--spacing--small); }
+  padding: var(--spacing--small);
+  position: relative; }
+  .acknowledgements__section:nth-child(1)::before, .acknowledgements__section:nth-child(2)::before, .acknowledgements__section:nth-child(1)::after, .acknowledgements__section:nth-child(2)::after {
+    background: inherit;
+    border: var(--border);
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%; }
+  .acknowledgements__section:nth-child(1)::before {
+    box-shadow: -0.075em 0 0 rgba(34, 34, 34, 0.2);
+    left: -3px;
+    top: 0;
+    z-index: -1; }
+  .acknowledgements__section:nth-child(2)::before {
+    box-shadow: 0.075em 0 0 rgba(34, 34, 34, 0.2);
+    right: -3px;
+    top: 0;
+    z-index: -1; }
+  .acknowledgements__section:nth-child(1)::after {
+    box-shadow: -0.075em 0 0 rgba(34, 34, 34, 0.2);
+    left: -5px;
+    top: -1px;
+    z-index: -2; }
+  .acknowledgements__section:nth-child(2)::after {
+    box-shadow: 0.075em 0 0 rgba(34, 34, 34, 0.2);
+    right: -5px;
+    top: -1px;
+    z-index: -2; }
   @media (min-width: 38.75rem) {
     .acknowledgements__section {
       display: grid;
