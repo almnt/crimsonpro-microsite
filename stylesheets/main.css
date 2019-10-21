@@ -707,8 +707,8 @@ hr {
       background-repeat: no-repeat;
       background-size: 100%;
       display: grid;
-      grid-gap: 1rem;
-      grid-template: auto 1fr 2fr / auto 2fr 15rem auto;
+      grid-gap: 0 1rem;
+      grid-template: 1fr 1fr 2fr / auto 2fr 15rem auto;
       grid-template-areas: ". . . ." ". title title ." ". photo article .";
       height: 35em;
       justify-items: center;
@@ -728,7 +728,7 @@ hr {
   margin-top: var(--spacing--base); }
   @media (min-width: 38.75rem) {
     .newspaper__title {
-      align-self: end;
+      align-self: top;
       font-size: calc(var(--font-size--newspaper-title) * 1.75);
       grid-area: title;
       margin-bottom: 0; } }
