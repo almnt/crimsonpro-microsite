@@ -7,7 +7,7 @@
   --book-font-size--copy: 1.1rem;
 }
 
-.book--new {
+.book {
   perspective: 1500px;
   height: var(--book--height);
   max-width: var(--book--width);
@@ -16,7 +16,7 @@
 }
 
 .book__container {
-  animation: bookRotate 10s ease-in-out infinite both;
+  animation: bookRotate 20s 5s linear infinite;
   position: relative;
   transform-style: preserve-3d;
   transform-origin: center center;
@@ -52,32 +52,16 @@
 .book-face__left {
   transform: rotateY(-90deg) translateZ(calc(var(--book--width) / 8));
   width: calc(var(--book--width) / 4);
+  writing-mode: sideways-rl;
+  font-size: var(--book-font-size--subheading);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing--base);
 }
 
 .book-face__right {
   transform: rotateY(90deg) translateZ(calc(var(--book--width) * .875));
   width: calc(var(--book--width) / 4);
 }
-
-.book-face__bottom {
-  height: calc(var(--book--width) / 4);
-  transform: rotateX(-90deg) translateZ(calc(var(--book--width) * 1.375));
-  width: var(--book--width);
-}
-
-.book-face__top {
-  height: calc(var(--book--width) / 4);
-  transform: rotateX(90deg) translateZ(calc(var(--book--width) / 8));
-  width: var(--book--width);
-}
-
-// .book {
-//   background-color: $background-color--light;
-//   color: $font-color--base;
-//   height: var(--book--height);
-//   max-width: var(--book--width);
-//   padding: var(--spacing--medium) var(--spacing--base);
-// }
 
 .book__heading,
 .book__subheading {
