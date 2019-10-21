@@ -84,6 +84,7 @@
 
   @media (min-width: $screen--medium) {
     font-size: 5rem;
+    margin: var(--spacing--base) 0;
   }
 }
 
@@ -133,9 +134,13 @@
 
 .design__characters-title {
   font-variant-caps: all-small-caps;
-  font-variation-settings: var(--font-weight--medium);
+  font-variation-settings: var(--font-weight--bold);
   letter-spacing: var(--letter-spacing--base);
   text-align: center;
+
+  @media (min-width: $screen--medium) {
+    font-size: 1.25rem;
+  }
 }
 
 [class^="design__characters-roman"],
@@ -222,9 +227,11 @@
 }
 
 .design--language-list {
-  list-style: none;
-  padding: 0;
   columns: 3;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .design__book-title,
