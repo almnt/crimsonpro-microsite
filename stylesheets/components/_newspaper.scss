@@ -1,5 +1,5 @@
 :root {
-  --font-size--newspaper-title: 1.75em;
+  --font-size--newspaper-title: 1.75rem;
 }
 
 .newspaper {
@@ -16,8 +16,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
     display: grid;
-    grid-gap: 1em;
-    grid-template: auto 1fr 2fr / auto 2fr 1fr auto;
+    grid-gap: 1rem;
+    grid-template: auto 1fr 2fr / auto 2fr 15rem auto;
     grid-template-areas:
       ". . . ."
       ". title title ."
@@ -62,7 +62,7 @@
   @media (min-width: $screen--medium) {
     align-self: end;
     grid-area: article;
-    margin-bottom: 0;
+    margin-bottom: var(--spacing--small);
   }
 }
 
@@ -85,6 +85,7 @@
 }
 
 .newspaper__article-body {
+  font-size: calc(var(--font-size--newspaper-title) * .5);
   grid-area: article;
   line-height: 1.5;
   margin-bottom: var(--spacing--small);

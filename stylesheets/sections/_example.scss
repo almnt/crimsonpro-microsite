@@ -23,6 +23,14 @@
 
 .example__body {
   padding: var(--spacing--base) 0;
+
+  @media (min-width: $screen--medium) {
+    padding: var(--spacing--medium) 0;
+  }
+
+  @media (min-width: $screen--large) {
+    padding: var(--spacing--large) 0;
+  }
 }
 
 .example__title {

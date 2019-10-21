@@ -13,9 +13,14 @@
   background-size:
     cover,
     100%;
-  font-size: 1.125em;
-  max-width: 25em;
-  padding: var(--spacing--base) var(--spacing--base) var(--spacing--medium);
+  font-size: .975rem;
+  max-width: 25rem;
+  min-height: 15rem;
+  padding: var(--spacing--medium) var(--spacing--base) var(--spacing--medium);
+
+  @media (min-width: $screen--medium) {
+    min-height: 13rem;
+  }
 }
 
 .dictionary__entry-title {
