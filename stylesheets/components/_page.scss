@@ -13,11 +13,13 @@
 
   @media (min-width: $screen--large) {
     &:nth-child(1) {
-      box-shadow: inset -.3em 0 .3em transparentize($ink, .9);
+      box-shadow: inset -.3em 0 .3em transparentize($ink, .9),
+                  -0.05em 0 0 transparentize($ink, .8);
     }
 
     &:nth-child(2) {
-      box-shadow: inset .3em 0 .3em transparentize($ink, .9);
+      box-shadow: inset .3em 0 .3em transparentize($ink, .9),
+                  0.05em 0 0 transparentize($ink, .8);
     }
   }
 }
