@@ -1245,8 +1245,8 @@ hr {
   align-items: center;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   justify-content: space-around;
+  min-height: 100vh;
   padding: var(--spacing--base);
   position: relative;
   width: 100%; }
@@ -1257,10 +1257,11 @@ hr {
 
 .example__navigation {
   font-size: 1em;
-  text-transform: lowercase;
   font-style: italic;
+  font-variation-settings: var(--font-weight--light);
   padding: var(--spacing--base) 0;
-  text-align: center; }
+  text-align: center;
+  text-transform: lowercase; }
 
 .example__body {
   padding: var(--spacing--base) 0; }
@@ -1274,9 +1275,9 @@ hr {
 .example__title {
   display: block;
   font-variation-settings: var(--font-weight--bold);
+  letter-spacing: var(--letter-spacing--base);
   margin-top: var(--spacing--base);
   text-align: right;
-  letter-spacing: var(--letter-spacing--base);
   text-transform: uppercase; }
 
 .introduction {
