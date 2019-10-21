@@ -1240,7 +1240,8 @@ hr {
 .epilogue__book-copy {
   text-align: right; }
 
-.example {
+.example,
+.example__container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -1250,7 +1251,8 @@ hr {
   position: relative;
   width: 100%; }
   @media (min-width: 38.75rem) {
-    .example {
+    .example,
+    .example__container {
       flex-direction: row; } }
 
 .example__navigation {
