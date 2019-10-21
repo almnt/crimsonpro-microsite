@@ -303,6 +303,12 @@ template {
 [hidden] {
   display: none; }
 
+@keyframes bookRotate {
+  to {
+    transform: rotateY(360deg); } }
+@keyframes flotate {
+  to {
+    transform: rotate(360deg); } }
 @font-face {
   font-family: "Crimson Pro";
   src: url("../fonts/crimsonpro-roman-vf.ttf") format("truetype");
@@ -504,11 +510,6 @@ hr {
   position: relative;
   z-index: 0; }
 
-@keyframes flotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 :root {
   --book--width: 20rem;
   --book--height: 30rem;
@@ -530,11 +531,6 @@ hr {
   transform-style: preserve-3d;
   transform-origin: center center; }
 
-@keyframes bookRotate {
-  from {
-    transform: rotateY(0deg); }
-  to {
-    transform: rotateY(360deg); } }
 [class^="book-face__"] {
   background-color: #ffffff;
   border: var(--border);
