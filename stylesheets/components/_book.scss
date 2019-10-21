@@ -8,11 +8,11 @@
 }
 
 .book {
-  perspective: 1500px;
+  flex-grow: 2;
   height: var(--book--height);
   max-width: var(--book--width);
+  perspective: 1500px;
   width: 100%;
-  flex-grow: 2;
 }
 
 .book__container {
@@ -39,6 +39,14 @@
   height: var(--book--height);
 }
 
+.book-face__left,
+.book-face__right {
+  font-size: var(--book-font-size--subheading);
+  letter-spacing: var(--letter-spacing--base);
+  text-transform: uppercase;
+  writing-mode: sideways-rl;
+}
+
 .book-face__front {
   transform: rotateY(0deg) translateZ(calc(var(--book--width) / 8));
   width: var(--book--width);
@@ -52,10 +60,6 @@
 .book-face__left {
   transform: rotateY(-90deg) translateZ(calc(var(--book--width) / 8));
   width: calc(var(--book--width) / 4);
-  writing-mode: sideways-rl;
-  font-size: var(--book-font-size--subheading);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing--base);
 }
 
 .book-face__right {
