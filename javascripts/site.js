@@ -358,3 +358,23 @@ document.querySelector('.design--language-list').addEventListener('click', funct
     translation(event.target.innerText.toLowerCase());
   }
 }, false);
+
+// Create a request variable and assign a new XMLHttpRequest object to it.
+var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://api.nytimes.com/svc/topstories/v2/books.json?api-key=kKPXszolOwI5vNaA88AhOgTd65Geuh7Y', true)
+
+request.onload = function() {
+  // Begin accessing JSON data here
+  let data = JSON.parse(this.response)
+  let randomArticle = Math.floor(Math.random() * 10 + 1);
+  let article = data.results[randomArticle];
+
+  document.querySelector('.newspaper__photo').style.backgroundImage = "url('" + article.multimedia[4].url + "')";
+  document.querySelector('.newspaper__article-headline').innerText = article.title;
+  document.querySelector('.newspaper__article-byline').innerText = article.byline;
+  document.querySelector('.newspaper__article-body p').innerText = article.abstract;
+}
+
+request.send()

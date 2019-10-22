@@ -975,10 +975,20 @@ hr {
       grid-area: title;
       margin-bottom: 0; } }
 
-@media (min-width: 38.75rem) {
-  .newspaper__photo {
-    align-self: end;
-    grid-area: photo; } }
+.newspaper__photo {
+  background-position: center;
+  background-size: cover;
+  max-width: 25rem;
+  min-height: 20rem;
+  min-width: 100%; }
+  @media (min-width: 38.75rem) {
+    .newspaper__photo {
+      align-self: end;
+      background-size: contain;
+      grid-area: photo;
+      height: 100%;
+      min-height: 15rem;
+      min-width: 25rem; } }
 
 .newspaper__article {
   margin-bottom: var(--spacing--base); }

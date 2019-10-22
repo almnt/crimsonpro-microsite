@@ -50,9 +50,19 @@
 }
 
 .newspaper__photo {
+  background-position: center;
+  background-size: cover;
+  max-width: 25rem;
+  min-height: 20rem;
+  min-width: 100%;
+
   @media (min-width: $screen--medium) {
     align-self: end;
+    background-size: contain;
     grid-area: photo;
+    height: 100%;
+    min-height: 15rem;
+    min-width: 25rem;
   }
 }
 
