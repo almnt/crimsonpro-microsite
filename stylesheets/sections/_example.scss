@@ -15,12 +15,32 @@
 }
 
 .example__navigation {
-  font-size: 1em;
-  font-style: italic;
-  font-variation-settings: var(--font-weight--light);
   padding: var(--spacing--base) 0;
-  text-align: center;
-  text-transform: lowercase;
+  width: 2rem;
+
+  &:nth-child(1)::after {
+    content: "Prev";
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    font-variation-settings: var(--font-weight--light);
+    margin: var(--spacing--small) 0;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
+  }
+
+  &:nth-child(3)::after {
+    content: "Next";
+    display: block;
+    font-size: 1em;
+    font-style: italic;
+    font-variation-settings: var(--font-weight--light);
+    margin: var(--spacing--small) 0;
+    text-align: center;
+    text-transform: lowercase;
+    width: 100%;
+  }
 }
 
 .example__body {
