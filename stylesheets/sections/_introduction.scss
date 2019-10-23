@@ -1,4 +1,5 @@
 .introduction {
+  background-color: $section-background--intro;
   padding: var(--spacing--base) var(--spacing--small);
 
   @media (min-width: $screen--medium) {

@@ -1,3 +1,5 @@
+// dat.gui Instantiation
+
 var guiOne = new dat.GUI({ autoPlace: false });
 var guiTwo = new dat.GUI({ autoPlace: false });
 var guiThree = new dat.GUI({ autoPlace: false });
@@ -16,8 +18,7 @@ customContainerThree.appendChild(guiThree.domElement);
 customContainerFour.appendChild(guiFour.domElement);
 customContainerFive.appendChild(guiFive.domElement);
 
-// gui.add('test', 'yay', 0, 10);
-
+// Weight Axis Slider Functionality
 function sliderMagic(rangeClass, characterClass, addInnerText) {
   let range = document.querySelector(rangeClass);
   let rangeValue = range.value;
@@ -48,6 +49,7 @@ sliderMagic('.slider--sample-two', '.design__characters-roman-two');
 sliderMagic('.slider--sample-three', '.design__characters-italic-three');
 sliderMagic('.slider--sample-four', '.design__characters-italic-four');
 
+// Alice in Wonderland Text Translation
 let content = {
   english: {
   bookTitle : 'Alice’s Adventures in Wonderland',
@@ -359,6 +361,7 @@ document.querySelector('.design--language-list').addEventListener('click', funct
   }
 }, false);
 
+// NYT API Connect and Update Newspaper
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest()
 
@@ -378,3 +381,20 @@ request.onload = function() {
 }
 
 request.send()
+
+// Add fullPage.js to Site on Medium Screen Width
+var windowWidth = window.innerWidth;
+
+function windowWidthCheck() {
+  if ((windowWidth) >= 1135) {
+    let fullPageScript = document.createElement("script");
+    document.body.appendChild(fullPageScript);
+    fullPageScript.innerHTML = `
+        new fullpage('#fullpage', {
+          afterResponsive: function(isResponsive){}
+        });
+    `;
+  }
+}
+
+windowWidthCheck();

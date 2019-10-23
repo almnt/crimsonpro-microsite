@@ -1,6 +1,9 @@
 .epilogue {
-  align-items: center;
   background-color: $section-background--intro;
+}
+
+.epilogue__container {
+  align-items: center;
   color: $font-color--light;
   display: flex;
   flex-wrap: wrap;

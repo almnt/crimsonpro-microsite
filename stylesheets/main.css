@@ -793,7 +793,7 @@ hr {
   font-size: var(--book-font-size--subheading);
   letter-spacing: var(--letter-spacing--base);
   text-transform: uppercase;
-  writing-mode: sideways-rl; }
+  writing-mode: vertical-rl; }
 
 .book-face__front {
   transform: rotateY(0deg) translateZ(calc(var(--book--width) / 8));
@@ -1107,7 +1107,6 @@ hr {
   background-color: #c3bae3; }
 
 .site-header {
-  background-color: #222222;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -1245,7 +1244,7 @@ hr {
   font-size: 2.4375rem; }
   @media (min-width: 38.75rem) {
     .acknowledgements__section-title {
-      writing-mode: sideways-lr; } }
+      writing-mode: vertical-lr; } }
 
 .acknowledgements__section-copy {
   font-size: .875rem; }
@@ -1463,8 +1462,10 @@ hr {
       columns: 2; } }
 
 .epilogue {
+  background-color: #222222; }
+
+.epilogue__container {
   align-items: center;
-  background-color: #222222;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -1497,7 +1498,6 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  min-height: 100vh;
   padding: var(--spacing--base);
   position: relative;
   width: 100%; }
@@ -1547,6 +1547,7 @@ hr {
   text-transform: uppercase; }
 
 .introduction {
+  background-color: #222222;
   padding: var(--spacing--base) var(--spacing--small); }
   @media (min-width: 38.75rem) {
     .introduction {
