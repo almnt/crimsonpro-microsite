@@ -919,7 +919,7 @@ hr {
 
 .manuscript__section {
   margin: var(--spacing--base) 0; }
-  .manuscript__section:nth-child(4) .manuscript__section-copy {
+  .manuscript__section:nth-child(5) .manuscript__section-copy {
     text-indent: 1.5em; }
 
 .manuscript__section-heading {
@@ -1548,45 +1548,13 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: 0 auto;
+  max-width: 80vw;
   padding: var(--spacing--base);
-  position: relative;
-  width: 100%; }
-  @media (min-width: 38.75rem) {
-    .example {
-      flex-direction: row; } }
-
-.example__navigation {
-  padding: var(--spacing--base) 0;
-  width: 2rem; }
-  .example__navigation:nth-child(1)::after {
-    content: "Prev";
-    display: block;
-    font-size: 1em;
-    font-style: italic;
-    font-variation-settings: var(--font-weight--light);
-    margin: var(--spacing--small) 0;
-    text-align: center;
-    text-transform: lowercase;
-    width: 100%; }
-  .example__navigation:nth-child(3)::after {
-    content: "Next";
-    display: block;
-    font-size: 1em;
-    font-style: italic;
-    font-variation-settings: var(--font-weight--light);
-    margin: var(--spacing--small) 0;
-    text-align: center;
-    text-transform: lowercase;
-    width: 100%; }
+  position: relative; }
 
 .example__body {
   padding: var(--spacing--base) 0; }
-  @media (min-width: 38.75rem) {
-    .example__body {
-      padding: var(--spacing--medium) 0; } }
-  @media (min-width: 72rem) {
-    .example__body {
-      padding: var(--spacing--large) 0; } }
 
 .example__title {
   display: block;
@@ -1594,7 +1562,8 @@ hr {
   letter-spacing: var(--letter-spacing--base);
   margin-top: var(--spacing--base);
   text-align: right;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 100%; }
 
 .introduction {
   background-color: #222222;
