@@ -391,7 +391,11 @@ function windowWidthCheck() {
     document.body.appendChild(fullPageScript);
     fullPageScript.innerHTML = `
         new fullpage('#fullpage', {
-          afterResponsive: function(isResponsive){}
+          afterResponsive: function(isResponsive){},
+          controlArrows: true,
+          loopHorizontal: false,
+          scrollingSpeed: 800,
+	        verticalCentered: true
         });
     `;
   }
