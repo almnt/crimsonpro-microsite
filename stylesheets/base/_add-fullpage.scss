@@ -81,7 +81,7 @@ html.fp-enabled,
   cursor: pointer;
   width: 0;
   height: 0;
-  border-style: solid;
+  border-style: none;
   margin-top: -38px;
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -89,16 +89,17 @@ html.fp-enabled,
 }
 
 .fp-controlArrow.fp-prev {
+  content: url('../images/arrow-previous.svg');
+  height: 80px;
   left: 15px;
-  width: 0;
-  border-width: 38.5px 34px 38.5px 0;
-  border-color: transparent #fff transparent transparent;
+  width: 80px;
 }
 
 .fp-controlArrow.fp-next {
+  content: url('../images/arrow-next.svg');
+  height: 80px;
   right: 15px;
-  border-width: 38.5px 0 38.5px 34px;
-  border-color: transparent transparent transparent #fff;
+  width: 80px;
 }
 
 .fp-scrollable {
