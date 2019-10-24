@@ -31,6 +31,46 @@
   }
 }
 
+.slider-container--intro {
+  margin: var(--spacing--base) 0 var(--spacing--large);
+  position: relative;
+
+  @media (min-width: $screen--medium) {
+    margin: 0;
+    width: 40vh;
+
+    // &::before {
+    //   color: $paper;
+    //   content: "Black";
+    //   display: block;
+    //   font-size: 16px;
+    //   font-style: italic;
+    //   left: 30%;
+    //   position: absolute;
+    //   text-align: right;
+    //   top: 0;
+    //   width: 80px;
+    // }
+
+    // &::after {
+    //   bottom: 0;
+    //   color: $paper;
+    //   content: "Extra Light";
+    //   display: block;
+    //   font-size: 16px;
+    //   font-style: italic;
+    //   left: 30%;
+    //   position: absolute;
+    //   text-align: right;
+    //   width: 80px;
+    // }
+  }
+
+  @media (min-width: $screen--large) {
+    width: 50vh;
+  }
+}
+
 .slider-container__text {
   color: darken($paper-almond, 70%);
   display: block;
@@ -40,9 +80,11 @@
 }
 
 .slider--book {
-  max-width: 10rem;
-  flex-shrink: 2;
-  margin: var(--spacing--large) 0;
+  @media (min-width: $screen--medium) {
+    position: absolute;
+    top: 45%;
+    transform: rotate(-90deg);
+  }
 
   &[type=range] {
 
