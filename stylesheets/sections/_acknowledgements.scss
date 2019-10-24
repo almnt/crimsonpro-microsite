@@ -22,46 +22,49 @@
   border: var(--border);
   margin-bottom: var(--spacing--medium);
   padding: var(--spacing--small);
-  position: relative;
 
-  &:nth-child(1)::before,
-  &:nth-child(2)::before,
-  &:nth-child(1)::after,
-  &:nth-child(2)::after {
-    background: inherit;
-    border: var(--border);
-    content: "";
-    height: 100%;
-    position: absolute;
-    width: 100%;
-  }
+  @media (min-width: $screen--medium) {
+    position: relative;
 
-  &:nth-child(1)::before {
-    box-shadow: -0.075em 0 0 transparentize($ink, .8);
-    left: -3px;
-    top: 0;
-    z-index: -1;
-  }
+    &:nth-child(1)::before,
+    &:nth-child(2)::before,
+    &:nth-child(1)::after,
+    &:nth-child(2)::after {
+      background: inherit;
+      border: var(--border);
+      content: "";
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }
 
-  &:nth-child(2)::before {
-    box-shadow: 0.075em 0 0 transparentize($ink, .8);
-    right: -3px;
-    top: 0;
-    z-index: -1;
-  }
+    &:nth-child(1)::before {
+      box-shadow: -0.075em 0 0 transparentize($ink, .8);
+      left: -3px;
+      top: 0;
+      z-index: -1;
+    }
 
-  &:nth-child(1)::after {
-    box-shadow: -0.075em 0 0 transparentize($ink, .8);
-    left: -5px;
-    top: -1px;
-    z-index: -2;
-  }
+    &:nth-child(2)::before {
+      box-shadow: 0.075em 0 0 transparentize($ink, .8);
+      right: -3px;
+      top: 0;
+      z-index: -1;
+    }
 
-  &:nth-child(2)::after {
-    box-shadow: 0.075em 0 0 transparentize($ink, .8);
-    right: -5px;
-    top: -1px;
-    z-index: -2;
+    &:nth-child(1)::after {
+      box-shadow: -0.075em 0 0 transparentize($ink, .8);
+      left: -5px;
+      top: -1px;
+      z-index: -2;
+    }
+
+    &:nth-child(2)::after {
+      box-shadow: 0.075em 0 0 transparentize($ink, .8);
+      right: -5px;
+      top: -1px;
+      z-index: -2;
+    }
   }
 
   @media (min-width: $screen--medium) {
