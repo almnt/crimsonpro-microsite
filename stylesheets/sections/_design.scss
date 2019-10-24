@@ -222,6 +222,19 @@
   margin-bottom: 0;
   padding: 0;
   text-align: center;
+
+  li {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color .5s ease-in-out;
+
+    &:hover {
+      color: darken($paper-mabel, 70%);
+      outline: 1px solid darken($paper-mabel, 10%);
+      text-decoration: none;
+    }
+  }
 }
 
 .design__book-title,

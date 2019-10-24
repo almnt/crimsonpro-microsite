@@ -1483,6 +1483,15 @@ hr {
   margin-bottom: 0;
   padding: 0;
   text-align: center; }
+  .design--language-list li {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color .5s ease-in-out; }
+    .design--language-list li:hover {
+      color: #0f4444;
+      outline: 1px solid #9ce9e9;
+      text-decoration: none; }
 
 .design__book-title,
 .design__book-byline {
