@@ -1139,6 +1139,33 @@ hr {
     .slider {
       margin-bottom: 0; } }
 
+.slider-container {
+  margin-bottom: var(--spacing--large);
+  position: relative; }
+  .slider-container::before {
+    bottom: -35px;
+    content: "Extra Light";
+    font-size: 16px;
+    font-style: italic;
+    left: 0;
+    position: absolute;
+    text-align: right; }
+  .slider-container::after {
+    bottom: -35px;
+    content: "Black";
+    font-size: 16px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    text-align: right; }
+
+.slider-container__text {
+  color: #44260f;
+  display: block;
+  font-size: 18px;
+  font-weight: 480;
+  text-align: center; }
+
 .slider--book {
   max-width: 10rem;
   flex-shrink: 2;

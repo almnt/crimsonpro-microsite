@@ -6,6 +6,39 @@
   }
 }
 
+.slider-container {
+  margin-bottom: var(--spacing--large);
+  position: relative;
+
+  &::before {
+    bottom: -35px;
+    content: "Extra Light";
+    font-size: 16px;
+    font-style: italic;
+    left: 0;
+    position: absolute;
+    text-align: right;
+  }
+
+  &::after {
+    bottom: -35px;
+    content: "Black";
+    font-size: 16px;
+    font-style: italic;
+    position: absolute;
+    right: 0;
+    text-align: right;
+  }
+}
+
+.slider-container__text {
+  color: darken($paper-almond, 70%);
+  display: block;
+  font-size: 18px;
+  font-weight: 480;
+  text-align: center;
+}
+
 .slider--book {
   max-width: 10rem;
   flex-shrink: 2;
