@@ -53,8 +53,12 @@
 }
 
 .book-face__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   transform: rotateY(180deg) translateZ(calc(var(--book--width) / 8));
   width: var(--book--width);
+
 }
 
 .book-face__left {

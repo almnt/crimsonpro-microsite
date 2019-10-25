@@ -801,6 +801,9 @@ hr {
   width: var(--book--width); }
 
 .book-face__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   transform: rotateY(180deg) translateZ(calc(var(--book--width) / 8));
   width: var(--book--width); }
 
@@ -1111,7 +1114,7 @@ hr {
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: center; }
 
 .site-navigation {
   background-color: #222222;
@@ -1599,6 +1602,11 @@ hr {
 .epilogue__book-copy {
   text-align: right; }
 
+.epilogue-face__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
 .example {
   align-items: center;
   display: flex;
@@ -1626,6 +1634,6 @@ hr {
   padding: var(--spacing--base) var(--spacing--small); }
   @media (min-width: 38.75rem) {
     .introduction {
-      padding: var(--spacing--medium); } }
+      padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */

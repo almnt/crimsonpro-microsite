@@ -35,3 +35,9 @@
 .epilogue__book-copy {
   text-align: right;
 }
+
+.epilogue-face__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
