@@ -156,9 +156,9 @@ let content = {
   bookByLine : 'de Lewis Carroll',
   bookChapter : 'Chapitre II: La mare des larmes',
   bookGrafs : [
-    `Car la souris nageait loin d‘elle aussi fort que possible, et faisait beaucoup de bruit dans la piscine.`,
-    `Alors elle appela doucement: «Chère souris! Reviens encore, et nous ne parlerons pas non plus des chats ou des chiens, si tu ne les aimes pas!» Quand la Souris entendit ceci, elle se retourna et revint lentement à elle: son visage était plutôt pâle (avec passion , Pensa Alice), et elle dit d'une voix basse et tremblante: «Allons au bord de la mer, et ensuite je te raconterai mon histoire, et tu comprendras pourquoi c'est que je déteste les chats et les chiens.»`,
-    `Il était grand temps d'y aller car la piscine était pleine à craquer d'oiseaux et d'animaux qui y étaient tombés: il y avait un canard et un dodo, un lory et un aigle, ainsi que plusieurs autres créatures curieuses. Alice a ouvert la voie et toute la partie a nagé jusqu'au rivage.`
+    `Car la souris nageait loin d’elle aussi fort que possible, et faisait beaucoup de bruit dans la piscine.`,
+    `Alors elle appela doucement: «Chère Souris! Reviens encore, et nous ne parlerons pas non plus des chats ou des chiens, si tu ne les aimes pas!» Quand la Souris entendit ceci, elle se retourna et revint lentement à elle: son visage était plutôt pâle (avec passion, pensa Alice), et elle dit d’une voix basse et tremblante: «Allons au bord de la mer, et ensuite je te raconterai mon histoire, et tu comprendras pourquoi c’est que je déteste les chats et les chiens.»`,
+    `Il était grand temps d’y aller car la piscine était pleine à craquer d’oiseaux et d’animaux qui y étaient tombés: il y avait un canard et un dodo, un lory et un aigle, ainsi que plusieurs autres créatures curieuses. Alice a ouvert la voie et toute la partie a nagé jusqu’au rivage.`
     ]
   },
   german: {
