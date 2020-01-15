@@ -1,0 +1,80 @@
+$space-helpers: (
+  "mb": "margin-bottom",
+  "ml": "margin-left",
+  "mr": "margin-right",
+  "mt": "margin-top",
+  "pb": "padding-bottom",
+  "pl": "padding-left",
+  "pr": "padding-right",
+  "pt": "padding-top",
+);
+
+$space-sizes: (
+  "x-small": $space--x-small,
+  "small": $space--small,
+  "large": $space--large,
+  "x-large": $space--x-large,
+);
+
+@each $space-helper, $space-property in $space-helpers {
+  .space--#{$space-helper} {
+    #{$space-property}: $space--base;
+  }
+}
+
+@each $size-name, $size-value in $space-sizes {
+  @each $space-helper, $space-property in $space-helpers {
+    .space--#{$space-helper}--#{$size-name} {
+      #{$space-property}: $size-value;
+    }
+  }
+}
+
+// Vertical Spaces
+.space--mv {
+  margin-bottom: $space--base;
+  margin-top: $space--base;
+}
+
+.space--pv {
+  padding-bottom: $space--base;
+  padding-top: $space--base;
+}
+
+// Horizontal Spaces
+.space--mh--centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space--ph {
+  padding-left: $space--base;
+  padding-right: $space--base;
+}
+
+// Padding, all sides
+.space--pg {
+  padding: $space--base;
+}
+
+// Specific sized Vertical and Horizontal spaces (e.g. .space--mv--small)
+@each $size-name, $size-value in $space-sizes {
+  .space--mv--#{$size-name} {
+    margin-bottom: $size-value;
+    margin-top: $size-value;
+  }
+
+  .space--pv--#{$size-name} {
+    padding-bottom: $size-value;
+    padding-top: $size-value;
+  }
+
+  .space--ph--#{$size-name} {
+    padding-left: $size-value;
+    padding-right: $size-value;
+  }
+
+  .space--pg--#{$size-name} {
+    padding: $size-value;
+  }
+}

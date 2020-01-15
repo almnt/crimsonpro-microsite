@@ -1,0 +1,46 @@
+.drink-me__text {
+  color: $accent-red;
+  font-family: $font-family--italic;
+  font-size: 80px;
+  font-style: italic;
+  font-variation-settings: $font-weight--black;
+  margin-bottom: $space--large;
+  text-align: center;
+}
+
+.drink-me__controls-colors {
+  display: flex;
+  justify-content: space-between;
+
+  & .button--round-small:nth-child(1) {
+    background-color: $accent-red;
+  }
+
+  & .button--round-small:nth-child(2) {
+    background-color: $accent-yellow;
+  }
+
+  & .button--round-small:nth-child(3) {
+    background-color: $accent-blue;
+  }
+
+  & .button--round-small:nth-child(4) {
+    background-color: $accent-brown;
+  }
+
+  & .button--round-small:nth-child(5) {
+    background-color: $neutral-white;
+  }
+
+  & .button--round-small:nth-child(6) {
+    background-color: $neutral-black;
+  }
+
+  & .button--round-small:nth-child(7) {
+    background-color: $accent-green;
+  }
+
+  & .button--round-small:nth-child(8) {
+    background-color: $neutral-white;
+  }
+}

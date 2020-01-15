@@ -156,9 +156,9 @@ let content = {
   bookByLine : 'de Lewis Carroll',
   bookChapter : 'Chapitre II: La mare des larmes',
   bookGrafs : [
-    `Car la souris nageait loin d‘elle aussi fort que possible, et faisait beaucoup de bruit dans la piscine.`,
-    `Alors elle appela doucement: «Chère souris! Reviens encore, et nous ne parlerons pas non plus des chats ou des chiens, si tu ne les aimes pas!» Quand la Souris entendit ceci, elle se retourna et revint lentement à elle: son visage était plutôt pâle (avec passion , Pensa Alice), et elle dit d'une voix basse et tremblante: «Allons au bord de la mer, et ensuite je te raconterai mon histoire, et tu comprendras pourquoi c'est que je déteste les chats et les chiens.»`,
-    `Il était grand temps d'y aller car la piscine était pleine à craquer d'oiseaux et d'animaux qui y étaient tombés: il y avait un canard et un dodo, un lory et un aigle, ainsi que plusieurs autres créatures curieuses. Alice a ouvert la voie et toute la partie a nagé jusqu'au rivage.`
+    `Car la souris nageait loin d’elle aussi fort que possible, et faisait beaucoup de bruit dans la piscine.`,
+    `Alors elle appela doucement: «Chère Souris! Reviens encore, et nous ne parlerons pas non plus des chats ou des chiens, si tu ne les aimes pas!» Quand la Souris entendit ceci, elle se retourna et revint lentement à elle: son visage était plutôt pâle (avec passion, pensa Alice), et elle dit d’une voix basse et tremblante: «Allons au bord de la mer, et ensuite je te raconterai mon histoire, et tu comprendras pourquoi c’est que je déteste les chats et les chiens.»`,
+    `Il était grand temps d’y aller car la piscine était pleine à craquer d’oiseaux et d’animaux qui y étaient tombés: il y avait un canard et un dodo, un lory et un aigle, ainsi que plusieurs autres créatures curieuses. Alice a ouvert la voie et toute la partie a nagé jusqu’au rivage.`
     ]
   },
   german: {
@@ -361,44 +361,58 @@ document.querySelector('.design--language-list').addEventListener('click', funct
   }
 }, false);
 
-// NYT API Connect and Update Newspaper
-// Create a request variable and assign a new XMLHttpRequest object to it.
-var request = new XMLHttpRequest()
+// // Add fullPage.js to Site on Medium Screen Width
+// var windowWidth = window.innerWidth;
 
-// Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://api.nytimes.com/svc/topstories/v2/books.json?api-key=kKPXszolOwI5vNaA88AhOgTd65Geuh7Y', true)
+// function windowWidthCheck() {
+//   if ((windowWidth) >= 1135) {
+//     let fullPageScript = document.createElement("script");
+//     document.body.appendChild(fullPageScript);
+//     fullPageScript.innerHTML = `
+//         new fullpage('#fullpage', {
+//           afterResponsive: function(isResponsive){},
+//           controlArrows: true,
+//           loopHorizontal: false,
+//           scrollingSpeed: 800,
+// 	        verticalCentered: true
+//         });
+//     `;
+//   }
+// }
 
-request.onload = function() {
-  // Begin accessing JSON data here
-  let data = JSON.parse(this.response)
-  let randomArticle = Math.floor(Math.random() * 10 + 1);
-  let article = data.results[randomArticle];
+// windowWidthCheck();
 
-  document.querySelector('.newspaper__photo').style.backgroundImage = "url('" + article.multimedia[4].url + "')";
-  document.querySelector('.newspaper__article-headline').innerText = article.title;
-  document.querySelector('.newspaper__article-byline').innerText = article.byline;
-  document.querySelector('.newspaper__article-body p').innerText = article.abstract;
-}
 
-request.send()
+var elem = document.querySelector('.playground__content');
+var two = new Two({ width: 285, height: 200 }).appendTo(elem);
 
-// Add fullPage.js to Site on Medium Screen Width
-var windowWidth = window.innerWidth;
+var circle = two.makeCircle(-70, 0, 50);
+var rect = two.makeRectangle(70, 0, 100, 100);
+circle.fill = '#FF8000';
+circle.stroke = 'orangered';
+rect.fill = 'rgba(0, 200, 255, 0.75)';
+rect.stroke = '#1C75BC';
 
-function windowWidthCheck() {
-  if ((windowWidth) >= 1135) {
-    let fullPageScript = document.createElement("script");
-    document.body.appendChild(fullPageScript);
-    fullPageScript.innerHTML = `
-        new fullpage('#fullpage', {
-          afterResponsive: function(isResponsive){},
-          controlArrows: true,
-          loopHorizontal: false,
-          scrollingSpeed: 800,
-	        verticalCentered: true
-        });
-    `;
+// Groups can take an array of shapes and/or groups.
+var group = two.makeGroup(circle, rect);
+
+// And have translation, rotation, scale like all shapes.
+group.translation.set(two.width / 2, two.height / 2);
+group.rotation = Math.PI;
+group.scale = 0;
+
+// You can also set the same properties a shape have.
+group.linewidth = 7;
+
+// Bind a function to scale and rotate the group
+// to the animation loop.
+two.bind('update', function(frameCount) {
+  // This code is called everytime two.update() is called.
+  // Effectively 60 times per second.
+  if (group.scale > 0.9999) {
+    group.scale = group.rotation = 0;
   }
-}
-
-windowWidthCheck();
+  var t = (1 - group.scale) * 0.125;
+  group.scale += t;
+  group.rotation += t * 4 * Math.PI;
+}).play();  // Finally, start the animation loop

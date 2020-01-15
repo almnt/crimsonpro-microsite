@@ -1,0 +1,27 @@
+.grid {
+  display: grid;
+
+  &--cols--two-three {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--three-seven {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  &--four-seven {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+  }
+
+  &--five-three {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  &--six-eight {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+  }
+}

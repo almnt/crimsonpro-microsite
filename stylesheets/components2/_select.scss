@@ -1,0 +1,31 @@
+.select {
+	background-color: $neutral-white;
+	border-radius: 5px;
+	border: $border;
+	display: inline-block;
+	margin: 0;
+	max-width: 100%;
+	padding: $space--small;
+	width: 100%;
+  text-transform: uppercase;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:hover {
+    border-color: #888;
+  }
+
+  :focus {
+    border-color: #aaa;
+    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    color: #222;
+  }
+
+  & option {
+    font-weight:normal;
+  }
+
+}

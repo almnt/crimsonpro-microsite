@@ -1,0 +1,26 @@
+// Background Colors
+$background-color--base: $neutral-white;
+
+// Font Colors
+$font-color--base: $neutral-black;
+
+// Line Heights
+$line-height--body: 1.3;
+$line-height--heading: 1.1;
+
+// Borders
+$border-color: $neutral-black;
+$border-radius: 100%;
+$border-style: solid;
+$border-width: 1px;
+$border: $border-width $border-style $border-color;
+
+// Space
+$space--base: 16px;
+$space--x-small: round($space--base * 0.25);
+$space--small: round($space--base * 0.5);
+$space--large: $space--base * 2;
+$space--x-large: $space--base * 4;
+
+// Z-Indices
+$z-index-behind: -1;

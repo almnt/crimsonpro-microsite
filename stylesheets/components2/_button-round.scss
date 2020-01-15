@@ -1,0 +1,27 @@
+.button--round-base {
+  background: transparent;
+  border-radius: 100%;
+  border: none;
+  height: 48px;
+  padding: $space--small;
+  width: 48px;
+
+  &--active-pink {
+    background-color: $neutral-black;
+    color: $accent-pink;
+  }
+
+  &--active-red {
+    background-color: $accent-red;
+    border: $border;
+    color: $neutral-white;
+  }
+}
+
+.button--round-small {
+  border-radius: 100%;
+  border: $border;
+  height: 24px;
+  padding: $space--small;
+  width: 24px;
+}

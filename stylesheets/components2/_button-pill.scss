@@ -1,0 +1,21 @@
+.button--pill {
+  background-color: transparent;
+  border-radius: $space--base;
+  border: $border;
+  padding: $space--x-small $space--small;
+
+  &--100 {
+    @extend .button--pill;
+    width: 100px;
+  }
+
+  &--280 {
+    @extend .button--pill;
+    width: 280px;
+  }
+
+  &--active-red {
+    background-color: $accent-red;
+    color: $neutral-white;
+  }
+}

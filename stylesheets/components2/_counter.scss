@@ -1,0 +1,21 @@
+.counter {
+  font-size: 600px;
+  line-height: 0.9;
+  margin-bottom: $space--large;
+  position: relative;
+
+  &::before {
+    background-color: $accent-blue;
+    color: $neutral-white;
+    content: "counter";
+    font-size: 18px;
+    height: 156px;
+    left: 35%;
+    padding-top: 20%;
+    position: absolute;
+    text-align: center;
+    top: 156px;
+    width: 120px;
+    z-index: $z-index-behind;
+  }
+}

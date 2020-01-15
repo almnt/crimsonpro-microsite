@@ -7,11 +7,10 @@
 }
 
 .newspaper__content {
-  border-bottom: var(--border);
+  border: var(--border);
   margin: 0 auto;
 
   @media (min-width: $screen--medium) {
-    background-image: url('../images/newspaper.png');
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 100%;

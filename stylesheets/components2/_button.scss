@@ -1,0 +1,76 @@
+@mixin button--style($radius, $color-bg: transparent, $color-text: inherit) {
+  background-color: $color-bg;
+  border-radius: $radius;
+  color: $color-text;
+}
+
+@mixin button--color($color) {
+  border: $border;
+  background-color: $color;
+}
+
+%button {
+  border: $border;
+  padding: $space--x-small $space--small;
+}
+
+.button--round {
+  @extend %button;
+  @include button--style(100%);
+  border: none;
+  height: 48px;
+  padding: $space--small;
+  width: 48px;
+
+  &--small {
+    height: 24px;
+    width: 24px;
+  }
+
+  &--active {
+    @include button--style(100%, $neutral-black, $accent-pink);
+  }
+
+  &--active--2 {
+    @include button--style(100%, $accent-red, $neutral-white);
+    border: $border;
+  }
+
+  &--small {
+    @include button--style(100%);
+  }
+}
+
+.button--color {
+  &--red {
+    @include button--color($accent-red);
+  }
+
+  &--pink {
+    @include button--color($accent-pink);
+  }
+
+  &--blue {
+    @include button--color($accent-blue);
+  }
+
+  &--green {
+    @include button--color($accent-green);
+  }
+
+  &--white {
+    @include button--color($neutral-white);
+  }
+
+  &--black {
+    @include button--color($neutral-black);
+  }
+
+  &--yellow {
+    @include button--color($accent-yellow);
+  }
+
+  &--brown {
+    @include button--color($accent-brown);
+  }
+}

@@ -1,0 +1,11 @@
+.container {
+  padding: $space--small;
+
+  &--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1vw;
+    width: 98vw;
+  }
+}

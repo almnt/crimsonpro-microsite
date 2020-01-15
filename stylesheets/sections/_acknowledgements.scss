@@ -26,18 +26,6 @@
   @media (min-width: $screen--medium) {
     position: relative;
 
-    &:nth-child(1)::before,
-    &:nth-child(2)::before,
-    &:nth-child(1)::after,
-    &:nth-child(2)::after {
-      background: inherit;
-      border: var(--border);
-      content: "";
-      height: 100%;
-      position: absolute;
-      width: 100%;
-    }
-
     &:nth-child(1)::before {
       box-shadow: -0.075em 0 0 transparentize($ink, .8);
       left: -3px;

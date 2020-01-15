@@ -1,0 +1,23 @@
+.flex {
+  display: flex;
+
+  &--column {
+    @extend .flex;
+    flex-direction: column;
+  }
+
+  &--justify-around {
+    @extend .flex;
+    justify-content: space-around;
+  }
+
+  &--justify-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+
+  &--justify-end {
+    @extend .flex;
+    justify-content: flex-end;
+  }
+}

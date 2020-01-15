@@ -1,0 +1,25 @@
+.weight-letters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weight-letters__letter {
+  -webkit-text-stroke: 1px $neutral-black;
+  color: $neutral-gray-85;
+  display: inline-block;
+  font-size: 72px;
+  line-height: .75;
+  margin: 0;
+
+  &:nth-child(6) {
+    background: linear-gradient(90deg, $neutral-gray-85 0%, $accent-pink 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  &:nth-child(7),
+  &:nth-child(8) {
+    color: $accent-pink;
+  }
+}

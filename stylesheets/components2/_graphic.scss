@@ -1,0 +1,8 @@
+.graphic {
+  display: inline-block;
+  z-index: -1;
+
+  &--shape {
+    position: absolute;
+  }
+}

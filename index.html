@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -8,644 +8,499 @@
 
   <title>Crimson Pro</title>
   <link rel="stylesheet" href="stylesheets/main.css">
-  <script src="javascripts/gui/build/dat.gui.min.js" type="text/javascript"></script>
-  <script src="javascripts/fullpage/fullpage.js" type="text/javascript"></script>
-  <script src="javascripts/site.js" type="text/javascript" async></script>
+
+  <style>
+    .book__cover {
+      text-align: center;
+    }
+    .book__title {
+      font-size: 1.2625rem;
+      font-weight: bold;
+    }
+
+    .book__author {
+      font-style: italic;
+    }
+
+    .page-meta {
+      font-size: .85rem;
+      font-variation-settings: 'wght' 300;
+      text-transform: lowercase;
+    }
+
+    .page-meta--left {
+      text-align: left;
+    }
+
+    .page-meta--right {
+      text-align: right;
+    }
+
+    .page-meta--title {
+      font-size: 1.2625rem;
+      font-variation-settings: var(--font-weight--bold);
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+
+    .page-heading {
+      font-size: 2.525rem;
+      font-variation-settings: var(--font-weight--normal);
+    }
+
+    .page-heading em {
+      font-variation-settings: var(--font-weight--light);
+    }
+
+    .page-body {
+      font-size: 1.275rem;
+      font-variation-settings: var(--font-weight--normal);
+    }
+
+    .page-body em {
+      font-variation-settings: var(--font-weight--light);
+    }
+
+    .page-rule {
+      margin: var(--spacing--small) 0;
+    }
+
+    .font-controls {
+      display: grid;
+      grid-template: repeat(2, auto) / repeat(2, auto);
+      text-align: center;
+    }
+
+    .font-controls__title {
+      font-style: italic;
+    }
+
+    .border--top {
+      border-top: var(--border);
+    }
+
+    .border--bottom {
+      border-bottom: var(--border);
+    }
+
+    .border--right {
+      border-right: var(--border);
+    }
+
+    .design-size {
+      display: flex;
+    }
+
+    .design-size>:last-child {
+      margin-left: 3rem;
+    }
+
+    .design-size__column:nth-child(1) {
+      width: 15%;
+    }
+
+    .design-size__column:nth-child(2) {
+      width: 85%;
+    }
+
+    .design-size__points:nth-child(2),
+    .design-size__font:nth-child(2) {
+      font-size: 72px;
+    }
+
+    .design-size__font:nth-child(2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 30vw;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="site-navigation" role="navigation">
-    <a class="site-navigation__link" href="#introduction">Introduction</a>
-    <a class="site-navigation__link" href="#design">Design</a>
-    <a class="site-navigation__link" href="#examples">Examples</a>
-    <a class="site-navigation__link" href="#acknowledgements">Acknowledgements</a>
-  </nav>
-
-  <div id="fullpage">
-    <div class="section introduction">
-      <div class="site-header" id="introduction">
-
-        <div class="slider-container--intro">
-          <input class="slider slider--book" max="900" min="200" step="1" type="range"
-          value="200">
-        </div>
-
-        <div class="book">
-          <div class="book__container">
-            <div class="book-face__front">
-              <h1 class="book__heading">Crimson Pro</h1>
-              <span class="book__weightheading"></span>
-
-              <h2 class="book__subheading">is a variable font</h2>
-
-              <div class="book__copy">
-                <p>for book and digital production in the tradition
-                  of beautiful oldstyle typefaces.</p>
-                <p>Contemporary and classic, Crimson Pro comes in
-                  eight pre-defined weights from Extra light to Black, in Roman and
-                  Italic.</p>
-              </div>
-            </div>
-
-            <div class="book-face__back">
-              <h3 class="epilogue__heading">Additional Credits</h3>
-              <div class="epilogue__book-copy">
-                <p><strong>Google:</strong><br> Dave Crossland, Irin Kim, & Paula Ashton.</p>
-
-                <p><strong>Type specimen site:</strong><br> Amélie Lamont</p>
-              </div>
-            </div>
-
-            <div class="book-face__left">
-              Crimson Pro
-            </div>
-
-            <div class="book-face__right"></div>
+  <div class="pages">
+    <section class="page">
+      <div class="page-body">
+        <div class="book__cover">
+          <div class="book__title">
+            The Benefits<br> of<br> Crimson Pro & Variable Fonts
           </div>
+          <img src="http://placekitten.com/50/50" alt="">
+          <div class="book__author">Google Fonts</div>
+          <div class="book__year">2019</div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <div class="slide">
-        <div class="design">
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Google</span>
-              <h2 class="page__header-heading">The Benefits of Crimson Pro & Variable Fonts</h2>
-              <h3 class="page__header-subheading">Variable Font</h3>
-            </header>
+    <section class="page">
+    </section>
+  </div>
 
-            <div class="page__body">
-              <p class="page__body-callout">Instead of multiple font files (one for
-              Bold, one for Medium, another for Light), with Crimson Pro, you
-              get one compressed font file that contains <em>all</em>
-              weights.</p>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--left">2</div>
+        <h2 class="page-heading">Benefits of <em>Variable Fonts</em></h2>
+      </header>
 
-              <hr />
-
-              <div class="page__body-column">
-                <p>While Crimson Pro currently only has avariable Weight <em>(wght)</em>, a
-                variable font can also allow for changing other properties, such as
-                Optical size <em>(opsz)</em>, Slant <em>(slnt)</em>, Width <em>(wdth)</em>, and Italic <em>(ital)</em>.</p>
-                <p><strong>What does this mean?</strong></p>
-                <p>One font file means better performance and fast
-                  loading times.</p>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 1</span>
-            </footer>
-          </section>
-
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Crimson Pro</span>
-              <h2 class="page__header-heading">Compression</h2>
-            </header>
-
-            <div class="page__body">
-              <div>
-                <p>Crimson Text</p>
-                <span>100kb</span>
-              </div>
-
-              <div>
-                <p>Crimson Pro</p>
-                <span>100kb</span>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 2</span>
-            </footer>
-          </section>
-        </div>
+      <div class="page-body">
+        <img src="http://placekitten.com/300/300" alt="">
+        <p><em>Variable fonts are the latest in the evolution of fonts.</em></p>
+        <hr class="page-rule">
+        <p>While Crimson Pro currently only has a variable Weight <em>(wght)</em> axis, variable fonts can have other axes, such as
+        Optical size <em>(opsz)</em>, Slant <em>(slnt)</em>, Width <em>(wdth)</em>, and Italic <em>(ital)</em>.</p>
       </div>
+    </section>
 
-      <div class="slide">
-        <div class="design">
-        <section class="page page--flex design--intro">
-          <header class="page__header">
-            <span class="page__header-meta">Google</span>
-            <h3 class="page__header-subheading">Design</h3>
-          </header>
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--right">Intro</div>
+      </header>
 
-          <div class="page__body">
-            <div class="design__lines">
-              <p class="design__line-text">Reading</p>
-              <span class="design__line-cap"></span>
-              <span class="design__line-mean"></span>
-              <span class="design__line-base"></span>
-            </div>
+      <div class="page-body">
+        <p><em>What does this mean?</em></p>
+        <hr class="page-rule">
+        <p>These axes allow designers greater flexibility to create and customize their own font instances for aesthetic layout and flexibility.</p>
+      </div>
+    </section>
+  </div>
 
-            <div class="design__lines">
-              <p class="design__line-text">on</p>
-              <span class="design__line-cap"></span>
-              <span class="design__line-mean"></span>
-              <span class="design__line-base"></span>
-            </div>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--left">4</div>
+      </header>
+    </section>
 
-            <div class="page__body-column">
-              <p>Crimson Pro is best for reading. Its cap height enables better proportions and less visual noise in text for easier reading.</p>
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--right page-meta--title">Design</div>
+      </header>
+    </section>
+  </div>
 
-              <p>Large counters and apertures make it easy to distinguish characters
-              at smaller sizes.</p>
-            </div>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--left">6</div>
+      </header>
+      <div class="page-body">
+        <div class="font-conter__letter">A</div>
+        <div class="font-controls">
+          <div class="font-controls__title border--top border--right">Weight Axis</div>
+          <div class="font-controls__title border--top">Size</div>
+          <div class="font-controls__slider border--top border--bottom border--right">Slider here</div>
+          <div class="font-controls__size border--top border--bottom">XS S M L XL</div>
+        </div>
+        <p>Easy on the eyes</p>
+        <hr class="page-rule">
+        <p>Crimson Pro's cap height gives it better proportions and less visual noise, making it easier to read.</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--right">Design</div>
+      </header>
+
+      <div class="page-body">
+        <div class="design-size">
+          <div class="design-size__column">
+            <div class="design-size__points"><em>Points</em></div>
+            <div class="design-size__points">72</div>
+            <div class="design-size__points">60</div>
+            <div class="design-size__points">48</div>
+            <div class="design-size__points">36</div>
+            <div class="design-size__points">30</div>
+            <div class="design-size__points">24</div>
+            <div class="design-size__points">18</div>
+            <div class="design-size__points">14</div>
+            <div class="design-size__points">12</div>
+            <div class="design-size__points">10</div>
+            <div class="design-size__points">8</div>
           </div>
-
-          <footer class="page__footer">
-            <span class="page__footer-meta">pg. 3</span>
-          </footer>
-        </section>
-
-        <section class="page page--flex design--intro">
-          <header class="page__header">
-            <span class="page__header-meta">Crimson Pro</span>
-            <h3 class="page__header-subheading">Axis</h3>
-          </header>
-
-          <div class="page__body">
-            <span class="page__weightheading"></span>
-
-            <div class="slider-container">
-              <span class="slider-container__text">Drag the slider to see Crimson Pro’s variable weight.</span>
-              <input class="slider--page" type="range" name="weight-slider" min="200" max="900">
-            </div>
-
-            <p>Weight axis TKTK, names intaces TKTK With unlimited options, you can tweak a font so it fits your design as intended.</p>
-          </div>
-
-          <footer class="page__footer">
-            <span class="page__footer-meta">pg. 4</span>
-          </footer>
-        </section>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="design">
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Google</span>
-              <h2 class="page__header-heading">Roman Samples</h2>
-            </header>
-
-            <div class="page__body">
-              <div class="slider-container">
-                <input class="slider--sample-one" max="900" min="200" step="1"
-              type="range" value="200">
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Uppercase Roman</p>
-                <span class="design__characters-roman-one">ABCDEFGHIJKLMNO</span>
-                <span class="design__characters-roman-one">ABCDEFGHIJKLMNOPQR</span>
-                <span class="design__characters-roman-one">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Lowercase Roman</p>
-                <span class="design__characters-roman-one">abcdefghijklmno</span>
-                <span class="design__characters-roman-one">abcdefghijklmnopqr</span>
-                <span class="design__characters-roman-one">abcdefghijklmnopqrstuvwxyz</span>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 5</span>
-            </footer>
-          </section>
-
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Crimson Pro</span>
-              <h2 class="page__header-heading">Roman Samples</h2>
-            </header>
-
-            <div class="page__body">
-              <div class="slider-container">
-                <input class="slider--sample-two" max="900" min="200" step="1"
-                type="range" value="200">
-              </div>
-
-                <div class="design__characters">
-                  <p class="design__characters-title">Numerals Roman</p>
-                  <span class="design__characters-roman-two">0123456789½¼¾</span>
-                  <span class="design__characters-roman-two">0123456789½¼¾₀₁₂</span>
-                  <span class="design__characters-roman-two">0123456789½¼¾₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹</span>
-                </div>
-
-                <div class="design__characters">
-                  <p class="design__characters-title">Characters Roman</p>
-                  <span class="design__characters-roman-two">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){</span>
-                  <span class="design__characters-roman-two">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){}[]√µ∂</span>
-                  <span
-                  class="design__characters-roman-two">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){}[]√µ∂%‰◊☙❧</span>
-                </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 6</span>
-            </footer>
-          </section>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="design">
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Google</span>
-              <h2 class="page__header-heading">Italic Samples</h2>
-            </header>
-
-            <div class="page__body">
-              <div class="slider-container">
-                <input class="slider--sample-three" max="900" min="200" step="1"
-                type="range" value="200">
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Uppercase Italic</p>
-
-                <span class="design__characters-italic-three">ABCDEFGHIJKLMNO</span>
-                <span class="design__characters-italic-three">ABCDEFGHIJKLMNOPQR</span>
-                <span class="design__characters-italic-three">ABCDEFGHIJKLMNOPQRSTUVWXYZ</span>
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Lowercase Italic</p>
-
-                <span class="design__characters-italic-three">abcdefghijklmno</span>
-                <span class="design__characters-italic-three">abcdefghijklmnopqr</span>
-                <span class="design__characters-italic-three">abcdefghijklmnopqrstuvwxyz</span>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 7</span>
-            </footer>
-          </section>
-
-          <section class="page page--flex design--intro">
-            <header class="page__header">
-              <span class="page__header-meta">Crimson Pro</span>
-              <h2 class="page__header-heading">Italic Samples</h2>
-            </header>
-
-            <div class="page__body">
-              <div class="slider-container">
-                <input class="slider--sample-four" max="900" min="200" step="1"
-              type="range" value="200">
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Numerals Italic</p>
-
-                <span class="design__characters-italic-four">0123456789½¼¾</span>
-                <span class="design__characters-italic-four">0123456789½¼¾₀₁₂</span>
-                <span class="design__characters-italic-four">0123456789½¼¾₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹</span>
-              </div>
-
-              <div class="design__characters">
-                <p class="design__characters-title">Characters Italic</p>
-
-                <span class="design__characters-italic-four">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){</span>
-                <span class="design__characters-italic-four">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){}[]√µ∂</span>
-                <span class="design__characters-italic-four">ΔΣΩμπ.,:;…!¡?¿·•*#/\(){}[]√µ∂%‰◊☙❧</span>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 8</span>
-            </footer>
-          </section>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="design">
-          <section class="page page--flex design--language">
-            <header class="page__header">
-              <span class="page__header-meta">Google</span>
-              <h2 class="page__header-heading">Looking to use Crimson Pro in your language?</h2>
-            </header>
-
-            <div class="page__body">
-              <p class="page__body-callout">Crimson Pro supports a variety of
-              languages. Select a language below to see <em>
-                Alice in Wonderland </em> translated on the following page.</p>
-
-              <ul class="design--language-list">
-                <li>Afrikaans</li>
-                <li>Albanian</li>
-                <li>Catalan</li>
-                <li>Croatian</li>
-                <li>Czech</li>
-                <li>Danish</li>
-                <li>Dutch</li>
-                <li>English</li>
-                <li>Estonian</li>
-                <li>Finnish</li>
-                <li>French</li>
-                <li>German</li>
-                <li>Hungarian</li>
-                <li>Icelandic</li>
-                <li>Italian</li>
-                <li>Latvian</li>
-                <li>Lithuanian</li>
-                <li>Maltese</li>
-                <li>Norwegian</li>
-                <li>Polish</li>
-                <li>Portuguese</li>
-                <li>Romanian</li>
-                <li>Slovak</li>
-                <li>Slovenian</li>
-                <li>Spanish</li>
-                <li>Swedish</li>
-                <li>Turkish</li>
-                <li>Vietnamese</li>
-                <li>Zulu</li>
-              </ul>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 9</span>
-            </footer>
-          </section>
-
-          <section class="page page--flex design--language">
-            <header class="page__header">
-              <span class="page__header-meta">Crimson Pro</span>
-            </header>
-
-            <div class="page__body">
-              <h4 class="design__book-title"></h4>
-              <p class="design__book-byline"></p>
-              <p class="design__book-chapter"></p>
-
-              <div class="design__book-grafs">
-                <p></p>
-
-                <p></p>
-
-                <p></p>
-              </div>
-            </div>
-
-            <footer class="page__footer">
-              <span class="page__footer-meta">pg. 10</span>
-            </footer>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="slide dictionary">
-        <div class="gui-wrapper__one"></div>
-
-        <div class="example">
-          <div class="example__body">
-            <div class="dictionary__entry" contenteditable="true">
-              <h3 class="dictionary__entry-title">write <span>(ˈrīt)</span></h3>
-              <p class="dictionary__entry-content">
-                <em>v.</em>&nbsp;&nbsp;&nbsp;<strong>1.</strong> to form (characters, symbols, etc.) on a surface with an instrument (such as a
-                pen).&nbsp;&nbsp;&nbsp;<strong>2.</strong> to set down in
-                writing.&nbsp;&nbsp;&nbsp;<strong>3.</strong> to make a permanent
-                impression of.&nbsp;&nbsp;&nbsp;<strong>4.</strong> to communicate with
-                in writing.
-              </p>
-            </div>
-
-            <span class="example__title">Dictionary</span>
+          <div class="design-size__column">
+            <div class="design-size__font"><em>Crimson Pro Regular</em></div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
+            <div class="design-size__font">White rabbit with pink eyes</div>
           </div>
         </div>
+        <p>rabbit pic here</p>
       </div>
+    </section>
+  </div>
 
-      <div class="slide newspaper">
-        <div class="gui-wrapper__two"></div>
-
-        <div class="example">
-          <div class="example__body">
-            <div class="newspaper__content" contenteditable="true">
-              <h3 class="newspaper__title">The Crimson Pro Daily</h3>
-              <div class="newspaper__photo"></div>
-              <div class="newspaper__article">
-                <h4 class="newspaper__article-headline"></h4>
-                <p class="newspaper__article-byline"></p>
-                <div class="newspaper__article-body">
-                  <p></p>
-                </div>
-              </div>
-            </div>
-
-            <span class="example__title">Newspaper</span>
-          </div>
-        </div>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--left">8</div>
+      </header>
+      <div class="page-body">
+        <p>P</p>
+        <hr>
+        <p>With large counters and apertures, readers can easily recognize different characters at smaller sizes.</p>
       </div>
+    </section>
 
-      <div class="slide biology">
-          <div class="gui-wrapper__three"></div>
+    <section class="page">
+      <header class="page__header">
+        <div class="page-meta page-meta--right">design</div>
+      </header>
 
-          <div class="example">
-            <div class="example__body">
-              <div class="biology__content" contenteditable="true">
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19'''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-01.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-02.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-03.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19'.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-04.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 20.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-05.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 20'' ''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-06.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 20'' ''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-07.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19'.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-08.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 20'' ''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-09.png" alt="">
-                </div>
-
-                <div class="biology__samples">
-                  <p class="biology__sample-text">Fig. 19''.</p>
-                  <img class="biology__sample-image" src="images/biology-sample-10.png" alt="">
-                </div>
-
-                <img src="images/biology-magnifier.png" alt="">
-
-              </div>
-
-              <span class="example__title">Biology Lab</span>
-            </div>
-          </div>
+      <div class="page-body">
+        <table>
+          <tr>
+            <td>Points</td>
+            <td>Crimson Pro Regular</td>
+          </tr>
+          <tr>
+            <td><hr></td>
+            <td><hr></td>
+          </tr>
+          <tr>
+            <td>280pt</td>
+            <td>a [image]</td>
+          </tr>
+          <tr>
+            <td>205pt</td>
+            <td>B D P</td>
+          </tr>
+          <tr>
+            <td>151pt</td>
+            <td>c h 4 O</td>
+          </tr>
+          <tr>
+            <td>76pt</td>
+            <td>R [image] Q D A</td>
+          </tr>
+          <tr>
+            <td>54pt</td>
+            <td>p g 8 d [image] O</td>
+          </tr>
+        </table>
+        <p>rabbit pic here</p>
       </div>
+    </section>
+  </div>
 
-      <div class="slide manuscript">
-        <div class="gui-wrapper__four"></div>
-
-        <div class="example">
-          <div class="example__body">
-            <div class="manuscript__content">
-              <div class="manuscript__prompt">
-                <h3 class="manuscript__prompt-heading">Write a <span>book</span></h3>
-
-                <p class="manuscript__prompt-copy">About a dog and her ball, who get stuck in a mystical vortex full of daemons and panthers.</p>
-
-                <p class="manuscript__prompt-new">Give Me a New Prompt</p>
-              </div>
-
-              <div class="manuscript__details" contenteditable="true">
-                <h3 class="manuscript__title">Book Title</h3>
-                  <h4 class="manuscript__section-heading">Overview</h4>
-                  <p class="manuscript__section-copy">This is a book about a dog and her ball, who get stuck in a mystical vortex full of daemons and panthers.</p>
-                </section>
-
-                <section class="manuscript__section">
-                  <h4 class="manuscript__section-heading">Characters</h4>
-
-                  <p class="manuscript__section-copy">
-                    <strong>Doc:</strong> Spunky, pixie dream girl. Loves to bark orders.
-                  </p>
-
-                  <p class="manuscript__section-copy">
-                    <strong>Ballerina:</strong> Born a basketball, dreams of becoming a wrecking ball.
-                  </p>
-                </section>
-
-                <section class="manuscript__section">
-                  <h4 class="manuscript__section-heading">Chapter One</h4>
-                  <p class="manuscript__section-copy">A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
-                </section>
-
-                <div class="manuscript__voicemail">New message from agent</div>
-              </div>
-            </div>
-
-            <span class="example__title">Manuscript</span>
-          </div>
-        </div>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">16 – 19</span>
+      </header>
+      <div class="page-body">
+        <table>
+          <tr>
+            <td>a b c d</td>
+            <td>0 1</td>
+          </tr>
+          <tr>
+            <td>e f g h</td>
+            <td>2 3</td>
+          </tr>
+          <tr>
+            <td>i j &nbsp; k</td>
+            <td>4 5</td>
+          </tr>
+          <tr>
+            <td>l &nbsp; m n</td>
+            <td>6 7</td>
+          </tr>
+          <tr>
+            <td>o p q r</td>
+            <td>8 9</td>
+          </tr>
+          <tr>
+            <td>&nbsp; &nbsp; s t</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>u v w &nbsp;</td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td>&nbsp; x y z</td>
+            <td> </td>
+          </tr>
+        </table>
       </div>
+    </section>
 
-      <div class="slide playground">
-        <div class="gui-wrapper__five"></div>
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">lowercase</span>
+      </header>
 
-        <div class="example">
-          <div class="example__body">
-            <div class="playground__content">
-              <h3 class="playground__content-title">Welcome to the playground. Set up your environment.</h3>
-              <p class="playground__content-copy">
-                Playground options go here.
-              </p>
-            </div>
+      <div class="page-body">
+        <p>* *</p>
+        <p>So she to work, and very soon finished off the cake.</p>
+        <p>* *</p>
 
-            <span class="example__title">Playground</span>
-          </div>
-        </div>
+        <p>[image goes here]</p>
       </div>
-    </div>
+    </section>
+  </div>
 
-    <div class="section">
-      <div class="acknowledgements" id="acknowledgements">
-        <section class="page acknowledgements__section">
-          <h2 class="acknowledgements__heading">Acknowledgements</h2>
-          <h3 class="acknowledgements__section-title">Jacques Le Bailley</h3>
-
-          <div class="acknowledgements__section-copy">
-            <p>Jacques is a senior type designer, living in The Hague.</p>
-            <p>He started his own foundry Baron von Fonthausen in 2009, and has been
-            dedicated to type design ever since.</p>
-          </div>
-
-          <div class="acknowledgements__section-copy">
-            <p>After graduating from the KABK and an apprenticeship at Linotype GmBH, he worked in Berlin and The Hague as Graphic Designer for several years, and then for many years at one of the most prestigious Dutch foundries, The Enschedé Type Foundry.</p>
-            <p>He has also been a tutor at the WdKA art academy of Rotterdam and St.Joost art academy of Den Bosch.</p>
-          </div>
-
-          <div class="acknowledgements__section-copy">
-            <p>He mixes personal type projects with contract work for foundries like Monotype, Bold Monday and Google, and every now and then he does custom projects for several branding agencies.</p>
-          </div>
-          <img class="acknowledgements__section-image" src="images/jacqueslebailley.png" alt="">
-        </section>
-
-        <section class="page acknowledgements__section">
-          <h3 class="acknowledgements__section-title">Sebastian Kosch</h3>
-
-          <p class="acknowledgements__section-copy">Sebastian is a software engineer and researcher with a weakness for good typography. He currently lives in Toronto.</p>
-          <p class="acknowledgements__section-copy">On background, he sketched the first version of Crimson in 2009, before Google Fonts launched. He was a freshman engineering student at the time, and drawing letters was more fun than studying for his calculus exams.</p>
-          <img class="acknowledgements__section-image" src="images/sebastiankosch.png" alt="">
-        </section>
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">14 – 17</span>
+      </header>
+      <div class="page-body">
+        <table>
+          <tr>
+            <td>A B C D</td>
+          </tr>
+          <tr>
+            <td>E F G H</td>
+          </tr>
+          <tr>
+            <td>&nbsp; I J K</td>
+          </tr>
+          <tr>
+            <td>&nbsp; L M N</td>
+          </tr>
+          <tr>
+            <td>O P &nbsp; &nbsp;</td>
+          </tr>
+          <tr>
+            <td>Q R S T</td>
+          </tr>
+          <tr>
+            <td>&nbsp; U V W</td>
+          </tr>
+          <tr>
+            <td>X Y Z &nbsp;</td>
+          </tr>
+        </table>
       </div>
-    </div>
+    </section>
 
-    <div class="section epilogue">
-      <div class="epilogue__container">
-        <h2 class="epilogue__title">fin.</h2>
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">uppercase</span>
+      </header>
 
-        <div class="book">
-          <div class="book__container">
-            <div class="book-face__front epilogue-face__back">
-              <h3 class="epilogue__heading">Additional Credits</h3>
-              <div class="epilogue__book-copy">
-                <p><strong>Google:</strong><br> Dave Crossland, Irin Kim, & Paula Ashton.</p>
+      <div class="page-body">
+        <p>*</p>
+        <p>"EAT ME"</p>
+        <p>* *</p>
 
-                <p><strong>Type specimen site:</strong><br> Amélie Lamont</p>
-              </div>
-            </div>
-
-            <div class="book-face__back">
-              <h1 class="book__heading">Crimson Pro</h1>
-              <span class="book__weightheading"></span>
-
-              <h2 class="book__subheading">is a variable font</h2>
-
-              <div class="book__copy">
-                <p>for book and digital production in the tradition
-                  of beautiful oldstyle typefaces.</p>
-                <p>Contemporary and classic, Crimson Pro comes in
-                  eight pre-defined weights from Extra light to Black, in Roman and
-                  Italic.</p>
-              </div>
-            </div>
-
-            <div class="book-face__left"></div>
-
-            <div class="book-face__right">Crimson Pro</div>
-          </div>
-        </div>
+        <p>$ ¢ X X X ? ! : ;</p>
+        <p>&lt; &gt; x + = + - . ,</p>
+        <p>‘ ’ “ ” *</p>
       </div>
-    </div>
+    </section>
+  </div>
+
+  <div class="pages">
+    <section class="page">
+    </section>
+
+    <section class="page">
+      <div class="page-body">
+        <p>Examples</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="pages">
+    <section class="page">
+    </section>
+
+    <section class="page">
+      <div class="page-body">
+        <p>Acknowledgements</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">28 – 31</span>
+      </header>
+      <div class="page-body">
+        <p>Crimson Pro supports a variety of languages. Select a language below to see Alice in Wonderland translated on the following page.</p>
+        <p>[image goes here]</p>
+        <ul class="design--language-list">
+          <li>Afrikaans</li>
+          <li>Albanian</li>
+          <li>Catalan</li>
+          <li>Croatian</li>
+          <li>Czech</li>
+          <li>Danish</li>
+          <li>Dutch</li>
+          <li>English</li>
+          <li>Estonian</li>
+          <li>Finnish</li>
+          <li>French</li>
+          <li>German</li>
+          <li>Hungarian</li>
+          <li>Icelandic</li>
+          <li>Italian</li>
+          <li>Latvian</li>
+          <li>Lithuanian</li>
+          <li>Maltese</li>
+          <li>Norwegian</li>
+          <li>Polish</li>
+          <li>Portuguese</li>
+          <li>Romanian</li>
+          <li>Slovak</li>
+          <li>Slovenian</li>
+          <li>Spanish</li>
+          <li>Swedish</li>
+          <li>Turkish</li>
+          <li>Vietnamese</li>
+          <li>Zulu</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">language support</span>
+      </header>
+
+      <div class="page-body">
+        <p>Alice's Adventures in Wonderland by Lewis Carroll</p>
+        <p>Chapter II: Pool of Tears</p>
+        <p>For the Mouse was swimming away from her as hard as it could go, and making quite a commotion in the pool as it went.</p>
+        <p>So she called softly after it, ‘Mouse dear! Do come back again, and we won’t talk about cats or dogs either, if you don’t like them!’ When the Mouse heard this, it turned round and swam slowly back to her: its face was quite pale (with passion, Alice thought), and it said in a low trembling voice, ‘Let us get to the shore, and then I’ll tell you my history, and you’ll understand why it is I hate cats and dogs.’</p>
+      </div>
+    </section>
+  </div>
+
+  <div class="pages">
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">32 – 35</span>
+      </header>
+      <div class="page-body">
+        <p>Jacques Le Bailley</p>
+        <p>info about jacques</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <header class="page__header">
+        <span class="page__header-meta">acknowledgments</span>
+      </header>
+
+      <div class="page-body">
+        <p>Sebastian Kosch</p>
+        <p>info about Sebastian</p>
+      </div>
+    </section>
   </div>
 </body>
 </html>

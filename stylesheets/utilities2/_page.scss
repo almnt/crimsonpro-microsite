@@ -1,0 +1,10 @@
+.page {
+  border: $border;
+  flex: 1 1 100%;
+  height: 98vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: $space--base $space--small;
+}

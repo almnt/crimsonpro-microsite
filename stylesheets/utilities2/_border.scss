@@ -1,0 +1,61 @@
+$border-helpers: (
+  "bb": "border-bottom",
+  "bl": "border-left",
+  "br": "border-right",
+  "bt": "border-top",
+);
+
+$border-widths: (
+  "medium": 2px,
+  "large": 3px,
+);
+
+$border-styles: (
+  solid : solid,
+  dashed : dashed,
+);
+
+@each $border-helper, $border-property in $border-helpers {
+  .border--#{$border-helper} {
+    #{$border-property}: $border;
+  }
+}
+
+@each $border-width, $widths-value in $border-widths {
+  @each $border-helper, $border-property in $border-helpers {
+    .border--#{$border-helper}--#{$border-width} {
+      #{$border-property}-width: $widths-value;
+      #{$border-property}-color: $border-color;
+      #{$border-property}-style: $border-style;
+    }
+  }
+}
+
+@each $border-style-type, $style-value in $border-styles {
+  @each $border-width, $widths-value in $border-widths {
+    @each $border-helper, $border-property in $border-helpers {
+      .border--#{$border-helper}--#{$border-width}--#{$border-style-type} {
+        #{$border-property}-width: $widths-value;
+        #{$border-property}-color: $border-color;
+        #{$border-property}-style: $border-style-type;
+      }
+    }
+  }
+}
+
+// Horizontal Borders
+.border--bh {
+  border-bottom: $border;
+  border-top: $border;
+}
+
+// Vertical Borders
+.border--bv {
+  border-bottom: $border;
+  border-top: $border;
+}
+
+// Border, all sides
+.border--all {
+  border: $border;
+}

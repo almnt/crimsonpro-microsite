@@ -1,0 +1,21 @@
+.header {
+  font-size: 16px;
+  margin-bottom: $space--base;
+  margin-top: $space--small;
+  text-transform: lowercase;
+
+  &--recto {
+    text-align: right;
+  }
+
+  &--verso {
+    text-align: left;
+  }
+
+  &--section-title {
+    font-size: 24px;
+    font-variation-settings: $font-weight--bold;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+}

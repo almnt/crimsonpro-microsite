@@ -1,0 +1,42 @@
+$font-size--min: 18px;
+$font-size--max: 19px;
+$screen-width--min: 320px;
+$screen-width--max: 1200px;
+
+html {
+  @include fluid-type($screen-width--min, $screen-width--max, $font-size--min, $font-size--max);
+  color: $font-color--base;
+  font-family: $font-family--base;
+  font-variation-settings: $font-weight--normal;
+  font-weight: 400;
+}
+
+body {
+  line-height: $line-height--body;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: $line-height--heading;
+  margin: 0 0 $space--small;
+}
+
+p {
+  margin: 0 0 $space--small;
+}
+
+strong {
+  font-variation-settings: $font-weight--bold;
+}
+
+hr {
+  border-bottom: $border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+}
