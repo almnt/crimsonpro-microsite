@@ -8,3 +8,11 @@
   overflow-y: scroll;
   padding: $space--base $space--small;
 }
+
+.page--full {
+  border: $border;
+  height: 98vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding: $space--base $space--small;
+}

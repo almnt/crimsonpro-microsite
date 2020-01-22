@@ -646,6 +646,13 @@ hr {
   overflow-y: scroll;
   padding: 16px 8px; }
 
+.page--full {
+  border: 1px solid #262626;
+  height: 98vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+  padding: 16px 8px; }
+
 .text--headline {
   color: #262626;
   margin: 0; }
