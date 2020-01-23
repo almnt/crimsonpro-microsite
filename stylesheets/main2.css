@@ -601,12 +601,21 @@ hr {
 
 .container {
   padding: 8px; }
-  .container--flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 1vw;
-    width: 98vw; }
+  @media screen and (min-width: 768px) {
+    .container {
+      margin: 0 auto;
+      max-width: 1200px; } }
+
+.container--flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 1vw;
+  width: 98vw; }
+  @media screen and (min-width: 768px) {
+    .container--flex {
+      margin: 0 auto;
+      max-width: 1200px; } }
 
 .flex, .flex--column, .flex--justify-around, .flex--justify-between, .flex--justify-end {
   display: flex; }
@@ -645,6 +654,14 @@ hr {
   overflow-x: hidden;
   overflow-y: scroll;
   padding: 16px 8px; }
+  @media screen and (min-width: 768px) {
+    .page {
+      flex: 1 1 50%;
+      padding: 16px; } }
+  @media screen and (min-width: 1200px) {
+    .page {
+      height: 85vh;
+      padding: 16px 32px; } }
 
 .page--full {
   border: 1px solid #262626;
@@ -652,6 +669,12 @@ hr {
   margin-bottom: 1vh;
   margin-top: 1vh;
   padding: 16px 8px; }
+  @media screen and (min-width: 768px) {
+    .page--full {
+      padding: 16px; } }
+  @media screen and (min-width: 1200px) {
+    .page--full {
+      padding: 32px; } }
 
 .text--headline {
   color: #262626;
