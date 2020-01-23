@@ -1,13 +1,9 @@
-$breakpoint--xsmall: 550px;
-$breakpoint--small: 768px;
-$breakpoint--medium: 720px;
+$breakpoint--small: 320px;
+$breakpoint--medium: 768px;
 $breakpoint--large: 1200px;
 
 @mixin breakpoint($point) {
-  @if $point == xsmall_up {
-    @media screen and (min-width: $breakpoint--xsmall) { @content ; }
-  }
-  @else if $point == small_up {
+  @if $point == small_up {
     @media screen and (min-width: $breakpoint--small)  { @content ; }
   }
   @else if $point == small_down {
@@ -26,6 +22,6 @@ $breakpoint--large: 1200px;
    @media screen and (min-width: $breakpoint--large)  { @content ; }
   }
   @else {
-    @error "There's an invalid breakpoint in the app that isn't declared in the breakpoints mixin.";
+    @error "There's an invalid breakpoint not declared in the breakpoints mixin.";
   }
 }
