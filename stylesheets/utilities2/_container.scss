@@ -1,5 +1,10 @@
 .container {
   padding: $space--small;
+
+  @include breakpoint(medium_up) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
 
 .container--flex {
@@ -8,4 +13,9 @@
   justify-content: center;
   margin: 0 1vw;
   width: 98vw;
+
+  @include breakpoint(medium_up) {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
 }
