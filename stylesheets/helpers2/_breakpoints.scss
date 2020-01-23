@@ -1,6 +1,6 @@
 $breakpoint--small: 320px;
 $breakpoint--medium: 768px;
-$breakpoint--large: 1200px;
+$breakpoint--large: 1024px;
 
 @mixin breakpoint($point) {
   @if $point == small_up {

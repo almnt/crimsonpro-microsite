@@ -2,7 +2,16 @@
   background-color: transparent;
   border-radius: $space--base;
   border: $border;
+  min-width: 50px;
   padding: $space--x-small $space--small;
+
+  @include breakpoint(medium_up) {
+    min-width: 65px;
+  }
+
+  @include breakpoint(large_up) {
+    min-width: 75px;
+  }
 
   &--100 {
     @extend .button--pill;

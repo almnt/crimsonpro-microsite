@@ -658,7 +658,7 @@ hr {
     .page {
       flex: 1 1 50%;
       padding: 16px; } }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     .page {
       height: 85vh;
       padding: 16px 32px; } }
@@ -672,7 +672,7 @@ hr {
   @media screen and (min-width: 768px) {
     .page--full {
       padding: 16px; } }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1024px) {
     .page--full {
       padding: 32px; } }
 
@@ -1084,7 +1084,14 @@ hr {
   background-color: transparent;
   border-radius: 16px;
   border: 1px solid #262626;
+  min-width: 50px;
   padding: 4px 8px; }
+  @media screen and (min-width: 768px) {
+    .button--pill, .button--pill--100, .button--pill--280 {
+      min-width: 65px; } }
+  @media screen and (min-width: 1024px) {
+    .button--pill, .button--pill--100, .button--pill--280 {
+      min-width: 75px; } }
   .button--pill--100 {
     width: 100px; }
   .button--pill--280 {
