@@ -1,7 +1,20 @@
+.weight-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include breakpoint(medium_up) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .weight-card {
   display: flex;
   flex-direction: column;
-  max-width: 140px;
+  max-width: 100px;
+
+  @include breakpoint(large_up) {
+    max-width: 120px;
+  }
 }
 
 .weight-card__label {
