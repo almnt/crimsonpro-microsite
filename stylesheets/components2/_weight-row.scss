@@ -2,36 +2,36 @@
   display: flex;
 
   &:nth-child(2) .weight-row__characters {
-    font-size: 150px;
+    font-size: 12rem;
     font-variation-settings: $font-weight--black;
   }
 
   &:nth-child(3) .weight-row__characters {
-    font-size: 110px;
+    font-size: 10rem;
     font-variation-settings: $font-weight--bold;
   }
 
   &:nth-child(4) .weight-row__characters {
-    font-size: 80px;
+    font-size: 8rem;
     font-variation-settings: $font-weight--semi-bold;
   }
 
   &:nth-child(5) .weight-row__characters {
-    font-size: 58px;
+    font-size: 6rem;
     font-variation-settings: $font-weight--medium;
   }
 
   &:nth-child(6) .weight-row__characters {
-    font-size: 40px;
+    font-size: 5rem;
   }
 
   &:nth-child(7) .weight-row__characters {
-    font-size: 30px;
+    font-size: 4rem;
     font-variation-settings: $font-weight--light;
   }
 
   &:nth-child(8) .weight-row__characters {
-    font-size: 21px;
+    font-size: 3rem;
     font-variation-settings: $font-weight--extra-light;
   }
 }
