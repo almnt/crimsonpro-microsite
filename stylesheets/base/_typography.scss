@@ -1,9 +1,18 @@
-html {
-  @include fluid-type($screen-width--min, $screen-width--max, $font-width--min, $font-width--max);
+$font-size--min: 18px;
+$font-size--max: 19px;
+$screen-width--min: 320px;
+$screen-width--max: 1200px;
 
-  color: var(--font-color--base);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
+html {
+  @include fluid-type($screen-width--min, $screen-width--max, $font-size--min, $font-size--max);
+  color: $font-color--base;
+  font-family: $font-family--base;
+  font-variation-settings: $font-weight--normal;
+  font-weight: 400;
+}
+
+body {
+  line-height: $line-height--body;
 }
 
 h1,
@@ -12,22 +21,22 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: var(--line-height--heading);
-  margin: 0 0 var(--spacing--small);
+  font-weight: normal;
+  line-height: $line-height--heading;
+  margin: 0 0 $space--small;
 }
 
 p {
-  margin: 0 0 var(--spacing--small);
+  margin: 0 0 $space--small;
 }
 
 strong {
-  font-variation-settings: var(--font-weight--bold);
+  font-variation-settings: $font-weight--bold;
 }
 
 hr {
-  border-bottom: var(--border);
+  border-bottom: $border;
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  margin: var(--spacing--medium) 0;
 }

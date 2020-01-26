@@ -2,29 +2,37 @@
 
 @import "reset/normalize";
 
-@import "base/mixins";
-@import "base/add-fullpage";
-@import "base/animations";
-@import "base/fonts";
-@import "base/variables";
-@import "base/inputs";
+@import "helpers/breakpoints";
+@import "helpers/font-face";
+@import "helpers/fluid-type";
+
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/variables";
+@import "settings/inputs";
+
 @import "base/layout";
 @import "base/media";
 @import "base/typography";
 
-@import "components/biology";
-@import "components/book";
-@import "components/dictionary";
-@import "components/manuscript";
-@import "components/newspaper";
-@import "components/page";
-@import "components/playground";
-@import "components/site-header";
-@import "components/site-navigation";
-@import "components/slider";
+@import "utilities/border";
+@import "utilities/container";
+@import "utilities/flex";
+@import "utilities/grid";
+@import "utilities/page";
+@import "utilities/text";
+@import "utilities/space";
 
-@import "sections/acknowledgements";
-@import "sections/design";
-@import "sections/epilogue";
-@import "sections/example";
-@import "sections/introduction";
+@import "components/header";
+@import "components/button";
+@import "components/button-pill";
+@import "components/button-round";
+@import "components/counter";
+@import "components/drink-me";
+@import "components/graphic";
+@import "components/grid-characters";
+@import "components/language-options";
+@import "components/select";
+@import "components/weight-card";
+@import "components/weight-letters";
+@import "components/weight-row";
