@@ -16,7 +16,7 @@ $border-width: 1px;
 $border: $border-width $border-style $border-color;
 
 // Space
-$space--base: 16px;
+$space--base: .8rem;
 $space--x-small: round($space--base * 0.25);
 $space--small: round($space--base * 0.5);
 $space--large: $space--base * 2;
