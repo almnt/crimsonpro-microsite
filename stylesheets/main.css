@@ -660,8 +660,7 @@ hr {
       padding: 16px; } }
   @media screen and (min-width: 1024px) {
     .page {
-      height: 85vh;
-      padding: 16px 32px; } }
+      padding: 16px 32px 32px; } }
 
 .page--full {
   border: 1px solid #262626;

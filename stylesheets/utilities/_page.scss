@@ -14,8 +14,7 @@
   }
 
   @include breakpoint(large_up) {
-    height: 85vh;
-    padding: $space--base $space--large;
+    padding: $space--base $space--large $space--large;
   }
 }
 
