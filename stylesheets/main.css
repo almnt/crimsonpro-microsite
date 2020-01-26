@@ -426,10 +426,10 @@ html {
     font-size: 18px; }
     @media screen and (min-width: 320px) {
       html {
-        font-size: calc(18px + 1 * ((100vw - 320px) / 880)); } }
-    @media screen and (min-width: 1200px) {
+        font-size: calc(18px + 2 * ((100vw - 320px) / 704)); } }
+    @media screen and (min-width: 1024px) {
       html {
-        font-size: 19px; } }
+        font-size: 20px; } }
 
 body {
   line-height: 1.3; }

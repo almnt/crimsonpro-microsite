@@ -1,7 +1,7 @@
 $font-size--min: 18px;
-$font-size--max: 19px;
+$font-size--max: 20px;
 $screen-width--min: 320px;
-$screen-width--max: 1200px;
+$screen-width--max: 1024px;
 
 html {
   @include fluid-type($screen-width--min, $screen-width--max, $font-size--min, $font-size--max);
