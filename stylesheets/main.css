@@ -1539,25 +1539,30 @@ hr {
 .weight-row {
   display: flex; }
   .weight-row:nth-child(2) .weight-row__characters {
-    font-size: 12rem;
-    font-variation-settings: "wght" 900; }
+    font-size: 17.5rem;
+    font-variation-settings: "wght" 900;
+    margin-top: -6.5rem; }
   .weight-row:nth-child(3) .weight-row__characters {
-    font-size: 10rem;
-    font-variation-settings: "wght" 700; }
+    font-size: 9rem;
+    font-variation-settings: "wght" 700;
+    margin-top: -6.5rem; }
   .weight-row:nth-child(4) .weight-row__characters {
-    font-size: 8rem;
-    font-variation-settings: "wght" 600; }
+    font-size: 7rem;
+    font-variation-settings: "wght" 600;
+    margin-top: -2.5rem; }
   .weight-row:nth-child(5) .weight-row__characters {
-    font-size: 6rem;
-    font-variation-settings: "wght" 500; }
+    font-size: 3.6rem;
+    font-variation-settings: "wght" 500;
+    margin-top: -1.5rem; }
   .weight-row:nth-child(6) .weight-row__characters {
-    font-size: 5rem; }
+    font-size: 2.6rem; }
   .weight-row:nth-child(7) .weight-row__characters {
-    font-size: 4rem;
+    font-size: 1.6rem;
     font-variation-settings: "wght" 300; }
   .weight-row:nth-child(8) .weight-row__characters {
-    font-size: 3rem;
-    font-variation-settings: "wght" 200; }
+    font-size: 1.1rem;
+    font-variation-settings: "wght" 200;
+    margin-top: 1rem; }
 
 .weight-row__weight {
   align-self: center;
@@ -1569,7 +1574,9 @@ hr {
   margin: 0; }
 
 .weight-row__characters {
+  display: flex;
   flex-grow: 2;
+  justify-content: space-around;
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
