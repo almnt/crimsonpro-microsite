@@ -6,7 +6,7 @@
   margin-top: 1vh;
   overflow-x: hidden;
   overflow-y: scroll;
-  padding: $space--base $space--small;
+  padding: $space--base $space--small $space--large;
 
   @include breakpoint(medium_up) {
     flex: 1 1 50%;
@@ -14,7 +14,12 @@
   }
 
   @include breakpoint(large_up) {
-    padding: $space--base $space--large $space--large;
+    &:nth-child(even) {
+      padding: $space--base $space--x-large $space--large $space--large;
+    }
+    &:nth-child(odd) {
+      padding: $space--base $space--large $space--large $space--x-large;
+    }
   }
 }
 
