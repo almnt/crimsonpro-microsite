@@ -1483,10 +1483,20 @@ hr {
   .select option {
     font-weight: normal; }
 
+.weight-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  @media screen and (min-width: 768px) {
+    .weight-cards {
+      grid-template-columns: repeat(3, 1fr); } }
+
 .weight-card {
   display: flex;
   flex-direction: column;
-  max-width: 140px; }
+  max-width: 100px; }
+  @media screen and (min-width: 1024px) {
+    .weight-card {
+      max-width: 120px; } }
 
 .weight-card__label {
   color: #262626;
@@ -1513,7 +1523,7 @@ hr {
   -webkit-text-stroke: 1px #262626;
   color: #d9d9d9;
   display: inline-block;
-  font-size: 72px;
+  font-size: 6rem;
   line-height: .75;
   margin: 0; }
   .weight-letters__letter:nth-child(6) {
@@ -1527,24 +1537,24 @@ hr {
 .weight-row {
   display: flex; }
   .weight-row:nth-child(2) .weight-row__characters {
-    font-size: 150px;
+    font-size: 12rem;
     font-variation-settings: "wght" 900; }
   .weight-row:nth-child(3) .weight-row__characters {
-    font-size: 110px;
+    font-size: 10rem;
     font-variation-settings: "wght" 700; }
   .weight-row:nth-child(4) .weight-row__characters {
-    font-size: 80px;
+    font-size: 8rem;
     font-variation-settings: "wght" 600; }
   .weight-row:nth-child(5) .weight-row__characters {
-    font-size: 58px;
+    font-size: 6rem;
     font-variation-settings: "wght" 500; }
   .weight-row:nth-child(6) .weight-row__characters {
-    font-size: 40px; }
+    font-size: 5rem; }
   .weight-row:nth-child(7) .weight-row__characters {
-    font-size: 30px;
+    font-size: 4rem;
     font-variation-settings: "wght" 300; }
   .weight-row:nth-child(8) .weight-row__characters {
-    font-size: 21px;
+    font-size: 3rem;
     font-variation-settings: "wght" 200; }
 
 .weight-row__weight {
