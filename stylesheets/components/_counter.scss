@@ -1,21 +1,23 @@
 .counter {
-  font-size: 600px;
+  font-size: 40rem;
   line-height: 0.9;
   margin-bottom: $space--large;
+  margin-top: -6.5rem;
   position: relative;
 
   &::before {
     background-color: $accent-blue;
+    border-radius: 10% 100% 100% 10%;
     color: $neutral-white;
     content: "counter";
-    font-size: 18px;
-    height: 156px;
+    font-size: 1rem;
+    height: 11rem;
     left: 35%;
     padding-top: 20%;
     position: absolute;
     text-align: center;
-    top: 156px;
-    width: 120px;
+    top: 10rem;
+    width: 9rem;
     z-index: $z-index-behind;
   }
 }
