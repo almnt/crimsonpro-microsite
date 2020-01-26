@@ -1484,7 +1484,8 @@ hr {
 
 .weight-cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; }
   @media screen and (min-width: 768px) {
     .weight-cards {
       grid-template-columns: repeat(3, 1fr); } }
@@ -1509,7 +1510,7 @@ hr {
 
 .weight-card__character {
   color: #262626;
-  font-size: 240px;
+  font-size: 12rem;
   font-variation-settings: "wght" 900;
   margin: 0;
   text-align: center; }

@@ -1,6 +1,7 @@
 .weight-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
 
   @include breakpoint(medium_up) {
     grid-template-columns: repeat(3, 1fr);
@@ -31,7 +32,7 @@
 
 .weight-card__character {
   color: $font-color--base;
-  font-size: 240px;
+  font-size: 12rem;
   font-variation-settings: $font-weight--black;
   margin: 0;
   text-align: center;
