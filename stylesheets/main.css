@@ -680,11 +680,11 @@ hr {
   color: #262626;
   margin: 0; }
   .text--headline--1 {
-    font-size: 72px;
+    font-size: 3.6rem;
     font-variation-settings: "wght" 400;
     line-height: 1.1; }
   .text--headline--2 {
-    font-size: 54px;
+    font-size: 2.7rem;
     font-variation-settings: "wght" 400;
     line-height: 1.1; }
   .text--headline--3 {
@@ -692,16 +692,16 @@ hr {
     font-variation-settings: "wght" 400;
     line-height: 1.1; }
   .text--headline--4 {
-    font-size: 32px;
+    font-size: 1.6rem;
     font-variation-settings: "wght" 400;
     line-height: 1.2; }
   .text--headline--5 {
-    font-size: 25px;
+    font-size: 1.25rem;
     font-variation-settings: "wght" 400;
     line-height: 1.2; }
   .text--headline--6 {
     font-family: "Crimson Pro Italic", serif;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-variation-settings: "wght" 300;
     line-height: 1.2; }
   .text--headline--light-italic {

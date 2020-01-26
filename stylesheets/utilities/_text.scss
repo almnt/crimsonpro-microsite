@@ -3,13 +3,13 @@
   margin: 0;
 
   &--1 {
-    font-size: 72px;
+    font-size: 3.6rem;
     font-variation-settings: $font-weight--normal;
     line-height: 1.1;
   }
 
   &--2 {
-    font-size: 54px;
+    font-size: 2.7rem;
     font-variation-settings: $font-weight--normal;
     line-height: 1.1;
   }
@@ -21,20 +21,20 @@
   }
 
   &--4 {
-    font-size: 32px;
+    font-size: 1.6rem;
     font-variation-settings: $font-weight--normal;
     line-height: 1.2;
   }
 
   &--5 {
-    font-size: 25px;
+    font-size: 1.25rem;
     font-variation-settings: $font-weight--normal;
     line-height: 1.2;
   }
 
   &--6 {
     font-family: $font-family--italic;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-variation-settings: $font-weight--light;
     line-height: 1.2;
   }
