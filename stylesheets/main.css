@@ -1527,9 +1527,9 @@ hr {
   -webkit-text-stroke: 1px #262626;
   color: #d9d9d9;
   display: inline-block;
-  font-size: 6rem;
+  font-size: 6.5rem;
   line-height: .75;
-  margin: 0; }
+  margin: -25px 0 0 0; }
   .weight-letters__letter:nth-child(6) {
     background: linear-gradient(90deg, #d9d9d9 0%, #fec0f0 100%);
     color: transparent;

@@ -7,9 +7,9 @@
   -webkit-text-stroke: 1px $neutral-black;
   color: $neutral-gray-85;
   display: inline-block;
-  font-size: 6rem;
+  font-size: 6.5rem;
   line-height: .75;
-  margin: 0;
+  margin: -25px 0 0 0;
 
   &:nth-child(6) {
     background: linear-gradient(90deg, $neutral-gray-85 0%, $accent-pink 100%);
