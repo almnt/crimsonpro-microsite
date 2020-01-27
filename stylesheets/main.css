@@ -1219,8 +1219,9 @@ hr {
 
 .grid-characters__upper-character {
   color: #262626;
-  font-size: 80px;
+  font-size: 5.65rem;
   justify-self: center;
+  line-height: 0.825;
   margin: 0; }
   .grid-characters__upper-character:nth-child(1) {
     grid-area: a; }
@@ -1283,7 +1284,8 @@ hr {
 
 .grid-characters__upper-symbols {
   color: #262626;
-  font-size: 80px;
+  font-size: 5.5rem;
+  line-height: 0.825;
   margin: 0;
   text-align: center; }
   .grid-characters__upper-symbols:nth-child(1) {
@@ -1325,8 +1327,9 @@ hr {
 
 .grid-characters__lower-character {
   color: #262626;
-  font-size: 60px;
+  font-size: 4.6rem;
   justify-self: center;
+  line-height: .875;
   margin: 0; }
   .grid-characters__lower-character:nth-child(1) {
     grid-area: a; }
