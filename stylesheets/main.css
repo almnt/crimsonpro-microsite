@@ -1406,15 +1406,24 @@ hr {
 
 .language-options {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-template-areas: "afrikaans english italian romanian" "albanian estonian latvian slovak" "catalan finnish lithuanian slovenian" "croatian french maltese spanish" "czech german norwegian swedish" "danish hungarian polish turkish" "dutch icelandic portuguese vietnamese"; }
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  grid-template-areas: "afrikaans english" "albanian estonian" "catalan finnish" "croatian french" "czech german" "danish hungarian" "dutch icelandic" "italian romanian" "latvian slovak" "lithuanian slovenian" "maltese spanish" "norwegian swedish" "polish turkish" "portuguese vietnamese"; }
+  @media screen and (min-width: 768px) {
+    .language-options {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      grid-template-areas: "afrikaans english italian romanian" "albanian estonian latvian slovak" "catalan finnish lithuanian slovenian" "croatian french maltese spanish" "czech german norwegian swedish" "danish hungarian polish turkish" "dutch icelandic portuguese vietnamese"; } }
 
 .language-options__option {
   background-color: transparent;
-  border-radius: 0.8rem;
+  border-radius: 1.6rem;
   border: 1px solid #262626;
-  padding: 0.2rem 0.4rem; }
+  font-size: .9rem;
+  max-width: 120px;
+  padding: 0.4rem;
+  text-transform: uppercase; }
   .language-options__option:nth-child(1) {
     background-color: rgba(254, 192, 240, 0.4);
     grid-area: afrikaans; }
