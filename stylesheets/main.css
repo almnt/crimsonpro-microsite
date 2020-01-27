@@ -1147,9 +1147,10 @@ hr {
 .drink-me__text {
   color: #ff0000;
   font-family: "Crimson Pro Italic", serif;
-  font-size: 80px;
+  font-size: 9rem;
   font-style: italic;
   font-variation-settings: "wght" 900;
+  line-height: .75;
   margin-bottom: 1.6rem;
   text-align: center; }
 
@@ -1172,6 +1173,23 @@ hr {
     background-color: #3eb549; }
   .drink-me__controls-colors .button--round-small:nth-child(8) {
     background-color: #f2f2f2; }
+
+.drink-me__group {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .drink-me__group {
+      flex-direction: row; } }
+
+.drink-me__group-column:nth-child(3) {
+  border-top: 1px solid #262626; }
+@media screen and (min-width: 768px) {
+  .drink-me__group-column {
+    max-width: 250px; } }
+
+.drink-me__group-divider {
+  width: 1px;
+  background-color: #262626; }
 
 .graphic {
   display: inline-block;

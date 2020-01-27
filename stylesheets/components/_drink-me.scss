@@ -1,9 +1,10 @@
 .drink-me__text {
   color: $accent-red;
   font-family: $font-family--italic;
-  font-size: 80px;
+  font-size: 9rem;
   font-style: italic;
   font-variation-settings: $font-weight--black;
+  line-height: .75;
   margin-bottom: $space--large;
   text-align: center;
 }
@@ -43,4 +44,29 @@
   & .button--round-small:nth-child(8) {
     background-color: $neutral-white;
   }
+}
+
+.drink-me__group {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoint(medium_up) {
+    flex-direction: row;
+  }
+}
+
+.drink-me__group-column {
+
+  &:nth-child(3) {
+    border-top: $border;
+  }
+
+  @include breakpoint(medium_up) {
+    max-width: 250px;
+  }
+}
+
+.drink-me__group-divider {
+  width: 1px;
+  background-color: $neutral-black;
 }
