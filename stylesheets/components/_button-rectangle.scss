@@ -1,0 +1,16 @@
+.button--rectangle-base {
+  background: transparent;
+  border-radius: 0;
+  border: $border;
+  height: 35;
+  padding: $space--small;
+  width: 130px;
+
+  &--active-red {
+    background-color: $accent-red;
+    border: $border;
+    color: $neutral-white;
+    font-family: $font-family--italic;
+    font-style: italic;
+  }
+}

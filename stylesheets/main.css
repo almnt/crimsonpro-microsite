@@ -1101,6 +1101,20 @@ hr {
     background-color: #ff0000;
     color: #f2f2f2; }
 
+.button--rectangle-base {
+  background: transparent;
+  border-radius: 0;
+  border: 1px solid #262626;
+  height: 35;
+  padding: 0.4rem;
+  width: 130px; }
+  .button--rectangle-base--active-red {
+    background-color: #ff0000;
+    border: 1px solid #262626;
+    color: #f2f2f2;
+    font-family: "Crimson Pro Italic", serif;
+    font-style: italic; }
+
 .button--round-base {
   background: transparent;
   border-radius: 100%;
