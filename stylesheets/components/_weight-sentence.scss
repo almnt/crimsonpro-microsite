@@ -1,0 +1,63 @@
+.weight-sentences__sentence {
+  overflow: hidden;
+  white-space: nowrap;
+
+  &:nth-child(1) {
+    font-size: 4rem;
+    font-variation-settings: $font-weight--medium;
+  }
+
+  &:nth-child(2) {
+    font-size: 3.6rem;
+    font-variation-settings: $font-weight--semi-bold;
+  }
+
+  &:nth-child(3) {
+    font-size: 3rem;
+    font-variation-settings: $font-weight--bold;
+  }
+
+  &:nth-child(4) {
+    font-size: 2.4rem;
+    font-variation-settings: $font-weight--extra-bold;
+  }
+
+  &:nth-child(5) {
+    font-size: 1.8rem;
+    font-variation-settings: $font-weight--black;
+  }
+
+  &:nth-child(6) {
+    font-size: 1.6rem;
+    font-variation-settings: $font-weight--semi-bold;
+  }
+
+  &:nth-child(7) {
+    font-size: 1.4rem;
+    font-variation-settings: $font-weight--medium;
+  }
+
+  &:nth-child(8) {
+    font-size: 1.2rem;
+    font-variation-settings: $font-weight--medium;
+  }
+
+  &:nth-child(9) {
+    font-size: 1rem;
+  }
+
+  &:nth-child(10) {
+    font-size: 0.9rem;
+    font-variation-settings: $font-weight--light;
+  }
+
+  &:nth-child(11) {
+    font-size: 0.8rem;
+    font-variation-settings: $font-weight--light;
+  }
+
+  &:nth-child(12) {
+    font-size: 0.7rem;
+    font-variation-settings: $font-weight--extra-light;
+  }
+}

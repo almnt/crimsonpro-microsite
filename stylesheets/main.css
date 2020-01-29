@@ -832,10 +832,6 @@ hr {
 .text--weight--black {
   font-variation-settings: "wght" 900; }
 
-.text--no-wrap {
-  overflow: hidden;
-  white-space: nowrap; }
-
 .text--center {
   text-align: center; }
 
@@ -1704,5 +1700,44 @@ hr {
   flex-grow: 2;
   justify-content: space-around;
   text-align: center; }
+
+.weight-sentences__sentence {
+  overflow: hidden;
+  white-space: nowrap; }
+  .weight-sentences__sentence:nth-child(1) {
+    font-size: 4rem;
+    font-variation-settings: "wght" 500; }
+  .weight-sentences__sentence:nth-child(2) {
+    font-size: 3.6rem;
+    font-variation-settings: "wght" 600; }
+  .weight-sentences__sentence:nth-child(3) {
+    font-size: 3rem;
+    font-variation-settings: "wght" 700; }
+  .weight-sentences__sentence:nth-child(4) {
+    font-size: 2.4rem;
+    font-variation-settings: "wght" 800; }
+  .weight-sentences__sentence:nth-child(5) {
+    font-size: 1.8rem;
+    font-variation-settings: "wght" 900; }
+  .weight-sentences__sentence:nth-child(6) {
+    font-size: 1.6rem;
+    font-variation-settings: "wght" 600; }
+  .weight-sentences__sentence:nth-child(7) {
+    font-size: 1.4rem;
+    font-variation-settings: "wght" 500; }
+  .weight-sentences__sentence:nth-child(8) {
+    font-size: 1.2rem;
+    font-variation-settings: "wght" 500; }
+  .weight-sentences__sentence:nth-child(9) {
+    font-size: 1rem; }
+  .weight-sentences__sentence:nth-child(10) {
+    font-size: 0.9rem;
+    font-variation-settings: "wght" 300; }
+  .weight-sentences__sentence:nth-child(11) {
+    font-size: 0.8rem;
+    font-variation-settings: "wght" 300; }
+  .weight-sentences__sentence:nth-child(12) {
+    font-size: 0.7rem;
+    font-variation-settings: "wght" 200; }
 
 /*# sourceMappingURL=main.css.map */
