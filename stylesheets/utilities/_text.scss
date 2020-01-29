@@ -1,3 +1,21 @@
+.text--title {
+  font-size: 1.4rem;
+  font-variation-settings: $font-weight--normal;
+  line-height: 1.1;
+  text-align: center;
+
+  @include breakpoint(large_up) {
+    font-size: 2rem;
+  }
+
+  &--stroke {
+    -webkit-text-stroke: 1px $neutral-black;
+    color: $neutral-white;
+    font-family: $font-family--italic;
+    font-style: italic;
+  }
+}
+
 .text--headline {
   color: $font-color--base;
   margin: 0;
