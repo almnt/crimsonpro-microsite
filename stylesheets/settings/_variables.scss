@@ -24,4 +24,5 @@ $space--large: $space--base * 2;
 $space--x-large: $space--base * 4;
 
 // Z-Indices
-$z-index-behind: -1;
+$z-index--base: 0;
+$z-index--behind: -1;
