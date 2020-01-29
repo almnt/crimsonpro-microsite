@@ -1582,9 +1582,13 @@ hr {
   -webkit-text-stroke: 1px #262626;
   color: #d9d9d9;
   display: inline-block;
-  font-size: 6.5rem;
-  line-height: .75;
+  font-size: 3.5rem;
+  line-height: 1;
   margin: -25px 0 0 0; }
+  @media screen and (min-width: 1024px) {
+    .weight-letters__letter {
+      font-size: 6.5rem;
+      line-height: .75; } }
   .weight-letters__letter:nth-child(6) {
     background: linear-gradient(90deg, #d9d9d9 0%, #fec0f0 100%);
     color: transparent;
