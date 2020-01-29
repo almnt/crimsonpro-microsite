@@ -1,23 +1,19 @@
 .language-options {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   grid-template-areas:
-  "afrikaans english"
-  "albanian estonian"
-  "catalan finnish"
-  "croatian french"
-  "czech german"
-  "danish hungarian"
-  "dutch icelandic"
-  "italian romanian"
-  "latvian slovak"
-  "lithuanian slovenian"
-  "maltese spanish"
-  "norwegian swedish"
-  "polish turkish"
-  "portuguese vietnamese";
+  "afrikaans albanian catalan"
+  "croatian czech danish"
+  "dutch english estonian"
+  "finnish french german"
+  "hungarian icelandic italian"
+  "latvian lithuanian maltese"
+  "norwegian polish portuguese"
+  "romanian slovak slovenian"
+  "spanish swedish turkish"
+  "vietnamese . .";
 
   @include breakpoint(medium_up) {
     grid-template-columns: repeat(4, 1fr);
@@ -37,38 +33,37 @@
   background-color: transparent;
   border-radius: $space--large;
   border: $border;
-  font-size: .9rem;
-  max-width: 120px;
+  font-size: .8rem;
+  width: 100px;
   padding: $space--small;
   text-transform: uppercase;
 
+  @include breakpoint(large_up) {
+    font-size: .9rem;
+    width: 120px;
+  }
+
   &:nth-child(1) {
-    background-color: transparentize($accent-pink, .6);
     grid-area: afrikaans;
   }
 
   &:nth-child(2) {
-    background-color: transparentize($accent-pale-blue, .6);
     grid-area: albanian;
   }
 
   &:nth-child(3) {
-    background-color: transparentize($accent-yellow, .6);
     grid-area: catalan;
   }
 
   &:nth-child(4) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: croatian;
   }
 
   &:nth-child(5) {
-    background-color: transparentize($accent-pale-blue, .6);
     grid-area: czech;
   }
 
   &:nth-child(6) {
-    background-color: transparentize($accent-yellow, .6);
     grid-area: danish;
   }
 
@@ -77,107 +72,86 @@
   }
 
   &:nth-child(8) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: english;
   }
 
   &:nth-child(9) {
-    background-color: transparentize($accent-green, .6);
     grid-area: estonian;
   }
 
   &:nth-child(10) {
-    background-color: transparentize($neutral-gray-85, .6);
     grid-area: finnish;
   }
 
   &:nth-child(11) {
-    background-color: transparentize($accent-pink, .6);
     grid-area: french;
   }
 
   &:nth-child(12) {
-    background-color: transparentize($accent-green, .6);
     grid-area: german;
   }
 
   &:nth-child(13) {
-    background-color: transparentize($accent-brown, .6);
     grid-area: hungarian;
   }
 
   &:nth-child(14) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: icelandic;
   }
 
   &:nth-child(15) {
-    background-color: transparentize($accent-yellow, .6);
     grid-area: italian;
   }
 
   &:nth-child(16) {
-    background-color: transparentize($accent-pale-blue, .6);
     grid-area: latvian;
   }
 
   &:nth-child(17) {
-    background-color: transparentize($accent-pink, .6);
     grid-area: lithuanian;
   }
 
   &:nth-child(18) {
-    background-color: transparentize($accent-brown, .6);
     grid-area: maltese;
   }
 
   &:nth-child(19) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: norwegian;
   }
 
   &:nth-child(20) {
-    background-color: transparentize($neutral-gray-85, .6);
     grid-area: polish;
   }
 
   &:nth-child(21) {
-    background-color: transparentize($accent-yellow, .6);
     grid-area: portuguese;
   }
 
   &:nth-child(22) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: romanian;
   }
 
   &:nth-child(23) {
-    background-color: transparentize($neutral-gray-85, .6);
     grid-area: slovak;
   }
 
   &:nth-child(24) {
-    background-color: transparentize($accent-blue, .6);
     grid-area: slovenian;
   }
 
   &:nth-child(25) {
-    background-color: transparentize($accent-yellow, .6);
     grid-area: spanish;
   }
 
   &:nth-child(26) {
-    background-color: transparentize($accent-green, .6);
     grid-area: swedish;
   }
 
   &:nth-child(27) {
-    background-color: transparentize($accent-pink, .6);
     grid-area: turkish;
   }
 
   &:nth-child(28) {
-    background-color: transparentize($accent-brown, .6);
     grid-area: vietnamese;
   }
 }

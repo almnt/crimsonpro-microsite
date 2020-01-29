@@ -1439,9 +1439,9 @@ hr {
 .language-options {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(14, 1fr);
-  grid-template-areas: "afrikaans english" "albanian estonian" "catalan finnish" "croatian french" "czech german" "danish hungarian" "dutch icelandic" "italian romanian" "latvian slovak" "lithuanian slovenian" "maltese spanish" "norwegian swedish" "polish turkish" "portuguese vietnamese"; }
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-areas: "afrikaans albanian catalan" "croatian czech danish" "dutch english estonian" "finnish french german" "hungarian icelandic italian" "latvian lithuanian maltese" "norwegian polish portuguese" "romanian slovak slovenian" "spanish swedish turkish" "vietnamese . ."; }
   @media screen and (min-width: 768px) {
     .language-options {
       grid-template-columns: repeat(4, 1fr);
@@ -1452,92 +1452,69 @@ hr {
   background-color: transparent;
   border-radius: 1.6rem;
   border: 1px solid #262626;
-  font-size: .9rem;
-  max-width: 120px;
+  font-size: .8rem;
+  width: 100px;
   padding: 0.4rem;
   text-transform: uppercase; }
+  @media screen and (min-width: 1024px) {
+    .language-options__option {
+      font-size: .9rem;
+      width: 120px; } }
   .language-options__option:nth-child(1) {
-    background-color: rgba(254, 192, 240, 0.4);
     grid-area: afrikaans; }
   .language-options__option:nth-child(2) {
-    background-color: rgba(221, 232, 242, 0.4);
     grid-area: albanian; }
   .language-options__option:nth-child(3) {
-    background-color: rgba(255, 255, 0, 0.4);
     grid-area: catalan; }
   .language-options__option:nth-child(4) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: croatian; }
   .language-options__option:nth-child(5) {
-    background-color: rgba(221, 232, 242, 0.4);
     grid-area: czech; }
   .language-options__option:nth-child(6) {
-    background-color: rgba(255, 255, 0, 0.4);
     grid-area: danish; }
   .language-options__option:nth-child(7) {
     grid-area: dutch; }
   .language-options__option:nth-child(8) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: english; }
   .language-options__option:nth-child(9) {
-    background-color: rgba(62, 181, 73, 0.4);
     grid-area: estonian; }
   .language-options__option:nth-child(10) {
-    background-color: rgba(217, 217, 217, 0.4);
     grid-area: finnish; }
   .language-options__option:nth-child(11) {
-    background-color: rgba(254, 192, 240, 0.4);
     grid-area: french; }
   .language-options__option:nth-child(12) {
-    background-color: rgba(62, 181, 73, 0.4);
     grid-area: german; }
   .language-options__option:nth-child(13) {
-    background-color: rgba(215, 176, 137, 0.4);
     grid-area: hungarian; }
   .language-options__option:nth-child(14) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: icelandic; }
   .language-options__option:nth-child(15) {
-    background-color: rgba(255, 255, 0, 0.4);
     grid-area: italian; }
   .language-options__option:nth-child(16) {
-    background-color: rgba(221, 232, 242, 0.4);
     grid-area: latvian; }
   .language-options__option:nth-child(17) {
-    background-color: rgba(254, 192, 240, 0.4);
     grid-area: lithuanian; }
   .language-options__option:nth-child(18) {
-    background-color: rgba(215, 176, 137, 0.4);
     grid-area: maltese; }
   .language-options__option:nth-child(19) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: norwegian; }
   .language-options__option:nth-child(20) {
-    background-color: rgba(217, 217, 217, 0.4);
     grid-area: polish; }
   .language-options__option:nth-child(21) {
-    background-color: rgba(255, 255, 0, 0.4);
     grid-area: portuguese; }
   .language-options__option:nth-child(22) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: romanian; }
   .language-options__option:nth-child(23) {
-    background-color: rgba(217, 217, 217, 0.4);
     grid-area: slovak; }
   .language-options__option:nth-child(24) {
-    background-color: rgba(112, 204, 247, 0.4);
     grid-area: slovenian; }
   .language-options__option:nth-child(25) {
-    background-color: rgba(255, 255, 0, 0.4);
     grid-area: spanish; }
   .language-options__option:nth-child(26) {
-    background-color: rgba(62, 181, 73, 0.4);
     grid-area: swedish; }
   .language-options__option:nth-child(27) {
-    background-color: rgba(254, 192, 240, 0.4);
     grid-area: turkish; }
   .language-options__option:nth-child(28) {
-    background-color: rgba(215, 176, 137, 0.4);
     grid-area: vietnamese; }
 
 .select {
