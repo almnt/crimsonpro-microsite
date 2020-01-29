@@ -1,28 +1,88 @@
 .weight-row {
   display: flex;
 
+  &:nth-child(2) {
+    margin-top: -2.5rem;
+
+    @include breakpoint(large_up) {
+      margin-top: -6.5rem;
+    }
+  }
+
+  &:nth-child(3) {
+    margin-top: -3.5rem;
+
+    @include breakpoint(large_up) {
+      margin-top: -5rem;
+    }
+  }
+
+  &:nth-child(4) {
+    margin-top: -1.5rem;
+
+    @include breakpoint(large_up) {
+      margin-top: -2rem;
+    }
+  }
+
+  &:nth-child(5) {
+    margin-top: -1rem;
+  }
+
+  &:nth-child(6) {
+    @include breakpoint(large_up) {
+      margin-top: .25rem;
+    }
+  }
+
+  &:nth-child(7) {
+    @include breakpoint(large_up) {
+      margin-top: .25rem;
+    }
+  }
+
+  &:nth-child(8) {
+    margin-top: .5rem;
+
+    @include breakpoint(large_up) {
+      margin-top: .35rem;
+    }
+  }
+
   &:nth-child(2) .weight-row__characters {
-    font-size: 17.5rem;
+    font-size: 10rem;
     font-variation-settings: $font-weight--black;
-    margin-top: -6.5rem;
+
+    @include breakpoint(large_up) {
+      font-size: 17.5rem;
+    }
   }
 
   &:nth-child(3) .weight-row__characters {
-    font-size: 9rem;
+    font-size: 6rem;
     font-variation-settings: $font-weight--bold;
-    margin-top: -6.5rem;
+
+    @include breakpoint(large_up) {
+      font-size: 9rem;
+    }
   }
 
   &:nth-child(4) .weight-row__characters {
-    font-size: 7rem;
+    font-size: 5rem;
     font-variation-settings: $font-weight--semi-bold;
-    margin-top: -2.5rem;
+
+    @include breakpoint(large_up) {
+      font-size: 7rem;
+    }
   }
 
   &:nth-child(5) .weight-row__characters {
-    font-size: 3.6rem;
+    font-size: 4rem;
     font-variation-settings: $font-weight--medium;
-    margin-top: -1.5rem;
+
+    @include breakpoint(large_up) {
+      font-size: 3.6rem;
+    }
   }
 
   &:nth-child(6) .weight-row__characters {
@@ -37,7 +97,6 @@
   &:nth-child(8) .weight-row__characters {
     font-size: 1.1rem;
     font-variation-settings: $font-weight--extra-light;
-    margin-top: 1rem;
   }
 }
 
