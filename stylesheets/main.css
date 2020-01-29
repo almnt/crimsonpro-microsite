@@ -1195,6 +1195,14 @@ hr {
         top: 10rem;
         width: 9rem; } }
 
+.dictionary {
+  background-color: transparent; }
+
+.dictionary__entry {
+  background-color: #dde8f2;
+  border: 1px solid #262626;
+  padding: 0.8rem; }
+
 .drink-me__text {
   color: #eb0000;
   font-family: "Crimson Pro Italic", serif;

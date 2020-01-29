@@ -1,0 +1,9 @@
+.dictionary {
+  background-color: transparent;
+}
+
+.dictionary__entry {
+  background-color: $accent-pale-blue;
+  border: $border;
+  padding: $space--base;
+}
