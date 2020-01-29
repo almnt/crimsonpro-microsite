@@ -6,7 +6,7 @@
   margin-bottom: 1vh;
   margin-top: 1vh;
   overflow-x: hidden;
-  padding: $space--base $space--small $space--large;
+  padding: $space--base $space--base $space--large;
 
   @include breakpoint(medium_up) {
     flex: 1 1 50%;
