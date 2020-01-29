@@ -1,12 +1,17 @@
 .drink-me__text {
   color: $accent-red;
   font-family: $font-family--italic;
-  font-size: 9rem;
+  font-size: 5rem;
   font-style: italic;
   font-variation-settings: $font-weight--black;
-  line-height: .75;
-  margin-bottom: $space--large;
+  line-height: 1;
+  margin-bottom: $space--x-large;
   text-align: center;
+
+  @include breakpoint(large_up) {
+    font-size: 9rem;
+    line-height: 0.75;
+  }
 }
 
 .drink-me__controls-colors {

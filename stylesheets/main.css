@@ -1177,12 +1177,16 @@ hr {
 .drink-me__text {
   color: #ff0000;
   font-family: "Crimson Pro Italic", serif;
-  font-size: 9rem;
+  font-size: 5rem;
   font-style: italic;
   font-variation-settings: "wght" 900;
-  line-height: .75;
-  margin-bottom: 1.6rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
   text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .drink-me__text {
+      font-size: 9rem;
+      line-height: 0.75; } }
 
 .drink-me__controls-colors {
   display: flex;
