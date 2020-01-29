@@ -1072,7 +1072,7 @@ hr {
     border-radius: 100%;
     color: #fec0f0; }
   .button--round--active--2 {
-    background-color: #ff0000;
+    background-color: #eb0000;
     border-radius: 100%;
     color: #f2f2f2;
     border: 1px solid #262626; }
@@ -1083,13 +1083,13 @@ hr {
 
 .button--color--red {
   border: 1px solid #262626;
-  background-color: #ff0000; }
+  background-color: #eb0000; }
 .button--color--pink {
   border: 1px solid #262626;
   background-color: #fec0f0; }
 .button--color--blue {
   border: 1px solid #262626;
-  background-color: #70ccf7; }
+  background-color: #00aeef; }
 .button--color--green {
   border: 1px solid #262626;
   background-color: #3eb549; }
@@ -1123,7 +1123,7 @@ hr {
   .button--pill--280 {
     width: 280px; }
   .button--pill--active-red {
-    background-color: #ff0000;
+    background-color: #eb0000;
     color: #f2f2f2; }
 
 .button--rectangle-base {
@@ -1134,7 +1134,7 @@ hr {
   padding: 0.4rem;
   width: 130px; }
   .button--rectangle-base--active-red {
-    background-color: #ff0000;
+    background-color: #eb0000;
     border: 1px solid #262626;
     color: #f2f2f2;
     font-family: "Crimson Pro Italic", serif;
@@ -1151,7 +1151,7 @@ hr {
     background-color: #262626;
     color: #fec0f0; }
   .button--round-base--active-red {
-    background-color: #ff0000;
+    background-color: #eb0000;
     border: 1px solid #262626;
     color: #f2f2f2; }
 
@@ -1176,7 +1176,7 @@ hr {
       margin-top: -6.5rem;
       position: relative; } }
   .counter::before {
-    background-color: #70ccf7;
+    background-color: #00aeef;
     border-radius: 10% 100% 100% 10%;
     color: #f2f2f2;
     content: "counter";
@@ -1196,7 +1196,7 @@ hr {
         width: 9rem; } }
 
 .drink-me__text {
-  color: #ff0000;
+  color: #eb0000;
   font-family: "Crimson Pro Italic", serif;
   font-size: 5rem;
   font-style: italic;
@@ -1213,11 +1213,11 @@ hr {
   display: flex;
   justify-content: space-between; }
   .drink-me__controls-colors .button--round-small:nth-child(1) {
-    background-color: #ff0000; }
+    background-color: #eb0000; }
   .drink-me__controls-colors .button--round-small:nth-child(2) {
     background-color: #ffff00; }
   .drink-me__controls-colors .button--round-small:nth-child(3) {
-    background-color: #70ccf7; }
+    background-color: #00aeef; }
   .drink-me__controls-colors .button--round-small:nth-child(4) {
     background-color: #d7b089; }
   .drink-me__controls-colors .button--round-small:nth-child(5) {
