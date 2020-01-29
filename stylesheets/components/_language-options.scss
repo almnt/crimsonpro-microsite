@@ -1,6 +1,6 @@
 .language-options {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-template-areas:
@@ -33,10 +33,15 @@
   background-color: transparent;
   border-radius: $space--large;
   border: $border;
-  font-size: .8rem;
-  width: 100px;
+  font-size: .7rem;
   padding: $space--small;
   text-transform: uppercase;
+  width: 85px;
+
+  @include breakpoint(medium_up) {
+    font-size: .8rem;
+    width: 100px;
+  }
 
   @include breakpoint(large_up) {
     font-size: .9rem;

@@ -121,7 +121,7 @@
 
   &--4 {
     @extend .text--display;
-    font-size: 3.25rem;
+    font-size: 3rem;
 
     @include breakpoint(large_up) {
       font-size: 3.6rem;

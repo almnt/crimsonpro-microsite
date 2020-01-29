@@ -759,7 +759,7 @@ hr {
   .text--display--3 {
     font-size: 4rem; }
   .text--display--4 {
-    font-size: 3.25rem; }
+    font-size: 3rem; }
     @media screen and (min-width: 1024px) {
       .text--display--4 {
         font-size: 3.6rem; } }
@@ -1459,7 +1459,7 @@ hr {
 
 .language-options {
   display: grid;
-  grid-gap: 10px;
+  grid-gap: 15px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-template-areas: "afrikaans albanian catalan" "croatian czech danish" "dutch english estonian" "finnish french german" "hungarian icelandic italian" "latvian lithuanian maltese" "norwegian polish portuguese" "romanian slovak slovenian" "spanish swedish turkish" "vietnamese . ."; }
@@ -1473,10 +1473,14 @@ hr {
   background-color: transparent;
   border-radius: 1.6rem;
   border: 1px solid #262626;
-  font-size: .8rem;
-  width: 100px;
+  font-size: .7rem;
   padding: 0.4rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  width: 85px; }
+  @media screen and (min-width: 768px) {
+    .language-options__option {
+      font-size: .8rem;
+      width: 100px; } }
   @media screen and (min-width: 1024px) {
     .language-options__option {
       font-size: .9rem;
