@@ -121,7 +121,11 @@
 
   &--4 {
     @extend .text--display;
-    font-size: 3.6rem;
+    font-size: 3.25rem;
+
+    @include breakpoint(large_up) {
+      font-size: 3.6rem;
+    }
   }
 
   &--5 {
@@ -214,6 +218,20 @@
   &--no-wrap {
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  &--stroke-yellow {
+    -webkit-text-stroke: 2px $neutral-black;
+    color: $accent-yellow;
+  }
+
+  &--stroke-green {
+    -webkit-text-stroke: 2px $neutral-black;
+    color: $accent-green;
+  }
+
+  &--stroke-unset {
+    -webkit-text-stroke: 0;
   }
 }
 

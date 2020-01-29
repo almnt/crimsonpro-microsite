@@ -759,7 +759,10 @@ hr {
   .text--display--3 {
     font-size: 4rem; }
   .text--display--4 {
-    font-size: 3.6rem; }
+    font-size: 3.25rem; }
+    @media screen and (min-width: 1024px) {
+      .text--display--4 {
+        font-size: 3.6rem; } }
   .text--display--5 {
     font-size: 3rem; }
   .text--display--6 {
@@ -802,6 +805,14 @@ hr {
   .text--display--no-wrap {
     overflow: hidden;
     white-space: nowrap; }
+  .text--display--stroke-yellow {
+    -webkit-text-stroke: 2px #262626;
+    color: #ffff00; }
+  .text--display--stroke-green {
+    -webkit-text-stroke: 2px #262626;
+    color: #3eb549; }
+  .text--display--stroke-unset {
+    -webkit-text-stroke: 0; }
 
 .text--weight--extra-light {
   font-variation-settings: "wght" 200; }
