@@ -1142,25 +1142,37 @@ hr {
   width: 24px; }
 
 .counter {
-  font-size: 40rem;
-  line-height: 0.9;
+  font-size: 30rem;
+  line-height: 1;
   margin-bottom: 1.6rem;
-  margin-top: -6.5rem;
+  margin-top: -4.5rem;
   position: relative; }
+  @media screen and (min-width: 1024px) {
+    .counter {
+      font-size: 40rem;
+      line-height: 0.9;
+      margin-bottom: 1.6rem;
+      margin-top: -6.5rem;
+      position: relative; } }
   .counter::before {
     background-color: #70ccf7;
     border-radius: 10% 100% 100% 10%;
     color: #f2f2f2;
     content: "counter";
     font-size: 1rem;
-    height: 11rem;
+    height: 8rem;
     left: 35%;
     padding-top: 20%;
     position: absolute;
     text-align: center;
-    top: 10rem;
-    width: 9rem;
+    top: 9rem;
+    width: 7rem;
     z-index: -1; }
+    @media screen and (min-width: 1024px) {
+      .counter::before {
+        height: 11rem;
+        top: 10rem;
+        width: 9rem; } }
 
 .drink-me__text {
   color: #ff0000;

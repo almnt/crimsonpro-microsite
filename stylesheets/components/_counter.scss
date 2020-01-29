@@ -1,9 +1,17 @@
 .counter {
-  font-size: 40rem;
-  line-height: 0.9;
+  font-size: 30rem;
+  line-height: 1;
   margin-bottom: $space--large;
-  margin-top: -6.5rem;
+  margin-top: -4.5rem;
   position: relative;
+
+  @include breakpoint(large_up) {
+    font-size: 40rem;
+    line-height: 0.9;
+    margin-bottom: $space--large;
+    margin-top: -6.5rem;
+    position: relative;
+  }
 
   &::before {
     background-color: $accent-blue;
@@ -11,13 +19,19 @@
     color: $neutral-white;
     content: "counter";
     font-size: 1rem;
-    height: 11rem;
+    height: 8rem;
     left: 35%;
     padding-top: 20%;
     position: absolute;
     text-align: center;
-    top: 10rem;
-    width: 9rem;
+    top: 9rem;
+    width: 7rem;
     z-index: $z-index--negative;
+
+    @include breakpoint(large_up) {
+      height: 11rem;
+      top: 10rem;
+      width: 9rem;
+    }
   }
 }
