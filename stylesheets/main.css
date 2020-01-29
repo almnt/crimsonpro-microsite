@@ -653,7 +653,6 @@ hr {
   margin-bottom: 1vh;
   margin-top: 1vh;
   overflow-x: hidden;
-  overflow-y: scroll;
   padding: 0.8rem 0.4rem 1.6rem; }
   @media screen and (min-width: 768px) {
     .page {
