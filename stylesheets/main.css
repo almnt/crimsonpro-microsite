@@ -1550,6 +1550,10 @@ hr {
   .language-options__option:nth-child(28) {
     grid-area: vietnamese; }
 
+.newspaper {
+  background-color: #d9d9d9;
+  padding: 0.8rem; }
+
 .select {
   background-color: #f2f2f2;
   border-radius: 5px;
