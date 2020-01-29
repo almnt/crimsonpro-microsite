@@ -1223,10 +1223,14 @@ hr {
 
 .grid-characters__upper-character {
   color: #262626;
-  font-size: 5.65rem;
+  font-size: 4.25rem;
   justify-self: center;
-  line-height: 0.825;
+  line-height: 1;
   margin: 0; }
+  @media screen and (min-width: 1024px) {
+    .grid-characters__upper-character {
+      font-size: 5.65rem;
+      line-height: 0.825; } }
   .grid-characters__upper-character:nth-child(1) {
     grid-area: a; }
   .grid-characters__upper-character:nth-child(2) {
@@ -1288,10 +1292,14 @@ hr {
 
 .grid-characters__upper-symbols {
   color: #262626;
-  font-size: 5.5rem;
-  line-height: 0.825;
+  font-size: 4.5rem;
+  line-height: 1;
   margin: 0;
   text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .grid-characters__upper-symbols {
+      font-size: 5.65rem;
+      line-height: 0.825; } }
   .grid-characters__upper-symbols:nth-child(1) {
     grid-area: ₤; }
   .grid-characters__upper-symbols:nth-child(2) {
@@ -1331,10 +1339,14 @@ hr {
 
 .grid-characters__lower-character {
   color: #262626;
-  font-size: 4.6rem;
+  font-size: 3.25rem;
   justify-self: center;
-  line-height: .875;
+  line-height: 1;
   margin: 0; }
+  @media screen and (min-width: 1024px) {
+    .grid-characters__lower-character {
+      font-size: 4.6rem;
+      line-height: .875; } }
   .grid-characters__lower-character:nth-child(1) {
     grid-area: a; }
   .grid-characters__lower-character:nth-child(2) {
