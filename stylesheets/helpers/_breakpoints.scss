@@ -1,6 +1,7 @@
 $breakpoint--small: 320px;
 $breakpoint--medium: 768px;
 $breakpoint--large: 1024px;
+$breakpoint--x-large: 1400px;
 
 @mixin breakpoint($point) {
   @if $point == small_up {
@@ -20,6 +21,9 @@ $breakpoint--large: 1024px;
   }
   @else if $point == large_up {
    @media screen and (min-width: $breakpoint--large)  { @content ; }
+  }
+  @else if $point == xlarge_up {
+    @media screen and (min-width: $breakpoint--x-large)  { @content ; }
   }
   @else {
     @error "There's an invalid breakpoint not declared in the breakpoints mixin.";
