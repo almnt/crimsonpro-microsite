@@ -682,9 +682,8 @@ hr {
 
 .page--full {
   border: 1px solid #262626;
-  height: 98vh;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+  margin-bottom: 15vh;
+  margin-top: 15vh;
   padding: 0.8rem 0.4rem; }
   @media screen and (min-width: 768px) {
     .page--full {
@@ -1211,12 +1210,29 @@ hr {
         width: 9rem; } }
 
 .dictionary {
-  background-color: transparent; }
+  background-color: #dde8f2;
+  margin: 0 auto; }
+  @media screen and (min-width: 1024px) {
+    .dictionary {
+      background-image: url("../../images/graphics/example-dictionary.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 376px;
+      max-width: 650px; } }
 
 .dictionary__entry {
-  background-color: #dde8f2;
   border: 1px solid #262626;
-  padding: 0.8rem; }
+  margin: 0 auto;
+  max-width: 550px;
+  padding: 1.6rem 1.6rem 0.8rem; }
+  @media screen and (min-width: 768px) {
+    .dictionary__entry {
+      border: none; } }
+
+.dictionary__definitions {
+  font-size: 1rem;
+  padding-left: 0.8rem; }
 
 .drink-me__text {
   color: #eb0000;

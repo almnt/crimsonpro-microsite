@@ -1,9 +1,29 @@
 .dictionary {
-  background-color: transparent;
+  background-color: $accent-pale-blue;
+  margin: 0 auto;
+
+  @include breakpoint(large_up) {
+    background-image: url('../../images/graphics/example-dictionary.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 376px;
+    max-width: 650px;
+  }
 }
 
 .dictionary__entry {
-  background-color: $accent-pale-blue;
   border: $border;
-  padding: $space--base;
+  margin: 0 auto;
+  max-width: 550px;
+  padding: $space--large $space--large $space--base;
+
+  @include breakpoint(medium_up) {
+    border: none;
+  }
+}
+
+.dictionary__definitions {
+  font-size: 1rem;
+  padding-left: $space--base;
 }

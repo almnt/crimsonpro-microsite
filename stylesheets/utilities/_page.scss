@@ -39,9 +39,8 @@
 
 .page--full {
   border: $border;
-  height: 98vh;
-  margin-bottom: 1vh;
-  margin-top: 1vh;
+  margin-bottom: 15vh;
+  margin-top: 15vh;
   padding: $space--base $space--small;
 
   @include breakpoint(medium_up) {
