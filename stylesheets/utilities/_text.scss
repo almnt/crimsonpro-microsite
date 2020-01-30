@@ -1,11 +1,15 @@
 .text--title {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-variation-settings: $font-weight--normal;
   line-height: 1.1;
   text-align: center;
 
   @include breakpoint(large_up) {
-    font-size: 1.7em;
+    font-size: 1.7rem;
+  }
+
+  @include breakpoint(xlarge_up) {
+    font-size: 2rem;
   }
 
   &--stroke {
