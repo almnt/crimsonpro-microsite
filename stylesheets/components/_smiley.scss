@@ -1,0 +1,27 @@
+$font-family--smiley: "Roboto Extremo", sans-serif;
+
+.smiley {
+  background-image: radial-gradient($accent-pink, $accent-yellow);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  margin: $space--base auto $space--large;
+  width: 200px;
+
+  @include breakpoint(large_up) {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.smiley__text {
+  font-family: $font-family--smiley;
+  font-size: 5rem;
+  text-align: center;
+
+  @include breakpoint(large_up) {
+    font-size: 7rem;
+  }
+}
