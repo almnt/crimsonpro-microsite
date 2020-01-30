@@ -5,7 +5,7 @@
   text-align: center;
 
   @include breakpoint(large_up) {
-    font-size: 2rem;
+    font-size: 1.7em;
   }
 
   &--stroke {

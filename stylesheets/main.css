@@ -700,7 +700,7 @@ hr {
   text-align: center; }
   @media screen and (min-width: 1024px) {
     .text--title {
-      font-size: 2rem; } }
+      font-size: 1.7em; } }
   .text--title--stroke {
     -webkit-text-stroke: 1px #262626;
     color: #f2f2f2;
