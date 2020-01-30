@@ -27,6 +27,16 @@
   }
 }
 
+.page--column {
+  display: flex;
+  flex-direction: column;
+
+  &--center {
+    @extend .page--column;
+    justify-content: center;
+  }
+}
+
 .page--full {
   border: $border;
   height: 98vh;
