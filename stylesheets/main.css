@@ -1587,7 +1587,203 @@ hr {
 
 .newspaper {
   background-color: #ddd9d6;
-  padding: 0.8rem; }
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0.8rem 0.8rem 0 0.8rem; }
+  @media screen and (min-width: 1024px) {
+    .newspaper {
+      padding-bottom: 0; } }
+
+.newspaper__content {
+  max-width: 1085px; }
+
+.newspaper__header-title {
+  font-size: 2rem;
+  font-variation-settings: "wght" 900;
+  text-align: center;
+  text-transform: uppercase; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__header-title {
+      font-size: 3rem; } }
+
+.newspaper__meta {
+  border-bottom: 1px solid #262626;
+  border-top: 1px solid #262626;
+  font-size: 16px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  text-transform: uppercase;
+  text-align: center; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__meta {
+      display: flex;
+      justify-content: space-between;
+      border-top: 0.5px solid #262626; } }
+
+.newspaper__meta-number {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__meta-number {
+      display: block; } }
+
+.newspaper__meta-cost {
+  display: none; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__meta-cost {
+      display: block; } }
+
+.newspaper__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0.8rem auto; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__main {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.newspaper__main-photo {
+  background-image: url("http://placekitten.com/g/300/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 210px; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__main-photo {
+      width: 700px;
+      height: 322px; } }
+
+.newspaper__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 340px; }
+
+.newspaper__main-title {
+  font-family: "Crimson Pro Italic", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: "wght" 600;
+  line-height: 1;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__main-title {
+      font-size: 2.4rem; } }
+
+.newspaper__main-byline {
+  border-bottom: 1px solid #262626;
+  border-top: 1px solid #262626;
+  font-family: "Crimson Pro Italic", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-variation-settings: "wght" 500;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  text-align: center;
+  text-transform: upper; }
+
+.newspaper__main-dek {
+  margin-top: 0.8rem; }
+
+.newspaper__row {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__row {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.newspaper__second {
+  border-top: 1px solid #262626;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 0.8rem;
+  margin-top: 1.6rem;
+  padding-top: 1.6rem; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__second {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      width: 700px; } }
+
+.newspaper__second-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: 0.8rem;
+  max-width: 285px; }
+
+.newspaper__second-photo {
+  background-image: url("http://placekitten.com/g/300/300");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 181px;
+  margin-top: 0.8rem;
+  width: 260px; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__second-photo {
+      height: 220px;
+      padding-top: 0;
+      width: 350px; } }
+
+.newspaper__second-title {
+  font-family: "Crimson Pro Italic", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: "wght" 600;
+  line-height: 1;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem; }
+
+.newspaper__second-byline {
+  border-bottom: 1px solid #262626;
+  border-top: 1px solid #262626;
+  font-family: "Crimson Pro Italic", serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-variation-settings: "wght" 500;
+  padding-bottom: 0.2rem;
+  padding-top: 0.2rem;
+  text-align: center;
+  text-transform: upper; }
+
+.newspaper__graphic {
+  background-image: url("../../images/graphics/newspaper-border.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 168px;
+  margin: 0.8rem auto 0;
+  width: 260px; }
+  @media screen and (min-width: 1024px) {
+    .newspaper__graphic {
+      height: 216px;
+      width: 340px; } }
+  .newspaper__graphic span {
+    display: block;
+    font-size: 3rem;
+    font-variation-settings: "wght" 900;
+    line-height: 1;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px; }
+    @media screen and (min-width: 1024px) {
+      .newspaper__graphic span {
+        padding-top: 80px; } }
 
 .select {
   background-color: #f2f2f2;

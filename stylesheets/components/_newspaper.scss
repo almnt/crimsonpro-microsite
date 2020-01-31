@@ -1,4 +1,232 @@
 .newspaper {
-  background-color: #ddd9d6;
-  padding: $space--base;
+  background-color: $warm-gray;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: $space--base $space--base 0 $space--base ;
+
+  @include breakpoint(large_up) {
+    padding-bottom: 0;
+  }
 }
+
+.newspaper__content {
+  max-width: 1085px;
+}
+
+.newspaper__header-title {
+  font-size: 2rem;
+  font-variation-settings: $font-weight--black;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include breakpoint(large_up) {
+    font-size: 3rem;
+  }
+}
+
+.newspaper__meta {
+  border-bottom: $border;
+  border-top: $border;
+  font-size: 16px;
+  padding-bottom: $space--x-small;
+  padding-top: $space--x-small;
+  text-transform: uppercase;
+  text-align: center;
+
+  @include breakpoint(large_up) {
+    display: flex;
+    justify-content: space-between;
+    border-top: .5px $border-style $border-color;
+  }
+}
+
+.newspaper__meta-number {
+  display: none;
+
+  @include breakpoint(large_up) {
+    display: block;
+  }
+}
+.newspaper__meta-cost {
+  display: none;
+
+  @include breakpoint(large_up) {
+    display: block;
+  }
+}
+
+.newspaper__main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $space--base auto;
+
+  @include breakpoint(large_up) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.newspaper__main-photo {
+  background-image: url('http://placekitten.com/g/300/300');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 210px;
+
+  @include breakpoint(large_up) {
+    width: 700px;
+    height: 322px;
+  }
+}
+
+.newspaper__main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 340px;
+}
+
+.newspaper__main-title {
+  font-family: $font-family--italic;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: $font-weight--semi-bold;
+  line-height: 1;
+  text-align: center;
+  padding-top: $space--base;
+  padding-bottom: $space--base;
+
+  @include breakpoint(large_up) {
+    font-size: 2.4rem;
+  }
+}
+
+.newspaper__main-byline {
+  border-bottom: $border;
+  border-top: $border;
+  font-family: $font-family--italic;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-variation-settings: $font-weight--medium;
+  padding-bottom: $space--x-small;
+  padding-top: $space--x-small;
+  text-align: center;
+  text-transform: upper;
+}
+
+.newspaper__main-dek {
+  margin-top: $space--base;
+}
+
+.newspaper__row {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(large_up) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.newspaper__second {
+  border-top: $border;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: $space--base;
+  margin-top: $space--large;
+  padding-top: $space--large;
+
+  @include breakpoint(large_up) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    width: 700px;
+  }
+}
+
+.newspaper__second-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-bottom: $space--base;
+  max-width: 285px;
+}
+
+.newspaper__second-photo {
+  background-image: url('http://placekitten.com/g/300/300');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 181px;
+  margin-top: $space--base;
+  width: 260px;
+
+  @include breakpoint(large_up) {
+    height: 220px;
+    padding-top: 0;
+    width: 350px;
+  }
+}
+
+.newspaper__second-title {
+  font-family: $font-family--italic;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: $font-weight--semi-bold;
+  line-height: 1;
+  text-align: center;
+  padding-top: $space--base;
+  padding-bottom: $space--base;
+}
+
+.newspaper__second-byline {
+  border-bottom: $border;
+  border-top: $border;
+  font-family: $font-family--italic;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-variation-settings: $font-weight--medium;
+  padding-bottom: $space--x-small;
+  padding-top: $space--x-small;
+  text-align: center;
+  text-transform: upper;
+}
+
+.newspaper__graphic {
+  background-image: url('../../images/graphics/newspaper-border.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 168px;
+  margin: $space--base auto 0;
+  width: 260px;
+
+  @include breakpoint(large_up) {
+    height: 216px;
+    width: 340px;
+  }
+
+  & span {
+    display: block;
+    font-size: 3rem;
+    font-variation-settings: $font-weight--black;
+    line-height: 1;
+    margin: 0 auto;
+    padding-top: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 220px;
+
+    @include breakpoint(large_up) {
+      padding-top: 80px;
+    }
+  }
+ }
