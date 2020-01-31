@@ -14,6 +14,73 @@
   }
 }
 
+.drink-me__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 $space--base;
+
+  @include breakpoint(large_up) {
+    justify-content: space-evenly;
+  }
+}
+
+.drink-me__buttons-button {
+  background: transparent;
+  border: $border;
+  border-radius: 0;
+  height: 35;
+  padding: $space--small;
+  width: 49%;
+
+  @include breakpoint(large_up) {
+    width: 47%;
+  }
+
+  &--active-red {
+    background-color: $accent-red;
+    border: none;
+    color: $neutral-white;
+    font-family: $font-family--italic;
+    font-style: italic;
+  }
+}
+
+.drink-me__section {
+  margin: $space--base 0;
+}
+
+.drink-me__section-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-top: $space--base;
+}
+
+.drink-me__section-button {
+  background: transparent;
+  border-radius: 100%;
+  border: none;
+  height: 48px;
+  padding: $space--small;
+  width: 48px;
+
+  &--active-red {
+    background-color: $accent-red;
+    border: $border;
+    color: $neutral-white;
+  }
+}
+
+.drink-me__section-text {
+  border-bottom: 3px dotted $border-color;
+  color: $font-color--base;
+  font-size: 1.2rem;
+  font-variation-settings: $font-weight--medium;
+  line-height: 1.3;
+  margin: 0;
+  padding-bottom: $space--base;
+  text-align: center;
+}
+
 .drink-me__controls-colors {
   display: flex;
   justify-content: space-between;
@@ -55,23 +122,40 @@
   display: flex;
   flex-direction: column;
 
-  @include breakpoint(medium_up) {
+  @include breakpoint(large_up) {
     flex-direction: row;
+    margin-top: $space--large;
   }
 }
 
 .drink-me__group-column {
+  margin: $space--base 0;
 
   &:nth-child(3) {
     border-top: $border;
   }
 
-  @include breakpoint(medium_up) {
-    max-width: 250px;
+  @include breakpoint(large_up) {
+    margin: 0;
+    width: 50%;
   }
 }
 
 .drink-me__group-divider {
   width: 1px;
   background-color: $neutral-black;
+}
+
+.drink-me__slider {
+  display: block;
+  margin: $space--base auto 0;
+  width: 90% !important;
+}
+
+.drink-me__slider-label {
+  display: block;
+  font-size: 2.4rem;
+  margin: $space--base auto 0;
+  text-align: center;
+  width: 90%;
 }

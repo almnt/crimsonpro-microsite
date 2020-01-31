@@ -260,28 +260,28 @@
           </div>
           <div class="drink-me__group">
             <div class="drink-me__group-column">
-              <div class="flex--justify-around">
-                <button class="button--rectangle-base">Roman</button>
-                <button class="button--rectangle-base button--rectangle-base--active-red">Italic</button>
+              <div class="drink-me__buttons">
+                <button class="drink-me__buttons-button">Roman</button>
+                <button class="drink-me__buttons-button">Italic</button>
               </div>
-              <div class="drink-me__controls-size">
-                <div class="text--body text--body--1 tet--body--medium text--body--center border--bb--medium--dashed  space--pv--small">Size</div>
-                <div class="flex flex--justify-between space--pv">
-                  <button class="button--round-base">XS</button>
-                  <button class="button--round-base">S</button>
-                  <button class="button--round-base">M</button>
-                  <button class="button--round-base button--round-base--active-red">L</button>
-                  <button class="button--round-base">XL</button>
+              <div class="drink-me__section">
+                <div class="drink-me__section-text">Size</div>
+                <div class="drink-me__section-buttons">
+                  <button class="drink-me__section-button">XS</button>
+                  <button class="drink-me__section-button">S</button>
+                  <button class="drink-me__section-button">M</button>
+                  <button class="drink-me__section-button drink-me__section-button--active-red">L</button>
+                  <button class="drink-me__section-button">XL</button>
                 </div>
               </div>
             </div>
             <div class="drink-me__group-divider"></div>
             <div class="drink-me__group-column">
-              <div class="drink-me__controls-weight">
-                <div class="text--body text--body--1 text--body--medium text--body--center border--bb--medium--dashed space--pv--small space--mb--large">Weight</div>
+              <div class="drink-me__section">
+                <div class="drink-me__section-text space--mb--large">Weight</div>
                 <div>
-                  <input type="range" id="drink-me__slider" name="" min="100" max="900" value="100" step="1">
-                  <label class="drink-me__label text--display text--display--6 text--display--center space--mt"></label>
+                  <input class="drink-me__slider" type="range" id="drink-me__slider" name="" min="100" max="900" value="100" step="1">
+                  <label class="drink-me__slider-label drink-me__label"></label>
                 </div>
               </div>
             </div>
