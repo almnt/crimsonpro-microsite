@@ -13,19 +13,25 @@
     flex: 1 1 50%;
     height: 820px;
     padding: $space--base;
+    position: relative;
   }
 
   @include breakpoint(large_up) {
     height: 1000px;
 
     &:nth-child(even) {
+      box-shadow: inset .3em 0 .3em transparentize($neutral-black, .9),
+                  0.05em 0 0 transparentize($neutral-black, .8);
       padding: $space--base $space--x-large $space--large $space--large;
     }
     &:nth-child(odd) {
+      box-shadow: inset -.3em 0 .3em transparentize($neutral-black, .9),
+                  -0.05em 0 0 transparentize($neutral-black, .8);
       padding: $space--base $space--large $space--large $space--x-large;
     }
   }
 }
+
 
 .page--column {
   display: flex;
