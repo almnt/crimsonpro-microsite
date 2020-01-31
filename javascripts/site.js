@@ -22,7 +22,12 @@ function updateCharacters(rangeValue, characters, addInnerText) {
   });
 }
 
-sliderMagic('.slider--book', '.book__weightheading', true);
+sliderMagic('#weight-card__slider1', '.weight-card__label1', true);
+sliderMagic('#weight-card__slider2', '.weight-card__label2', true);
+sliderMagic('#weight-card__slider3', '.weight-card__label3', true);
+sliderMagic('#weight-card__slider4', '.weight-card__label4', true);
+sliderMagic('#weight-card__slider5', '.weight-card__label5', true);
+sliderMagic('#weight-card__slider6', '.weight-card__label6', true);
 sliderMagic('.slider--page', '.page__weightheading', true);
 sliderMagic('.slider--sample-one', '.design__characters-roman-one');
 sliderMagic('.slider--sample-two', '.design__characters-roman-two');
