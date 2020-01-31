@@ -684,6 +684,7 @@ hr {
   border: 1px solid #262626;
   margin-bottom: 15vh;
   margin-top: 15vh;
+  min-height: 70vh;
   padding: 0.8rem 0.4rem; }
   @media screen and (min-width: 768px) {
     .page--full {

@@ -41,6 +41,7 @@
   border: $border;
   margin-bottom: 15vh;
   margin-top: 15vh;
+  min-height: 70vh;
   padding: $space--base $space--small;
 
   @include breakpoint(medium_up) {
