@@ -1184,11 +1184,15 @@ hr {
   font-size: 30rem;
   line-height: 1;
   margin-bottom: 1.6rem;
-  margin-top: -4.5rem;
-  position: relative; }
+  margin-top: -2.5rem;
+  position: relative;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .counter {
+      margin-top: 0; } }
   @media screen and (min-width: 1024px) {
     .counter {
-      font-size: 40rem;
+      font-size: 50rem;
       line-height: 0.9;
       margin-bottom: 1.6rem;
       margin-top: -6.5rem;
@@ -1200,18 +1204,22 @@ hr {
     content: "counter";
     font-size: 1rem;
     height: 8rem;
-    left: 35%;
-    padding-top: 20%;
+    left: 33%;
+    padding-top: 22%;
     position: absolute;
     text-align: center;
     top: 9rem;
     width: 7rem;
     z-index: -1; }
+    @media screen and (min-width: 768px) {
+      .counter::before {
+        padding-top: 25%;
+        left: 35%; } }
     @media screen and (min-width: 1024px) {
       .counter::before {
-        height: 11rem;
-        top: 10rem;
-        width: 9rem; } }
+        height: 13rem;
+        top: 13rem;
+        width: 10rem; } }
 
 .dictionary {
   background-color: #dde8f2;

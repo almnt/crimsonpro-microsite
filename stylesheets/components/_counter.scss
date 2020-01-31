@@ -2,11 +2,16 @@
   font-size: 30rem;
   line-height: 1;
   margin-bottom: $space--large;
-  margin-top: -4.5rem;
+  margin-top: -2.5rem;
   position: relative;
+  text-align: center;
+
+  @include breakpoint(medium_up) {
+    margin-top: 0;
+  }
 
   @include breakpoint(large_up) {
-    font-size: 40rem;
+    font-size: 50rem;
     line-height: 0.9;
     margin-bottom: $space--large;
     margin-top: -6.5rem;
@@ -20,18 +25,23 @@
     content: "counter";
     font-size: 1rem;
     height: 8rem;
-    left: 35%;
-    padding-top: 20%;
+    left: 33%;
+    padding-top: 22%;
     position: absolute;
     text-align: center;
     top: 9rem;
     width: 7rem;
     z-index: $z-index--negative;
 
+    @include breakpoint(medium_up) {
+      padding-top: 25%;
+      left: 35%;
+    }
+
     @include breakpoint(large_up) {
-      height: 11rem;
-      top: 10rem;
-      width: 9rem;
+      height: 13rem;
+      top: 13rem;
+      width: 10rem;
     }
   }
 }
