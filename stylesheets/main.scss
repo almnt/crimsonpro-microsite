@@ -29,13 +29,9 @@
 @import "components/button-rectangle";
 @import "components/button-round";
 @import "components/counter";
-@import "components/dictionary";
 @import "components/drink-me";
 @import "components/graphic";
 @import "components/grid-characters";
-@import "components/language-options";
-@import "components/manuscript";
-@import "components/newspaper";
 @import "components/select";
 @import "components/smiley";
 @import "components/story";
@@ -44,3 +40,8 @@
 @import "components/weight-letters";
 @import "components/weight-row";
 @import "components/weight-sentence";
+
+@import "examples/dictionary";
+@import "examples/language-options";
+@import "examples/manuscript";
+@import "examples/newspaper";
