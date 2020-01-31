@@ -28,11 +28,9 @@ sliderMagic('#weight-card__slider3', '.weight-card__label3', true);
 sliderMagic('#weight-card__slider4', '.weight-card__label4', true);
 sliderMagic('#weight-card__slider5', '.weight-card__label5', true);
 sliderMagic('#weight-card__slider6', '.weight-card__label6', true);
-sliderMagic('.slider--page', '.page__weightheading', true);
-sliderMagic('.slider--sample-one', '.design__characters-roman-one');
-sliderMagic('.slider--sample-two', '.design__characters-roman-two');
-sliderMagic('.slider--sample-three', '.design__characters-italic-three');
-sliderMagic('.slider--sample-four', '.design__characters-italic-four');
+sliderMagic('#weight-sentence__slider', '.weight-sentence');
+sliderMagic('#drink-me__slider', '.drink-me__label', true);
+
 
 // Alice in Wonderland Text Translation
 let content = {
@@ -329,19 +327,18 @@ let content = {
 }
 
 function translation(language) {
-  document.querySelector('.design__book-title').innerText = content[language].bookTitle;
-  document.querySelector('.design__book-byline').innerText = content[language].bookByLine;
-  document.querySelector('.design__book-chapter').innerText = content[language].bookChapter;
+  document.querySelector('.story__title').innerText = content[language].bookTitle;
+  document.querySelector('.story__chapter').innerText = content[language].bookChapter;
 
-  document.querySelectorAll('.design__book-grafs p').forEach(function(item, index){
+  document.querySelectorAll('.story__grafs').forEach(function(item, index){
     item.innerText = content[language].bookGrafs[index];
   });
 }
 
 translation('english');
 
-document.querySelector('.design--language-list').addEventListener('click', function (event) {
-  if (event.target.matches('li')) {
+document.querySelector('.language-options').addEventListener('click', function (event) {
+  if (event.target.matches('button')) {
     translation(event.target.innerText.toLowerCase());
   }
 }, false);
