@@ -1,0 +1,19 @@
+.example {
+  background-color: $accent-pink;
+  padding: $space--base;
+  height: 300px;
+
+  @include breakpoint(large_up) {
+    height: 90vh;
+  }
+}
+
+.example__content-title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.example__content-text {
+  font-size: .9rem;
+  text-align: center;
+}

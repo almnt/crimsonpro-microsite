@@ -2146,4 +2146,20 @@ hr {
       .newspaper__graphic span {
         padding-top: 80px; } }
 
+.example {
+  background-color: #fec0f0;
+  padding: 0.8rem;
+  height: 300px; }
+  @media screen and (min-width: 1024px) {
+    .example {
+      height: 90vh; } }
+
+.example__content-title {
+  font-size: 2rem;
+  text-align: center; }
+
+.example__content-text {
+  font-size: .9rem;
+  text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
