@@ -6,11 +6,14 @@
   font-variation-settings: $font-weight--black;
   line-height: 1;
   margin-bottom: $space--x-large;
+  overflow: hidden;
   text-align: center;
+  white-space: nowrap;
 
   @include breakpoint(large_up) {
     font-size: 9rem;
     line-height: 0.75;
+    height: 300px;
   }
 }
 

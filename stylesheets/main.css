@@ -1256,11 +1256,14 @@ hr {
   font-variation-settings: "wght" 900;
   line-height: 1;
   margin-bottom: 3.2rem;
-  text-align: center; }
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap; }
   @media screen and (min-width: 1024px) {
     .drink-me__text {
       font-size: 9rem;
-      line-height: 0.75; } }
+      line-height: 0.75;
+      height: 300px; } }
 
 .drink-me__buttons {
   display: flex;
