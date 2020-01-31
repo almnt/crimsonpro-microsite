@@ -1,23 +1,3 @@
-// dat.gui Instantiation
-
-var guiOne = new dat.GUI({ autoPlace: false });
-var guiTwo = new dat.GUI({ autoPlace: false });
-var guiThree = new dat.GUI({ autoPlace: false });
-var guiFour = new dat.GUI({ autoPlace: false });
-var guiFive = new dat.GUI({ autoPlace: false });
-
-var customContainerOne = document.querySelector('.gui-wrapper__one');
-var customContainerTwo = document.querySelector('.gui-wrapper__two');
-var customContainerThree = document.querySelector('.gui-wrapper__three');
-var customContainerFour = document.querySelector('.gui-wrapper__four');
-var customContainerFive = document.querySelector('.gui-wrapper__five');
-
-customContainerOne.appendChild(guiOne.domElement);
-customContainerTwo.appendChild(guiTwo.domElement);
-customContainerThree.appendChild(guiThree.domElement);
-customContainerFour.appendChild(guiFour.domElement);
-customContainerFive.appendChild(guiFive.domElement);
-
 // Weight Axis Slider Functionality
 function sliderMagic(rangeClass, characterClass, addInnerText) {
   let range = document.querySelector(rangeClass);
