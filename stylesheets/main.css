@@ -1856,7 +1856,8 @@ hr {
   margin: -.5rem 0 0 0; }
 
 .weight-card__range {
-  margin-bottom: 0.8rem; }
+  margin-bottom: 0.8rem;
+  z-index: 1; }
 
 .weight-card__character {
   color: #262626;

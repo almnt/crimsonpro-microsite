@@ -28,6 +28,7 @@
 
 .weight-card__range {
   margin-bottom: $space--base;
+  z-index: $z-index--positive;
 }
 
 .weight-card__character {
