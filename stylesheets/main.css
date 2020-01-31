@@ -1981,7 +1981,7 @@ hr {
   padding-top: 0.2rem;
   text-transform: uppercase;
   text-align: center; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__meta {
       display: flex;
       justify-content: space-between;
@@ -1989,13 +1989,13 @@ hr {
 
 .newspaper__meta-number {
   display: none; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__meta-number {
       display: block; } }
 
 .newspaper__meta-cost {
   display: none; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__meta-cost {
       display: block; } }
 
@@ -2004,7 +2004,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   margin: 0.8rem auto; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__main {
       flex-direction: row;
       justify-content: space-between; } }
@@ -2015,7 +2015,7 @@ hr {
   background-size: cover;
   width: 260px;
   height: 210px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__main-photo {
       width: 700px;
       height: 322px; } }
@@ -2026,6 +2026,12 @@ hr {
   justify-content: center;
   margin: 0 auto;
   max-width: 340px; }
+  @media screen and (min-width: 768px) {
+    .newspaper__main-content {
+      padding-left: 10px; } }
+  @media screen and (min-width: 1024px) {
+    .newspaper__main-content {
+      padding-left: 0; } }
 
 .newspaper__main-title {
   font-family: "Crimson Pro Italic", serif;
@@ -2036,7 +2042,7 @@ hr {
   text-align: center;
   padding-top: 0.8rem;
   padding-bottom: 0.8rem; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__main-title {
       font-size: 2.4rem; } }
 
@@ -2060,7 +2066,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__row {
       flex-direction: row;
       justify-content: space-between; } }
@@ -2073,12 +2079,12 @@ hr {
   margin-bottom: 0.8rem;
   margin-top: 1.6rem;
   padding-top: 1.6rem; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__second {
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 0;
       margin-bottom: 0;
+      margin-top: 0;
       padding-top: 0;
       width: 700px; } }
 
@@ -2089,6 +2095,12 @@ hr {
   margin: 0 auto;
   padding-bottom: 0.8rem;
   max-width: 285px; }
+  @media screen and (min-width: 768px) {
+    .newspaper__second-content {
+      max-width: 225px; } }
+  @media screen and (min-width: 1024px) {
+    .newspaper__second-content {
+      max-width: 285px; } }
 
 .newspaper__second-photo {
   background-image: url("http://placekitten.com/g/300/300");
@@ -2097,10 +2109,16 @@ hr {
   height: 181px;
   margin-top: 0.8rem;
   width: 260px; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .newspaper__second-photo {
       height: 220px;
+      margin-left: 10px;
       padding-top: 0;
+      width: 286px; } }
+  @media screen and (min-width: 1024px) {
+    .newspaper__second-photo {
+      height: 225px;
+      margin-left: 0;
       width: 350px; } }
 
 .newspaper__second-title {
@@ -2132,23 +2150,27 @@ hr {
   height: 168px;
   margin: 0.8rem auto 0;
   width: 260px; }
+  @media screen and (min-width: 768px) {
+    .newspaper__graphic {
+      display: none; }
+      .newspaper__graphic span {
+        display: none; } }
   @media screen and (min-width: 1024px) {
     .newspaper__graphic {
-      height: 216px;
-      width: 340px; } }
-  .newspaper__graphic span {
-    display: block;
-    font-size: 3rem;
-    font-variation-settings: "wght" 900;
-    line-height: 1;
-    margin: 0 auto;
-    padding-top: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 220px; }
-    @media screen and (min-width: 1024px) {
+      display: block; }
       .newspaper__graphic span {
-        padding-top: 80px; } }
+        display: block;
+        font-size: 3rem;
+        font-variation-settings: "wght" 900;
+        line-height: 1;
+        margin: 0 auto;
+        padding-top: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 220px; } }
+    @media screen and (min-width: 1024px) and (min-width: 1024px) {
+      .newspaper__graphic span {
+        padding-top: 45px; } }
 
 .example {
   background-color: #fec0f0;

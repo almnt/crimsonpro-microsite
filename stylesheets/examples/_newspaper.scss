@@ -35,7 +35,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     display: flex;
     justify-content: space-between;
     border-top: .5px $border-style $border-color;
@@ -45,14 +45,14 @@
 .newspaper__meta-number {
   display: none;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     display: block;
   }
 }
 .newspaper__meta-cost {
   display: none;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     display: block;
   }
 }
@@ -63,7 +63,7 @@
   justify-content: center;
   margin: $space--base auto;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -76,7 +76,7 @@
   width: 260px;
   height: 210px;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     width: 700px;
     height: 322px;
   }
@@ -88,6 +88,14 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 340px;
+
+  @include breakpoint(medium_up) {
+    padding-left: 10px;
+  }
+
+  @include breakpoint(large_up) {
+    padding-left: 0;
+  }
 }
 
 .newspaper__main-title {
@@ -100,7 +108,7 @@
   padding-top: $space--base;
   padding-bottom: $space--base;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     font-size: 2.4rem;
   }
 }
@@ -128,7 +136,7 @@
   flex-direction: column;
   justify-content: center;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -143,11 +151,11 @@
   margin-top: $space--large;
   padding-top: $space--large;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0;
     margin-bottom: 0;
+    margin-top: 0;
     padding-top: 0;
     width: 700px;
   }
@@ -160,6 +168,14 @@
   margin: 0 auto;
   padding-bottom: $space--base;
   max-width: 285px;
+
+  @include breakpoint(medium_up) {
+    max-width: 225px;
+  }
+
+  @include breakpoint(large_up) {
+    max-width: 285px;
+  }
 }
 
 .newspaper__second-photo {
@@ -170,9 +186,16 @@
   margin-top: $space--base;
   width: 260px;
 
-  @include breakpoint(large_up) {
+  @include breakpoint(medium_up) {
     height: 220px;
+    margin-left: 10px;
     padding-top: 0;
+    width: 286px;
+  }
+
+  @include breakpoint(large_up) {
+    height: 225px;
+    margin-left: 0;
     width: 350px;
   }
 }
@@ -209,24 +232,31 @@
   margin: $space--base auto 0;
   width: 260px;
 
-  @include breakpoint(large_up) {
-    height: 216px;
-    width: 340px;
+  @include breakpoint(medium_up) {
+    display: none;
+
+    & span {
+      display: none;
+    }
   }
 
-  & span {
+  @include breakpoint(large_up) {
     display: block;
-    font-size: 3rem;
-    font-variation-settings: $font-weight--black;
-    line-height: 1;
-    margin: 0 auto;
-    padding-top: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 220px;
 
-    @include breakpoint(large_up) {
-      padding-top: 80px;
+    & span {
+      display: block;
+      font-size: 3rem;
+      font-variation-settings: $font-weight--black;
+      line-height: 1;
+      margin: 0 auto;
+      padding-top: 40px;
+      text-align: center;
+      text-transform: uppercase;
+      width: 220px;
+
+      @include breakpoint(large_up) {
+        padding-top: 45px;
+      }
     }
   }
  }
