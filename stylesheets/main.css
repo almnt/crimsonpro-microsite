@@ -1832,6 +1832,40 @@ hr {
     .smiley__text {
       font-size: 7rem; } }
 
+.story__title {
+  -webkit-text-stroke: 2px #262626;
+  color: #262626;
+  font-size: 2.4rem;
+  font-variation-settings: "wght" 700;
+  margin-bottom: 0.8rem;
+  text-align: center; }
+
+.story__chapter {
+  color: #262626;
+  font-family: "Crimson Pro Italic", serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: "wght" 700;
+  margin-bottom: 1.6rem;
+  text-align: center; }
+
+.story__graf {
+  font-size: .9rem; }
+  .story__graf {
+    margin-bottom: 1.6rem; }
+
+.story__text--blue {
+  color: #00aeef; }
+
+.story__text--green {
+  color: #3eb549; }
+
+.story__text--pink {
+  color: #fec0f0; }
+
+.story__text--red {
+  color: #eb0000; }
+
 .weight-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -1,0 +1,42 @@
+.story__title {
+  -webkit-text-stroke: 2px $neutral-black;
+  color: $font-color--base;
+  font-size: 2.4rem;
+  font-variation-settings: $font-weight--bold;
+  margin-bottom: $space--base;
+  text-align: center;
+}
+
+.story__chapter {
+  color: $font-color--base;
+  font-family: $font-family--italic;
+  font-size: 2rem;
+  font-style: italic;
+  font-variation-settings: $font-weight--bold;
+  margin-bottom: $space--large;
+  text-align: center;
+}
+
+.story__graf {
+  font-size: .9rem;
+
+  & {
+    margin-bottom: $space--large;
+  }
+}
+
+.story__text--blue {
+  color: $accent-blue;
+}
+
+.story__text--green {
+  color: $accent-green;
+}
+
+.story__text--pink {
+  color: $accent-pink;
+}
+
+.story__text--red {
+  color: $accent-red;
+}
