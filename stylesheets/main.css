@@ -1833,7 +1833,7 @@ hr {
   background-color: #dde8f2;
   border-radius: 7px;
   margin: 0 auto; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     .dictionary {
       background-color: transparent;
       background-image: url("../../images/graphics/example-dictionary.svg");
@@ -1850,7 +1850,11 @@ hr {
   padding: 1.6rem 1.6rem 0.8rem; }
   @media screen and (min-width: 768px) {
     .dictionary__entry {
-      border: none; } }
+      border: none;
+      padding-top: 3.2rem; } }
+  @media screen and (min-width: 1024px) {
+    .dictionary__entry {
+      padding-top: 1.6rem; } }
 
 .dictionary__definitions {
   font-size: 1rem;
