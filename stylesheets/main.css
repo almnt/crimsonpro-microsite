@@ -1869,7 +1869,8 @@ hr {
 .weight-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center; }
+  justify-items: center;
+  grid-column-gap: 5px; }
   @media screen and (min-width: 768px) {
     .weight-cards {
       grid-template-columns: repeat(3, 1fr); } }
@@ -1880,7 +1881,7 @@ hr {
   max-width: 100px; }
   @media screen and (min-width: 1024px) {
     .weight-card {
-      max-width: 120px; } }
+      max-width: 160px; } }
 
 .weight-card__label {
   color: #262626;
