@@ -1866,6 +1866,18 @@ hr {
 .story__text--red {
   color: #eb0000; }
 
+.type-sample {
+  background-image: url("../images/graphics/brackets.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #262626;
+  font-size: 12rem;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap; }
+
 .weight-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
