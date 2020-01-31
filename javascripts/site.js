@@ -28,7 +28,7 @@ sliderMagic('#weight-card__slider3', '.weight-card__label3', true);
 sliderMagic('#weight-card__slider4', '.weight-card__label4', true);
 sliderMagic('#weight-card__slider5', '.weight-card__label5', true);
 sliderMagic('#weight-card__slider6', '.weight-card__label6', true);
-sliderMagic('#weight-sentence__slider', '.weight-sentence');
+sliderMagic('#weight-sentence__slider', '.weight-sentences__sentence');
 sliderMagic('#drink-me__slider', '.drink-me__label', true);
 
 
