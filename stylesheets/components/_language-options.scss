@@ -15,7 +15,8 @@
   "spanish swedish turkish"
   "vietnamese . .";
 
-  @include breakpoint(medium_up) {
+  @include breakpoint(large_up) {
+    grid-column-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:

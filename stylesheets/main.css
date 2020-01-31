@@ -1579,8 +1579,9 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-template-areas: "afrikaans albanian catalan" "croatian czech danish" "dutch english estonian" "finnish french german" "hungarian icelandic italian" "latvian lithuanian maltese" "norwegian polish portuguese" "romanian slovak slovenian" "spanish swedish turkish" "vietnamese . ."; }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
     .language-options {
+      grid-column-gap: 5px;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(7, 1fr);
       grid-template-areas: "afrikaans english italian romanian" "albanian estonian latvian slovak" "catalan finnish lithuanian slovenian" "croatian french maltese spanish" "czech german norwegian swedish" "danish hungarian polish turkish" "dutch icelandic portuguese vietnamese"; } }
