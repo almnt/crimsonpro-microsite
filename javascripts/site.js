@@ -361,28 +361,6 @@ document.querySelector('.design--language-list').addEventListener('click', funct
   }
 }, false);
 
-// // Add fullPage.js to Site on Medium Screen Width
-// var windowWidth = window.innerWidth;
-
-// function windowWidthCheck() {
-//   if ((windowWidth) >= 1135) {
-//     let fullPageScript = document.createElement("script");
-//     document.body.appendChild(fullPageScript);
-//     fullPageScript.innerHTML = `
-//         new fullpage('#fullpage', {
-//           afterResponsive: function(isResponsive){},
-//           controlArrows: true,
-//           loopHorizontal: false,
-//           scrollingSpeed: 800,
-// 	        verticalCentered: true
-//         });
-//     `;
-//   }
-// }
-
-// windowWidthCheck();
-
-
 var elem = document.querySelector('.playground__content');
 var two = new Two({ width: 285, height: 200 }).appendTo(elem);
 
