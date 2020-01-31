@@ -1211,9 +1211,11 @@ hr {
 
 .dictionary {
   background-color: #dde8f2;
+  border-radius: 7px;
   margin: 0 auto; }
   @media screen and (min-width: 1024px) {
     .dictionary {
+      background-color: transparent;
       background-image: url("../../images/graphics/example-dictionary.svg");
       background-position: center;
       background-repeat: no-repeat;
